@@ -1,0 +1,26 @@
+{
+  "name": "istorie1918",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "run-script-os",
+    "start:win32": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 1918 --browser \"C:\\Program Files\\Firefox Developer Edition\\firefox.exe\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/AncutaCreita/Istorie1918.git"
+  },
+  "author": "Ancuta Creita",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "run-script-os": "^1.0.2"
+  },
+  "bugs": {
+    "url": "https://gitlab.com/AncutaCreita/Istorie1918/issues"
+  },
+  "homepage": "https://gitlab.com/AncutaCreita/Istorie1918#README"
+}

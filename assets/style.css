@@ -1,0 +1,182 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500i,600,700|Playfair+Display:400,400i,700,700i,900,900i&subset=latin-ext');
+
+:root {
+  --yellow: #ffc600;
+  --black: #272727;
+  --white: #fff;
+  --dark-blue:#1e202d;
+  --gold:#af9073;
+  --light-gold:#e8c29e;
+}
+
+html {
+  /* border-box box model allows us to add padding and border to our elements without increasing their size */
+  box-sizing: border-box;
+  /* A system font stack so things load nice and quick! */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 900;
+  font-size: 16px;
+  color: var(--black);
+}
+
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color:var(--dark-blue);
+  font-size:12px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 5px 0;
+}
+
+.wrapper{
+  display: grid;
+  /* grid-gap:20px; */
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: normal;
+  max-width: 1200px;
+  margin:0 auto;
+  padding:40px;
+  grid-template-columns: 1fr 10fr 1fr;
+  background-image: url(images/heroBg.png);
+  background-color: var(--dark-blue); 
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow:0 0 20px 13px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.menu{
+  grid-column: 1/-1;
+  display: none;
+}
+.menu ul {
+  display: grid;
+  grid-gap: 10px;
+  padding: 0;
+  list-style: none;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  
+}
+
+.header{
+  grid-column: 2/ 3;
+  min-height: 350px;
+  color:#fff;
+}
+
+h1{
+  font-size:50px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 100;
+}
+h1.title{  
+  font-size: 80px;
+  color:#fff;
+}
+
+button{
+  display: inline-block;
+  background-color: transparent;
+  border:2px solid var(--gold);
+  padding: 15px;
+  color: var(--gold);
+  border-radius:50px;
+  cursor: pointer;
+}
+button:hover{
+  border:2px solid var(--light-gold);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.71);
+}
+
+section{
+  display:grid;
+  grid-gap: 0 20px;
+ }
+.section__bg{
+  grid-column: 1/-1;
+  grid-template-columns: auto 1fr; 
+  background-image: url(images/heroBg.png); 
+  color:var(--white);
+   padding: 20px;
+}
+.section__sm{
+  grid-column: 2/ 3;
+  grid-template-columns: auto 1fr; 
+  background-color: #fff;
+  color:var(--black);
+}
+.textOnly{
+  display: grid;
+  grid-template-columns: 1fr 1fr;   
+}
+.features{
+  grid-column: span 3;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(100px, 1fr));
+  justify-content: center;
+  background: var(--white);
+  color: var(--black);
+}
+
+.feature{
+  /* display: grid; */
+  grid-row: 2;
+  align-items: center;  
+  justify-items: center;
+  text-align: center;
+}
+.features h1{
+  grid-row: 1/ 1;
+  padding:20px;
+}
+
+.description{
+  padding: 40px;
+}
+blockquote{
+  grid-column: 2 ;
+  color: var(--white);
+  border: 1px solid var(--gold);
+  font-style: italic;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 40px;
+  position: relative;
+}
+blockquote::before{
+  content: "\201C"; /*Unicode for Left Double Quote*/
+  
+  /*Font*/
+  font-size: 120px;
+  font-weight: bold;
+  color: var(--gold);
+  
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:5px;
+}
+
+blockquote::after{
+  /*Reset to make sure*/
+  content: "";
+}
+
