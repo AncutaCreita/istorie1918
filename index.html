@@ -9,38 +9,47 @@
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
+
   <div class="wrapper">
       <nav class="menu">
           <button aria-expanded="false" aria-controls="menu-list">
             <span class="open">☰</span>
+            <span class="close">×</span>
             Menu
           </button>
           <ul id="menu-list">
             <li>
-              <a href="">Capitolu1</a>
+              <a href="">Aplicatie</a>
             </li>
             <li>
-            </li>
-            <a href="">Capitolu1</a>
+                <a href="">Demo</a>
+            </li>                
+                <a href="">Cuprins</a>
+            </li>            
+            <li>
+                <a href="">Features</a>
             </li>
             <li>
-            </li>
-            <a href="">Capitolu1</a>
-            </li>
-            <li>
-            </li>
-            <a href="">Capitolu1</a>
-            </li>
-            <li>
-              <a href="">Capitolu1</a>
-            </li>
+                <a href="">Participanti</a>
+            </li>                        
+
           </ul>
         </nav>
       <div class="header">
         <header class="hero">
            <h1  class="title">România 1918</h1>
-           <h2>Imagini.Fapte.Oameni</h2>
-           <p>Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice respective.</p>
+           <h2>Imagini. Fapte. Oameni</h2>
+           <p>Tinerii care s-au avântat în luptă din spirit de aventură s-au întors pe străzile orașelor cu o expresie ciudată în priviri.</p>
         </header>
         <button>
           <span>☰</span>
@@ -55,54 +64,60 @@
           App link
         </button>
       </div>
+
+<!-- start blockquote -->
+      <blockquote>
+          ”Tinerii care s-au avântat în luptă din spirit de aventură s-au întors pe străzile orașelor cu o expresie ciudată în priviri. Sunt incapabili să scrie despre grozăviile de pe front, incapabili să le povestească altor oameni, care nu au văzut cu ochii lor și nu pot înțelege războiul. Pentru că încă nu s-au inventat cuvintele care să exprime ce au trăit acești bărbați și aceste femei.”
+        <p>(Philip Gibbs, jurnalist în timpul Primului Război Mondial)</p>
+      </blockquote>
+<!-- end blockquote -->  
+
       <section class="section__sm">
         <div class="description">
-            <h1>Capitolul 1</h1>
-            <p>Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. </p>
+            <h1>1. Marele Război</h1>
+            <p>”Tinerii care s-au avântat în luptă din spirit de aventură s-au întors pe străzile orașelor cu o expresie ciudată în priviri. Sunt incapabili să scrie despre grozăviile de pe front, incapabili să le povestească altor oameni, care nu au văzut cu ochii lor și nu pot înțelege războiul. Pentru că încă nu s-au inventat cuvintele care să exprime ce au trăit acești bărbați și aceste femei.”
+                (Philip Gibbs, jurnalist în timpul Primului Război Mondial)
+            </p>
         </div>
-        <img src="assets/images/demo_img.jpg" alt="Something" class="about__mockup">
-        <img/>
+        <div class="sm__img __img1"></div>
+        <!-- <img src="assets/images/img1.png" alt="Something" class="about__mockup">
+        <img/> -->
       </section>
       <section class="section__bg">
           <div class="description">
-              <h1>Capitolul 2</h1>
-              <p>Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. </p>
+              <h1>2. România sub arme</h1>
+              <p>Tinerii care s-au avântat în luptă din spirit de aventură s-au întors pe străzile orașelor cu o expresie ciudată în priviri. Sunt incapabili să scrie despre grozăviile de pe front, incapabili să le povestească altor oameni, care nu au văzut cu ochii lor și nu pot înțelege războiul. Pentru că încă nu s-au inventat cuvintele care să exprime ce au trăit acești bărbați și aceste femei. </p>
           </div>
-          <img src="https://mir-s3-cdn-cf.behance.net/projects/404/eae42c49202023.Y3JvcCw0MDUsMzE3LDAsMA.jpg" alt="Yummy Taco" class="">
-          <img/>
+          <img src="assets/images/img2.png" alt="Descriere" class=""/>
       </section>
       <section class="section__sm">
           <div class="description">
-              <h1>Capitolul 1</h1>
-              <p>Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. </p>
+              <h1>3. Capitol </h1>
+              <p>Tinerii care s-au avântat în luptă din spirit de aventură s-au întors pe străzile orașelor cu o expresie ciudată în priviri. Sunt incapabili să scrie despre grozăviile de pe front, incapabili să le povestească altor oameni, care nu au văzut cu ochii lor și nu pot înțelege războiul. Pentru că încă nu s-au inventat cuvintele care să exprime ce au trăit acești bărbați și aceste femei.</p>
           </div>
-          <img src="assets/images/demo_img.jpg" alt="Something" class="about__mockup">
-          <img/>
-        </section>
-        <section class="section__sm textOnly">
-            <div class="description">
-                <h1>Text</h1>
-                <p>Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. </p>
-            </div>
-            <div class="description">
-                <p>Lorem Ipsum este pur şi simplu o machetă pentru text a industriei tipografice. </p>
-            </div>
-          </section>
-<!-- start blockquote -->
-          <blockquote>
-              You’ve got a pain deep in your bones, son.           
-          </blockquote>
-<!-- end blockquote -->          
+          <div class="sm__img __img3"></div>
+      </section>
+      <section class="section__sm textOnly">
+          <h1>4. Capitol</h1>        
+          <div class="description">
+              <p>Tinerii care s-au avântat în luptă din spirit de aventură s-au întors pe străzile orașelor cu o expresie ciudată în priviri. Sunt incapabili să scrie despre grozăviile de pe front </p>
+          </div>
+          <div class="description">
+              <p> , incapabili să le povestească altor oameni, care nu au văzut cu ochii lor și nu pot înțelege războiul.Pentru că încă nu s-au inventat cuvintele care să exprime ce au trăit acești bărbați și aceste femei.</p>
+          </div>
+        </section>   
+
+       
 <!-- features -->
           <div class="features">
-            <!-- <h1>Features</h1> -->
+            <h1>Features</h1>
               <div class="feature">
-                  <span class="icon">🌮</span>
+                  <span class="icon">🎵</span>
                   <h3>Multilingual</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
              </div>
               <div class="feature">
-                  <span class="icon">🍺</span>
+                  <span class="icon">🎵</span>
                   <h3>Responsive design</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
               </div>
@@ -117,12 +132,12 @@
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
               </div>
               <div class="feature">
-                  <span class="icon">🌮</span>
+                  <span class="icon">🎵</span>
                   <h3>Multilingual</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
              </div>
               <div class="feature">
-                  <span class="icon">🍺</span>
+                  <span class="icon">🎵</span>
                   <h3>Responsive design</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, assumenda.</p>
               </div>
@@ -139,14 +154,31 @@
             </div> 
 <!-- end features  -->
 
-
-          
-          
-      <footer></footer>
-
-
-
   </div>
+<!-- end wrapper  -->
+
+<footer>
+    <!-- to change after the final domain -->
+    <div class="fb-share-button" data-href="https://www.google.com" data-layout="button" data-size="large" data-mobile-iframe="true">
+        <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.google.com%2F&amp;src=sdkpreparse">Share
+        </a>
+    </div>
+
+    <p>Copyright@ Siveco Romania - 2018</p>
+</footer>
+
+<script>
+
+  var navButton = document.querySelector('button[aria-expanded]');
+
+  function toggleNav() {
+    var expanded = eval(navButton.getAttribute('aria-expanded'));
+    navButton.setAttribute('aria-expanded', !expanded);
+  }
+
+  navButton.addEventListener('click', toggleNav);
+
+</script>
 
 </body>
 
