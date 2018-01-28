@@ -21,7 +21,7 @@
 
 
   <div class="wrapper">
-      <nav class="menu">
+      <nav id="upToHeader" class="menu">
           <button aria-expanded="false" aria-controls="menu-list">
             <span class="open">☰</span>
             <span class="close">×</span>
@@ -29,24 +29,24 @@
           </button>
           <ul id="menu-list">
             <li>
-              <a href="">Aplicatie</a>
+              <a href="#home">Aplicatie</a>
             </li>
             <li>
-                <a href="">Demo</a>
+                <a href="#demo">Demo</a>
             </li>                
-                <a href="">Cuprins</a>
+                <a href="#cuprins">Cuprins</a>
             </li>            
             <li>
-                <a href="">Features</a>
+                <a href="#featuresLink">Features</a>
             </li>
             <li>
-                <a href="">Participanti</a>
+                <a href="#participanti">Participanti</a>
             </li>                        
 
           </ul>
         </nav>
       <div class="header">
-        <header class="hero">
+        <header id=home"" class="hero">
            <h1  class="title">România 1918</h1>
            <h2>Imagini. Fapte. Oameni</h2>
            <p>Tinerii care s-au avântat în luptă din spirit de aventură s-au întors pe străzile orașelor cu o expresie ciudată în priviri.</p>
@@ -72,7 +72,7 @@
       </blockquote>
 <!-- end blockquote -->  
 
-      <section class="section__sm">
+    <section id="cuprins" class="section__sm">
         <div class="description">
             <h1>1. Marele Război</h1>
             <p>”Tinerii care s-au avântat în luptă din spirit de aventură s-au întors pe străzile orașelor cu o expresie ciudată în priviri. Sunt incapabili să scrie despre grozăviile de pe front, incapabili să le povestească altor oameni, care nu au văzut cu ochii lor și nu pot înțelege războiul. Pentru că încă nu s-au inventat cuvintele care să exprime ce au trăit acești bărbați și aceste femei.”
@@ -82,22 +82,22 @@
         <div class="sm__img __img1"></div>
         <!-- <img src="assets/images/img1.png" alt="Something" class="about__mockup">
         <img/> -->
-      </section>
-      <section class="section__bg">
+    </section>
+    <section class="section__bg">
           <div class="description">
               <h1>2. România sub arme</h1>
               <p>Tinerii care s-au avântat în luptă din spirit de aventură s-au întors pe străzile orașelor cu o expresie ciudată în priviri. Sunt incapabili să scrie despre grozăviile de pe front, incapabili să le povestească altor oameni, care nu au văzut cu ochii lor și nu pot înțelege războiul. Pentru că încă nu s-au inventat cuvintele care să exprime ce au trăit acești bărbați și aceste femei. </p>
           </div>
           <img src="assets/images/img2.png" alt="Descriere" class=""/>
-      </section>
-      <section class="section__sm">
+    </section>
+    <section class="section__sm">
           <div class="description">
               <h1>3. Capitol </h1>
               <p>Tinerii care s-au avântat în luptă din spirit de aventură s-au întors pe străzile orașelor cu o expresie ciudată în priviri. Sunt incapabili să scrie despre grozăviile de pe front, incapabili să le povestească altor oameni, care nu au văzut cu ochii lor și nu pot înțelege războiul. Pentru că încă nu s-au inventat cuvintele care să exprime ce au trăit acești bărbați și aceste femei.</p>
           </div>
           <div class="sm__img __img3"></div>
-      </section>
-      <section class="section__sm textOnly">
+    </section>
+    <section class="section__sm textOnly">
           <h1>4. Capitol</h1>        
           <div class="description">
               <p>Tinerii care s-au avântat în luptă din spirit de aventură s-au întors pe străzile orașelor cu o expresie ciudată în priviri. Sunt incapabili să scrie despre grozăviile de pe front </p>
@@ -105,11 +105,21 @@
           <div class="description">
               <p> , incapabili să le povestească altor oameni, care nu au văzut cu ochii lor și nu pot înțelege războiul.Pentru că încă nu s-au inventat cuvintele care să exprime ce au trăit acești bărbați și aceste femei.</p>
           </div>
-        </section>   
+    </section>   
 
-       
-<!-- features -->
-          <div class="features">
+        <!-- video -->
+    <section id="demo" class="section__video">
+        <h1>Demo</h1>
+        <div class="flex-video">                  
+            <video preload loop muted id="vid" src="https://player.vimeo.com/external/118310608.sd.mp4?s=16baa73f581d93200fbfc4ffb15c1f04">
+            </video>
+        </div>  
+    </section>
+     
+
+
+        <!-- features -->
+    <div id="featuresLink" class="features">
             <h1>Features</h1>
               <div class="feature">
                   <span class="icon">🎵</span>
@@ -153,7 +163,6 @@
               </div>              
             </div> 
 <!-- end features  -->
-
   </div>
 <!-- end wrapper  -->
 
@@ -165,6 +174,8 @@
     </div>
 
     <p>Copyright@ Siveco Romania - 2018</p>
+
+    <button class="up"><a href="#upToHeader">&#x25b2;</a></button>
 </footer>
 
 <script>
@@ -177,8 +188,12 @@
   }
 
   navButton.addEventListener('click', toggleNav);
+  var vid = document.getElementById('vid');
+    vid.play();
 
 </script>
+
+
 
 </body>
 
