@@ -21,6 +21,8 @@
 
 
     <div id="upToHeader" class="wrapper">
+
+        <!-- start menu -->
         <nav class="menu">
             <button aria-expanded="false" aria-controls="menu-list">
                 <span class="open">☰</span>
@@ -45,6 +47,9 @@
 
             </ul>
         </nav>
+        <!-- end menu -->
+
+        <!-- start header -->
         <div class="header">
             <header id=home "" class="hero">
                 <h1 class="title">România 1918</h1>
@@ -65,6 +70,7 @@
                 App link
             </button>
         </div>
+        <!-- end header -->
 
         <!-- start blockquote -->
         <blockquote>
@@ -76,6 +82,7 @@
         </blockquote>
         <!-- end blockquote -->
 
+        <!-- start content -->
         <section id="cuprins" class="section__sm">
             <div class="description">
                 <h1>1. Marele Război</h1>
@@ -86,9 +93,12 @@
                     Primului Război Mondial)
                 </p>
             </div>
-            <div class="sm__img __img1"></div>
-            <!-- <img src="assets/images/img1.png" alt="Something" class="about__mockup">
-        <img/> -->
+            <div class="sm__img __img1">
+                    <div class="overlay">
+                            <a id="open-button" class="open-button">Video</a>
+                    </div >            
+            </div>
+
         </section>
         <section class="section__bg">
             <div class="description">
@@ -121,6 +131,7 @@
                     că încă nu s-au inventat cuvintele care să exprime ce au trăit acești bărbați și aceste femei.</p>
             </div>
         </section>
+        <!-- end content -->
 
         <!-- video -->
         <section id="demo" class="section__video">
@@ -130,6 +141,7 @@
                 </video>
             </div>
         </section>
+        <!-- end video -->
 
 
 
@@ -196,6 +208,20 @@
 
     </footer>
 
+    <!-- modal -->
+    <div class="modal-overlay closed" id="modal-overlay"></div>
+        <div class="modal closed" id="modal">
+            <button class="close-button" id="close-button">Închide</button>
+            <div class="modal-guts">
+                <!-- <h1>Video 1</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita corrupti laudantium aperiam, doloremque explicabo ipsum earum dicta saepe delectus totam vitae ipsam doloribus et obcaecati facilis eius assumenda, cumque.</p> -->
+                <div class="video">
+                    <video preload loop muted id="vid01" src="https://player.vimeo.com/external/118310608.sd.mp4?s=16baa73f581d93200fbfc4ffb15c1f04">
+                    </video>
+                </div>
+        </div>
+    </div>
+
     <script>
 
         var navButton = document.querySelector('button[aria-expanded]');
@@ -204,10 +230,33 @@
             var expanded = eval(navButton.getAttribute('aria-expanded'));
             navButton.setAttribute('aria-expanded', !expanded);
         }
-
         navButton.addEventListener('click', toggleNav);
+
+         // video script
         var vid = document.getElementById('vid');
+        var vid01 = document.getElementById('vid01');
         vid.play();
+
+        // modal script
+        var modal = document.querySelector("#modal");
+        var modalOverlay = document.querySelector("#modal-overlay");
+
+        var closeButton = document.querySelector("#close-button");
+        var openButton = document.querySelector("#open-button");
+
+        closeButton.addEventListener("click", function() {
+            modal.classList.toggle("closed");
+            modalOverlay.classList.toggle("closed");
+            vid01.pause(); 
+            vid01.currentTime = 0;
+        });
+
+        openButton.addEventListener("click", function() {
+            modal.classList.toggle("closed");
+            modalOverlay.classList.toggle("closed");
+            
+            vid01.play();
+        });
 
     </script>
 
