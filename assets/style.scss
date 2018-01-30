@@ -214,7 +214,7 @@ section img {
   background-color: #fff;
   color: var(--black);
 
-  .section__sm .sm__img {
+  .sm__img {
     background-size: cover;
     background-position: center center;
     min-height: 200px;
@@ -408,15 +408,16 @@ li.up {
   /* sections */
   .section__sm {
     grid-template-columns: 1fr;
-  }
 
-  .section__sm img {
-    width: 100%;
-  }
+    img {
+      width: 100%;
+    }
 
-  .section__sm .sm__img {
-    width: 100%;
-    background-position: 0 center;
+    .sm__img {
+      width: 100%;
+      background-position: 0 center;
+      height: 100%;
+    }
   }
 
   .section__bg img {
