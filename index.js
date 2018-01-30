@@ -25,5 +25,5 @@
 // })();
 //}//, false);
 
-
-
+var x = require('./assets/style.scss')
+var $ = require('jQuery')
