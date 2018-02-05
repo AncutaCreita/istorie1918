@@ -411,6 +411,10 @@ footer {
   color: #fff;
   background-position: bottom center;
   margin-top: -10vh;
+
+  a {
+    color: #fff;
+  }
 }
 
 li.up {
@@ -716,4 +720,38 @@ li.up {
       grid-row: 2;
     }
   }
+}
+
+.features object {
+  width: 160px;
+  height: 160px;
+  border: 0;
+}
+
+.img_icon {
+  background: url(images/GUI_v2.png) 0px -105px;
+}
+
+.video_icon {
+  background: url(images/GUI_v2.png) 155px -110px;
+}
+
+.d_icon {
+  background: url(images/GUI_v2.png) 465px -110px;
+}
+
+.language_icon {
+  background: url(images/GUI_v2.png) 515px -392px;
+}
+
+.maps_icon {
+  background: url(images/GUI_v2.png) 310px -110px;
+}
+
+.adapt_icon {
+  background: url(images/GUI_v2.png) 310px -110px;
+}
+
+.acces_icon {
+  background: url(images/GUI_v2.png) 310px -110px;
 }
