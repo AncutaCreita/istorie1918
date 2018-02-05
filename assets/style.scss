@@ -229,7 +229,7 @@ section img {
   // grid-column: 2/ 3;
   grid-column-start: 2;
   grid-column-end: 3;
-  -ms-grid-column-span: 1;
+  -ms-grid-column-span: 3;
   grid-template-columns: 1fr 300px;
   background-color: #fff;
   color: var(--black);
@@ -266,6 +266,39 @@ section img {
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+  justify-content: center;
+  background: var(--white);
+  color: var(--black);
+  border: 1px solid var(--white);
+  padding: 40px;
+  margin-top: 40px;
+
+  h1 {
+    grid-column: 1/ -1;
+  }
+
+  .feature {
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .feature .icon {
+    font-size: 50px;
+    color: #af9073;
+    fill: #af9073;
+  }
+}
+
+.collaborate {
+  // grid-column: 1/ span 3;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  -ms-grid-column-span: 3;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
   justify-content: center;
   background: var(--white);
   color: var(--black);
@@ -600,9 +633,13 @@ li.up {
 
   .header {
     -ms-grid-row: 2;
+    display: flex;
+    flex-direction: column;
 
-    .button {
+    button {
       display: flex;
+      align-self: flex-start;
+      margin: 10px 0;
     }
   }
 
@@ -626,6 +663,42 @@ li.up {
     -ms-grid-row: 7;
   }
 
+  #chapter5 {
+    -ms-grid-row: 8;
+  }
+
+  #demo {
+    -ms-grid-row: 9;
+  }
+
+  .features {
+    -ms-grid-row: 10;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      width: 100%;
+    }
+
+    .feature {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  .collaborate {
+    -ms-grid-row: 11;
+    display: flex;
+    flex-direction: column;
+
+    .feature {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
   .textOnly {
     h1 {
       grid-column-start: 1;
@@ -642,13 +715,5 @@ li.up {
       grid-column-start: 2;
       grid-row: 2;
     }
-  }
-
-  #demo {
-    -ms-grid-row: 8;
-  }
-
-  .features {
-    -ms-grid-row: 9;
   }
 }
