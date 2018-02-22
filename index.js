@@ -23,27 +23,38 @@ function toggleNav() {
 navButton.addEventListener('click', toggleNav);
 
 // video script
-var vid = document.getElementById('vid');
-var vid01 = document.getElementById('vid01');
-vid.play();
+// var vid = document.getElementById('vid');
+// var vid01 = document.getElementById('vid01');
+// vid.play();
 
 // modal script
-var modal = document.querySelector("#modal");
-var modalOverlay = document.querySelector("#modal-overlay");
+// var modal = document.querySelector("#modal");
+// var modalOverlay = document.querySelector("#modal-overlay");
 
-var closeButton = document.querySelector("#close-button");
-var openButton = document.querySelector("#open-button");
+// var closeButton = document.querySelector("#close-button");
+// var openButton = document.querySelector("#open-button");
 
-closeButton.addEventListener("click", function () {
-    modal.classList.toggle("closed");
-    modalOverlay.classList.toggle("closed");
-    vid01.pause();
-    vid01.currentTime = 0;
-});
+// closeButton.addEventListener("click", function () {
+//     modal.classList.toggle("closed");
+//     modalOverlay.classList.toggle("closed");
+//     vid01.pause();
+//     vid01.currentTime = 0;
+// });
 
-openButton.addEventListener("click", function () {
-    modal.classList.toggle("closed");
-    modalOverlay.classList.toggle("closed");
+// openButton.addEventListener("click", function () {
+//     modal.classList.toggle("closed");
+//     modalOverlay.classList.toggle("closed");
 
-    vid01.play();
-});
+//     vid01.play();
+// });
+
+// video loop on hover script
+var figure = $(".video").hover( hoverVideo, hideVideo );
+
+function hoverVideo(e) {  
+    $('video', this).get(0).play(); 
+}
+
+function hideVideo(e) {
+    $('video', this).get(0).pause(); 
+}

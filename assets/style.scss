@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500i,600,700|Playfair+Display:400,400i,700,700i,900,900i&subset=latin-ext');
+// @import url('../node_modules/mdi/css/materialdesignicons.min');
+@import url("~mdi/css/materialdesignicons.min.css");
 
 :root {
   --yellow: #ffc600;
@@ -242,6 +244,12 @@ section img {
     background-position: center center;
     min-height: 200px;
   }
+
+  .sm_video {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    -ms-grid-column-span: 1;
+  }
 }
 
 .textOnly {
@@ -306,7 +314,8 @@ section img {
   padding: 40px;
   margin-top: 40px;
 
-  h1 {
+  h1,
+  h2 {
     grid-column: 1/ -1;
   }
 
@@ -397,6 +406,23 @@ video {
   width: 100% !important;
   height: auto !important;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+#videosList {
+  max-width: 600px;
+  overflow: hidden;
+}
+
+.video {
+  // background-image: url(images/img2.png);
+  height: 257px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+/* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+  display: none !important;
 }
 
 footer {
@@ -682,7 +708,8 @@ li.up {
       grid-row: 1;
     }
 
-    img {
+    img,
+    #videosList {
       grid-column-start: 2;
       grid-row: 1;
     }
@@ -771,13 +798,13 @@ li.up {
 }
 
 .maps_icon {
-  background: url(images/GUI_v2.png) 310px -110px;
+  background: url(images/GUI_v2.png) 0px -255px;
 }
 
 .adapt_icon {
-  background: url(images/GUI_v2.png) 310px -110px;
+  background: url(images/GUI_v2.png) 460px -560px;
 }
 
 .acces_icon {
-  background: url(images/GUI_v2.png) 310px -110px;
+  background: url(images/GUI_v2.png) 765px -560px;
 }

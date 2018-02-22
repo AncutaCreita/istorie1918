@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>România 1918</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/materialdesignicons.min.css"> -->
 </head>
 
 <body>
@@ -45,7 +46,7 @@
                     <a href="#featuresLink">Funcționalități</a>
                 </li>
                 <li>
-                    <a href="#colaboratori">Colaboratori</a>
+                    <a href="#colaboratori">Creatori</a>
                 </li>
 
             </ul>
@@ -56,19 +57,24 @@
         <div class="header">
             <header id="home" class="hero">
                 <h1 class="title">România 1918</h1>
-                <h2>Imagini. Fapte. Oameni</h2>
+                <h2>Oameni. Imagini. Fapte</h2>
                 <p>Anul 1918 a fost, pentru națiunea română, un miracol împlinit. Beneficiind de cea mai înaltă tehnologie,
                     enciclopedia de față celebrează oamenii care, prin faptele lor, au făcut posibilă întregirea României.
-                    <br/> „România 1918” este un produs creat de SIVECO România și oferit gratuit românilor de pretutindeni, ca
-                    un memento al celui mai important proiect național.</p>
+                    <br/>
+                    <br/> „România 1918” este un produs creat de
+                    <em>SIVECO România</em>, în parteneriat cu instituții prestigioase de cultură și personalități ale societății
+                    românești.
+                    <br/>
+                    <br/> Enciclopedia este oferită gratuit românilor de pretutindeni, ca un memento al celui mai important proiect
+                    național.
+                </p>
             </header>
             <button>
                 <span></span>
                 App Store
             </button>
             <button>
-                <span>☰</span>
-                App Windows
+                <a class="mdi mdi-home" href="/">App Windows</a>
             </button>
             <button>
                 <span>☰</span>
@@ -105,11 +111,17 @@
                     derulate pe parcursul fiecărui an de război. Harta lumii în 1918-1920
                 </p>
             </div>
-            <div class="sm__img __img1">
-                <div class="overlay">
-                    <a id="open-button" class="open-button">Video</a>
+
+            <div id="videosList">
+
+                <div class="video">
+                    <video class="thevideo" loop preload="auto">
+                        <source src="assets/video/video_1.mp4" type="video/mp4">
+                        <!-- <source src="https://giant.gfycat.com/VerifiableTerrificHind.webm" type="video/webm"> Your browser does not support the video tag. -->
+                    </video>
                 </div>
             </div>
+
 
         </section>
         <section id="chapter2" class="section__bg">
@@ -133,7 +145,17 @@
                     <b>Copiii eroi</b> : Măriuca Zaharia, Alexandru Daia, Ioan Guțe
                 </p>
             </div>
-            <img src="assets/images/img2.png" alt="Descriere" class="" />
+            <div id="videosList">
+
+                <div class="video">
+                    <video class="thevideo" loop preload="auto">
+                        <source src="assets/video/video_2.mp4" type="video/mp4">
+                        <!-- <source src="https://giant.gfycat.com/VerifiableTerrificHind.webm" type="video/webm"> Your browser does not support the video tag. -->
+                    </video>
+                </div>
+            </div>
+
+
         </section>
         <section id="chapter3" class="section__sm">
             <div class="description">
@@ -252,7 +274,7 @@
             </div>
             <div class="feature">
                 <object class="adapt_icon"></object>
-                <h3>Adabtabilitate</h3>
+                <h3>Adaptabilitate</h3>
                 <p>Enciclopedia este adaptată oricărui tip de echipament și poate fi vizualizată pe PC, laptop, tabletă sau
                     smartphone
                 </p>
@@ -262,56 +284,104 @@
 
         <!-- colaboratori -->
         <div id="colaboratori" class="collaborate">
-            <h1>Colaboratori</h1>
-            <div class="">
-                <b>Consiliul științific</b>
+            <h1>Creatori</h1>
+            <h2>Enciclopedia “România 1918, Oameni. Fapte. Imagini.” este o producție SIVECO Romania, în parteneriat cu instituții
+                prestigioase de cultură și personalități ale societății românești. </h2>
+            <div>
+                <h3>Parteneri</h3>
+                <br/> Muzeul Național de Istorie a României
+                <br/>Muzeul Național al Unirii Alba Iulia
+                <br/> Muzeul Județean Ialomița - Fondul Costică Acsinte, scanat de Cezar Popescu
+                <br/>Muzeul Castelul Peleș Mausoleul Mateiaș, Muzeul Municipal Câmpulung, Argeș Biblioteca Digitală București
+                – www.digibuc.ro
+                <br/>Editura Polirom
+                <br/>Consiliul Național al Cinematografiei
+                <br/>Arhiva Națională de Filme
+                <br/>Editura ”Cetatea de Scaun”
+                <br/>Oficiul Național pentru Cultul Eroilor
+                <br/>Fundația Ștefadina Muzeul de Istorie Satu Mare
+                <br/>Editura Litera
                 <br/>
                 <br/>
-                <br/>Prof. Univ. Dr. Ioan Scurtu
-                <br/>Prof. Univ. Dr. Mihail Lungu
-                <br/>Prof. Univ. Dr. Gh. Sbârnă
+                <b>Coordonator proiect</b> : Radu Jugureanu(SIVECO România)
+                <br/>
+                <b>Autor și scenarist</b>: Magda Stan, profesor istorie Liceul Teoretic Nicolae Iorga
+
+            </div>
+            <div>
+                <h3>Consiliul științific</h3>
+                <br/>General Prof. Univ. Dr. Mihail E. Ionescu
+                <br/>Prof. Univ. Dr. Corneliu Mihail Lungu
+                <br/>Istoric Neculai Moghior
                 <br/>Prof. Univ. Dr. Ioan Opriș
-                <br/>General Prof. Univ. dr. Mihail E. Ionescu
+                <br/>General Dr. Dumitru Dorin Prunariu
+                <br/>Prof. Univ. Dr. Gheorghe Sbârnă
+                <br/>Prof. Univ. Dr. Ioan Scurtu
+                <br/>Simona Tănăsescu
+            </div>
+            <div>
+                <h3>Consiliul științific didactic</h3>
+                <br/>Prof. Dr. Doru Dumitrescu
                 <br/>Prof. Dr. Gabriel Leahu
+                <br/>Prof. Simona Tănase
             </div>
 
             <div>
-                <b>Echipa SIVECO România</b>
-                <br/>
-                <br/>
-                <br/>Coordonator proiect: Radu Jugureanu
-                <br/>Autor și scenarist: Magda Stan Dezvoltatori: Bogdan Gornea, Marius Curcă, Adrian Dragomir, Daniel Gherghiceanu,
-                Alexandru Indreas, Andrei Nedelciu
-                <br/>Graficieni: Silviu Artene, Sigrid Iuhas, Bogdan Jugureanu, Marian Negrișan, Cristiana Stermin
-                <br/>Web design: Ancuța Creiță
-                <br/>Marketing și comunicare: Daniela Mironov Bănuță, Cătălin Parascan
-            </div>
-
-            <div>
-                <b>Colecționari</b>
-                <br/>
-                <br/>
+                <h3>Colecționari contributori </h3>
                 <br/>Prof. Dr. Carol Căpiță
                 <br/>
                 <a href="https://povestisasesti.com/author/povestisasesti/">Mihaela Kloos-Ilea</a>
+                <br/>Mihaela Kloos-Ilea, autor blog
+                <a href="https://povestisasesti.com/author/povestisasesti/" title="Povestiri Săsești"> Povestiri Săsești</a>
                 <br/>Prof. Univ. Dr. A. Atanasiu
                 <br/>Simona Tănăsescu
-                <br/>
-
-                <a href="http://fratii-dimancescu.blogspot.ro/">Alin Dimăncescu</a>
+                <br/>Alin Dimăncescu, autor blog
+                <a href="http://fratii-dimancescu.blogspot.ro/" title="Alin Dimăncescu">Alin Dimăncescu</a>
                 <br/>Prof. Corneliu Stoica
                 <br/>Prof. Adrian Mihai Olaru
-                <br/>Alexandra Crăciunoiu
+                <br/>Alexandra Crăciunoiu (Colecția Cristian Crăciunoiu)
             </div>
 
             <div>
-                <b>Autori articole </b>
+                <h3>Creație digitală</h3>
+                <br/>
+                <b>Coordonator</b>: Bogdan Gornea (SIVECO România)
                 <br/>
                 <br/>
+                <b>Dezvoltatori</b> : Marius Curcă, Adrian Dragomir, Daniel Gherghiceanu, Alexandru Indreas, Andrei Nedelciu
+                (SIVECO România)
+                <br/>
+                <b></b>Grafică, design, animație, film</b>: Silviu Artene, Marian Negrișan, Cristiana Stermin (SIVECO România),
+                Sigrid Iuhas, Bogdan Jugureanu
+                <br/>
+                <br/>
+                <b>Web design</b>: Ancuța Creiță (SIVECO România)
+                <br/>
+                <b>Testare</b>: Cătălin Petrea (coordonator) (SIVECO România)
+                <br/> Alexandru Binig
+                <br/>Radu Ilia
+
+                <br/>
+                <br/>
+                <b>Marketing și comunicare</b>: Daniela Mironov Bănuță, Cătălin Parascan
+            </div>
+
+
+            <div>
+                <h3>Autori articole </h3>
+                <br/>Alin Ciupală – „Bătălia lor. Femeile din România în Primul Război Mondial”, Editura Polirom dr. Claudiu Porumbăcean,
+                Muzeul Județean Satu Mare
                 <br/>Cercet. Dr. Adrian-Silvan Ionescu - ”Serviciul Fotografic al Armatei şi contribuţia sa la iconografia Războiului
                 cel Mare”, Muzeul Național, nr. XXV, 2013
+                <br/>Prof. Univ. Dr. Corneliu Mihail Lungu,
                 <br/>Istoric Neculai Moghior
-                <br/>Alin Ciupală – „Bătălia lor. Femeile din România în Primul Război Mondial”, Editura Polirom
+                <br/>Adrian Mihai Olaru
+                <br/>Prof. Univ. Dr. Ioan Opriș,
+                <br/> Prof. Univ. Dr. Gheorghe Sbârnă,
+                <br/>Prof. Univ. Dr. Ioan Scurtu
+                <br/>Corneliu Stoica, https://ro.wikipedia.org/wiki/Corneliu_Stoica
+                <br/>Horia Șerbănescu
+
             </div>
 
 
