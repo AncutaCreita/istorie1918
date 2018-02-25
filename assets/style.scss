@@ -47,7 +47,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0 0 5px 0;
+  margin: 10px 0 5px 0;
 }
 
 .wrapper {
@@ -381,6 +381,19 @@ section img {
   margin-bottom: 40px;
   padding: 40px 65px;
   position: relative;
+  &::before {
+    content: "\201C"; /*Unicode for Left Double Quote*/
+
+    /*Font*/
+    font-size: 120px;
+    font-weight: bold;
+    color: var(--gold);
+
+    /*Positioning*/
+    position: absolute;
+    left: 10px;
+    top: 5px;
+  }
 }
 
 blockquote {
@@ -599,6 +612,7 @@ li.up {
 
     #videosList .video video {
       width: 100%!important;
+
       // max-height: 300px;
       height: auto !important;
       // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
@@ -723,6 +737,39 @@ li.up {
   border: 0;
   color: white;
   cursor: pointer;
+}
+.features object {
+  width: 160px;
+  height: 160px;
+  border: 0;
+}
+
+.img_icon {
+  background: url(images/GUI_v2.png) 0px -105px;
+}
+
+.video_icon {
+  background: url(images/GUI_v2.png) 155px -110px;
+}
+
+.d_icon {
+  background: url(images/GUI_v2.png) 465px -110px;
+}
+
+.language_icon {
+  background: url(images/GUI_v2.png) 455px -392px;
+}
+
+.maps_icon {
+  background: url(images/GUI_v2.png) 0px -270px;
+}
+
+.adapt_icon {
+  background: url(images/GUI_v2.png) 460px -560px;
+}
+
+.acces_icon {
+  background: url(images/GUI_v2.png) 765px -560px;
 }
 
 //only apply to IE
@@ -897,39 +944,25 @@ li.up {
       display: none;
       max-height: 0;
     }
-  }  
+
+    .section__sm,
+    .section__bg{
+      display: flex;
+      // flex-direction: column;
+      .description{
+      width: 100%;
+      }
+      .videoList {
+        width: 100%;
+      }
+    }
+  } 
+  .section__sm video{
+    min-height: 100%;
+  } 
+  .section__bg video{
+    min-height: 100%;
+    align-self: center;
+  } 
 }
 
-.features object {
-  width: 160px;
-  height: 160px;
-  border: 0;
-}
-
-.img_icon {
-  background: url(images/GUI_v2.png) 0px -105px;
-}
-
-.video_icon {
-  background: url(images/GUI_v2.png) 155px -110px;
-}
-
-.d_icon {
-  background: url(images/GUI_v2.png) 465px -110px;
-}
-
-.language_icon {
-  background: url(images/GUI_v2.png) 455px -392px;
-}
-
-.maps_icon {
-  background: url(images/GUI_v2.png) 0px -270px;
-}
-
-.adapt_icon {
-  background: url(images/GUI_v2.png) 460px -560px;
-}
-
-.acces_icon {
-  background: url(images/GUI_v2.png) 765px -560px;
-}
