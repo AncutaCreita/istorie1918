@@ -1,18 +1,41 @@
 var x = require('./assets/style.scss')
-var $ = require('jQuery')
+var $ = require('jQuery');
 
+$(window).scroll(function(){
+    const heightToShowScollButton = 500;
+    const $scrollButton = $('#scroll-to-top');
 
-$(function () {
-    $(window).scroll(function () {
-        var winTop = $(window).scrollTop();
-        if (winTop >= 60) {
-            $("body").addClass("sticky-header");
-        } else {
-            $("body").removeClass("sticky-header");
+    if($(this).scrollTop() > heightToShowScollButton){
+        if($scrollButton.hasClass('hide')){
+            $scrollButton.addClass('show').removeClass('hide');
         }
-    })
+    } else {
+        if($scrollButton.hasClass('show')){
+            $scrollButton.addClass('hide').removeClass('show');
+        }
+    }
 })
 
+$('#scroll-to-top').click(function(event){ 
+    event.preventDefault();
+    $('html,body').animate({
+        scrollTop: 0
+    }, 1000);
+
+    return false;
+});
+
+
+$(window).scroll(function () {
+    var winTop = $(window).scrollTop();
+    if (winTop >= 60) {
+        $("body").addClass("sticky-header");
+    } else {
+        $("body").removeClass("sticky-header");
+    }
+})
+
+    
 // burger menu
 var navButton = document.querySelector('button[aria-expanded]');
 
@@ -21,6 +44,8 @@ function toggleNav() {
     navButton.setAttribute('aria-expanded', !expanded);
 }
 navButton.addEventListener('click', toggleNav);
+
+
 
 // video script
 // var vid = document.getElementById('vid');
@@ -56,5 +81,5 @@ function hoverVideo(e) {
 }
 
 function hideVideo(e) {
-    $('video', this).get(0).play(); 
+    $('video', this).get(0).pause(); 
 }
