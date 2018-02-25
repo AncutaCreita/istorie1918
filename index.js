@@ -67,7 +67,7 @@ navButton.addEventListener('click', toggleNav);
 // video script
 // var vid = document.getElementById('vid');
 // var vid01 = document.getElementById('vid01');
-// vid.play();
+$('#vid')[0].play();
 
 // modal script
 // var modal = document.querySelector("#modal");

@@ -163,7 +163,7 @@
     color: transparent;
     border: 0;
     outline: none;
-    background: transparent;
+    background: var(--gold);
 }
 .slick-dots li button:hover,
 .slick-dots li button:focus

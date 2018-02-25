@@ -1,4 +1,9 @@
 /* Slider */
+:root{
+    --gold: #af9073;
+}
+
+
 .slick-slider
 {
     position: relative;
