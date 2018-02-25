@@ -95,7 +95,7 @@ h6 {
 
 .menu ul {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
   grid-gap: 10px;
   padding: 0;
@@ -515,7 +515,7 @@ li.up {
 		opacity: 0;
 	}
 }
-@media (max-width: 700px) {
+@media (max-width: 950px) {
 
   /* menu */
   [aria-controls="menu-list"] {
