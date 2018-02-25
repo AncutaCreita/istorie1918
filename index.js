@@ -1,11 +1,17 @@
-var x = require('./assets/style.scss')
-var $ = require('jQuery');
+var x = require('./assets/style.scss');
+import $ from 'jquery';
+import 'slick-carousel';
 
+/**
+ * If window scoll is more than 500 from top adds show class on scroll-to-top
+ */
 $(window).scroll(function(){
     const heightToShowScollButton = 500;
     const $scrollButton = $('#scroll-to-top');
+    const winTop = $(window).scrollTop();
 
-    if($(this).scrollTop() > heightToShowScollButton){
+    // Used to show the scoll button
+    if(winTop > heightToShowScollButton){
         if($scrollButton.hasClass('hide')){
             $scrollButton.addClass('show').removeClass('hide');
         }
@@ -14,8 +20,19 @@ $(window).scroll(function(){
             $scrollButton.addClass('hide').removeClass('show');
         }
     }
+
+    // Used for sticky header
+    if (winTop >= 60) {
+        $("body").addClass("sticky-header");
+    } else {
+        $("body").removeClass("sticky-header");
+    }
+
 })
 
+/**
+ * On scroll-to-top press animate to 0 in 1000 ms
+ */
 $('#scroll-to-top').click(function(event){ 
     event.preventDefault();
     $('html,body').animate({
@@ -25,16 +42,16 @@ $('#scroll-to-top').click(function(event){
     return false;
 });
 
-
-$(window).scroll(function () {
-    var winTop = $(window).scrollTop();
-    if (winTop >= 60) {
-        $("body").addClass("sticky-header");
-    } else {
-        $("body").removeClass("sticky-header");
-    }
-})
-
+/**
+ * Testimonials carousel
+ */
+$('.testimonialeHolder').slick({
+    arrows: false,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    cssEase: 'linear'
+  });
     
 // burger menu
 var navButton = document.querySelector('button[aria-expanded]');

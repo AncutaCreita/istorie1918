@@ -230,10 +230,17 @@ section img {
   align-items: center;
 
   video {
+<<<<<<< Updated upstream
+    max-height: 300px;
+    width: 100%;
+  }  
+
+=======
     height: auto !important;
     min-height: 350px;
     max-width: 500px;
   }
+>>>>>>> Stashed changes
 }
 
 .__img1 {
@@ -277,9 +284,14 @@ section img {
   }
 
   video {
+<<<<<<< Updated upstream
+    max-height: 350px;
+    width: auto;
+=======
     height: auto !important;
     min-height: 350px;
     max-width: 500px;
+>>>>>>> Stashed changes
   }
 }
 
@@ -429,10 +441,16 @@ blockquote::after {
     padding: 40px;
   }
 
+<<<<<<< Updated upstream
+  video{
+    width: 100%;
+    height: auto;
+=======
   video {
     width: 100% !important;
     height: auto !important;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+>>>>>>> Stashed changes
   }
 }
 
@@ -593,6 +611,7 @@ li.up {
 
     .description {
       padding: 20px;
+<<<<<<< Updated upstream
     }  
 
     #videosList .video video {
@@ -601,6 +620,9 @@ li.up {
       height: auto !important;
       // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
     } 
+=======
+    }
+>>>>>>> Stashed changes
   }
 }
 
