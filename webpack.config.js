@@ -14,7 +14,7 @@ module.exports = {
     open: true,
     hot: true,
     port: 1918,
-    host: '10.233.13.41',
+    host: '0.0.0.0',
   },
   devtool: 'eval-source-map',
   module: {
