@@ -368,7 +368,9 @@ section img {
 }
 
 .testimoniale {
-  grid-column: 2 / -1;
+  // grid-column: 2 / 2;
+  grid-column-start: 1;
+  grid-column-end: span1;
   color: var(--white);
   opacity: 0.8;
   border: 1px solid var(--gold);
@@ -755,7 +757,9 @@ li.up {
     }    
   }
 
-  blockquote {
+  .testimoniale {
+    grid-column-start: 2;
+    -ms-grid-column-span: 2;
     -ms-grid-row: 3;
   }
 
