@@ -81,6 +81,7 @@ h6 {
     top: 0;
     z-index: 10;
     padding: 5px 40px;
+    
   }
 }
 
@@ -132,6 +133,17 @@ h6 {
   align-content: center;
   grid-gap: 40px;
   margin-top: 40px;
+
+  .appStore{
+    grid-column-start: 1;
+    grid-column-end: span 4;
+    -ms-grid-column-span: 4;
+    justify-content: space-around; 
+
+    button {
+      margin: 10px;
+    }     
+  }
 }
 
 .header .hero {
@@ -154,13 +166,6 @@ h6 {
   max-width: 500px;
 }
 
-.header .button {
-  // grid-column: 1/ span 1;
-  display: grid;
-  grid-column-start: 1;
-  grid-column-end: span 1;
-  -ms-grid-column-span: 1;
-}
 
 h1 {
   font-size: 50px;
@@ -207,7 +212,6 @@ section {
   display: grid;
   grid-gap: 0 20px;
   align-items: center;
-
 }
 
 section img {
@@ -227,10 +231,9 @@ section img {
   align-items: center;
 
   video {
-  height: auto !important;
-  min-height: 350px;
-  max-width: 500px;
-  }
+    max-height: 300px;
+    width: 100%;
+  }  
 
 }
 
@@ -274,11 +277,9 @@ section img {
     -ms-grid-column-span: 1;
   }
   video {
-    height: auto !important;
-    min-height: 350px;
-    max-width: 500px;
-  }  
-
+    max-height: 350px;
+    width: auto;
+  }
 }
 
 .textOnly {
@@ -412,10 +413,10 @@ blockquote::after {
   h1 {
     padding: 40px;
   }
-  video {
-    width: 100%!important;
-    height: auto !important;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+
+  video{
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -424,7 +425,6 @@ blockquote::after {
   overflow: hidden;
   width: 100%;
   margin: 0;
-  /* min-height: 400px; */
   padding: 200px;
 }
 
@@ -436,16 +436,9 @@ blockquote::after {
   height: auto;
 }
 
-
-
 #videosList {
   max-width: 600px;
   overflow: hidden;
-}
-
-.video {
-  // background-image: url(images/img2.png);
-  width: 100%;
 }
 
 /* Hide Play button + controls on iOS */
@@ -483,14 +476,45 @@ li.up {
   align-self: flex-end;
   bottom: 0;
   margin-bottom: 40px;
+
+  span {
+    text-decoration: none;
+    padding: 30px;
+  } 
+  
+  &.hide{
+    opacity: 0;
+    animation-name: fadeOut;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+  }
+  &.show{
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+  }
 }
 
-.up a {
-  color: #fff;
-  text-decoration: none;
-  padding: 30px;
-}
+//transnitions
 
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
 @media (max-width: 700px) {
 
   /* menu */
@@ -539,8 +563,14 @@ li.up {
       background-position: 0 center;
       height: 100%;
     }
+
+    video {
+      width: auto!important;
+      max-height: 300px;
+      // height: auto !important;
+      // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    }    
   }
- 
 
   .section__bg {
     grid-template-columns: 1fr;
@@ -548,7 +578,13 @@ li.up {
     .description {
       padding: 20px;
     }  
-    
+
+    #videosList .video video {
+      width: 100%!important;
+      // max-height: 300px;
+      height: auto !important;
+      // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    } 
   }
 }
 
@@ -697,11 +733,10 @@ li.up {
     display: flex;
     flex-direction: column;
 
-    button {
+    .appStore{
       display: flex;
-      align-self: flex-start;
-      margin: 10px 0;
-    }
+      justify-content: flex-start;
+    }    
   }
 
   blockquote {
@@ -732,7 +767,7 @@ li.up {
     -ms-grid-row: 9;
   }
 
-  .section__bg {
+  .section__bg, .section__sm {
     .description {
       grid-column-start: 1;
       grid-row: 1;
