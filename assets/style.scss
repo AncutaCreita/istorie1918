@@ -361,6 +361,18 @@ section img {
     color: #af9073;
     fill: #af9073;
   }
+
+}
+
+figure, figure a{
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // align-content: center;
+  // justify-content: center;
+  text-align: center;
+  color: inherit;
+  text-decoration: none;
 }
 
 .description {
@@ -393,6 +405,10 @@ section img {
     position: absolute;
     left: 10px;
     top: 5px;
+  }
+
+  a{
+    color: white;
   }
 }
 
@@ -528,7 +544,7 @@ li.up {
   }
 }
 
-//transnitions
+//transitions
 
 @keyframes fadeInOpacity {
 	0% {
