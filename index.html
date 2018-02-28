@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
@@ -53,7 +53,13 @@
                 <li>
                     <a href="#parteneri">Parteneri</a>
                 </li>
-
+                <li>
+                    <select id='lang_select'>
+                        <option value="ro">RomÃ¢nÄƒ</option>
+                        <option value="en">English</option>
+                        <option value="fr">FranÃ§ais</option>
+                    </select>
+                </li>
             </ul>
         </nav>
         <!-- end menu -->
@@ -62,7 +68,7 @@
         <div class="header">
             <header id="home" class="hero">
                 <h1 class="title">România 1918</h1>
-                <h2>Oameni. Imagini. Fapte</h2>
+                <h2 data-i18n="text1">Oameni. Imagini. Fapte</h2>
                 <p>Anul 1918 a fost, pentru națiunea română, un miracol împlinit. Beneficiind de cea mai înaltă tehnologie,
                     enciclopedia de față celebrează oamenii care, prin faptele lor, au făcut posibilă întregirea României.
                     <br/>
@@ -533,6 +539,38 @@
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="assets/jquery_i18n/CLDRPluralRuleParser.js"></script>
+    <script src="assets/jquery_i18n/jquery.i18n.js"></script>
+    <script src="assets/jquery_i18n/jquery.i18n.messagestore.js"></script>
+    <script src="assets/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+    <script src="assets/jquery_i18n/jquery.i18n.language.js"></script>
+    <script src="assets/jquery_i18n/jquery.i18n.parser.js"></script>
+    <script src="assets/jquery_i18n/jquery.i18n.emitter.js"></script>
+    <script src="assets/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+
+    <script>
+        $.i18n().load({
+            "en": {
+                "text1": "People. Images. Facts.",
+            },
+            "ro": {
+                "text1": "Oameni. Imagini. Fapte",
+            },
+            "fr": {
+                "text1": "French",
+            }
+        });
+
+        $('#lang_select').on('change', function () {
+            $.i18n().locale = this.value;
+            $('body').i18n();
+        })
+
+        $('body').i18n();
+
+    </script>
 
 </body>
 
