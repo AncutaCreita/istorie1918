@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>România 1918 - Oameni. Imagini. Fapte</title>
+    <title>România 1918 - Oameni, momente și imagini</title>
     <link href="assets/css/slick.css" media="all" rel="stylesheet" type="text/css" />
     <link href="assets/css/slick-theme.css" media="all" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/png" href="/assets/images/favicon.png" />
@@ -33,31 +33,31 @@
             </button>
             <ul id="menu-list">
                 <li>
-                    <a href="#home">Acasă</a>
+                    <a href="#home" data-i18n="m1">Acasă</a>
                 </li>
                 <li>
-                    <a href="#testimoniale">Testimoniale</a>
+                    <a href="#testimoniale"  data-i18n="m2">Testimoniale</a>
                 </li>
                 <li>
-                    <a href="#cuprins">Cuprins</a>
+                    <a href="#cuprins"  data-i18n="m3">Cuprins</a>
                 </li>
                 <li>
-                    <a href="#demo">Demo</a>
+                    <a href="#demo" data-i18n="m4">Demo</a>
                 </li>
                 <li>
-                    <a href="#featuresLink">Funcționalități</a>
+                    <a href="#featuresLink" data-i18n="m5">Funcționalități</a>
                 </li>
                 <li>
-                    <a href="#colaboratori">Creatori</a>
+                    <a href="#colaboratori" data-i18n="m6">Creatori</a>
                 </li>
                 <li>
-                    <a href="#parteneri">Parteneri</a>
+                    <a href="#parteneri" data-i18n="m7">Parteneri</a>
                 </li>
                 <li>
                     <select id='lang_select'>
-                        <option value="ro">RomÃ¢nÄƒ</option>
+                        <option value="ro">Română</option>
                         <option value="en">English</option>
-                        <option value="fr">FranÃ§ais</option>
+                        <!-- <option value="fr">FranÃ§ais</option> -->
                     </select>
                 </li>
             </ul>
@@ -67,17 +67,14 @@
         <!-- start header -->
         <div class="header">
             <header id="home" class="hero">
-                <h1 class="title">România 1918</h1>
-                <h2 data-i18n="text1">Oameni. Imagini. Fapte</h2>
-                <p>Anul 1918 a fost, pentru națiunea română, un miracol împlinit. Beneficiind de cea mai înaltă tehnologie,
-                    enciclopedia de față celebrează oamenii care, prin faptele lor, au făcut posibilă întregirea României.
-                    <br/>
-                    <br/> „România 1918” este un produs creat de
-                    <em>SIVECO România</em>, în parteneriat cu instituții prestigioase de cultură și personalități ale societății
-                    românești.
-                    <br/>
-                    <br/> Enciclopedia este oferită gratuit românilor de pretutindeni, ca un memento al celui mai important proiect
-                    național.
+                <h1 class="title" data-i18n="h1">România 1918</h1>
+                <h2 data-i18n="h2">Oameni, momente și imagini</h2>
+                <p>
+                    <span data-i18n="h3">>Un produs creat de</span> <em data-i18n="h4">SIVECO România</em><span data-i18n="h5">, în parteneriat cu instituții prestigioase de cultură și personalități ale societății românești.</span>
+                    </br></br>                    
+                    <span data-i18n="h6">Anul 1918 a fost, pentru națiunea română, un miracol împlinit. Enciclopedia digitală „România 1918” celebrează oamenii și momentele cheie care au făcut posibilă întregirea României.</span> 
+                    </br></br>
+                    <span data-i18n="h7">Aplicația este oferită  românilor de pretutindeni, ca un memento al celui mai important proiect național.</span>
                 </p>
             </header>
             <div class="appStore">
@@ -103,37 +100,35 @@
 
         <div id='testimoniale' class="testimoniale">
             <div class="testimonialeHolder">
-                <span id="testimonial1">
-                    <br/>„Este cadoul nostru, al tuturor creatorilor acestei Enciclopedii pentru România. Vă propunem să le cunoașteți
-                    și să îi cunoașteți pe miile de românce și români care, acum 100 de ani, prin sacrificiul lor, au creat
-                    România Întreagă.
+                <span id="testimonial1" >
+                    <br/><span data-i18n="t1">" Veți fi pentru o clipă măcar contemporani cu acele modele reale, autentice, care prin generozitate, toleranță,
+                        sacrificiu și simplitate ne-au oferit nouă, astăzi, o Românie frumoasă.</span>
 
-                    <br/>Veți fi pentru o clipă măcar contemporani cu acele modele reale, autentice, care prin generozitate, toleranță,
-                    sacrificiu și simplitate ne-au oferit nouă, astăzi, o Românie frumoasă.
-
-                    <br/>Veți afla în această Enciclopedie poveștile unor oameni ce nu apar în manualele din care învățăm la școală,
-                    dar sunt mult mai prețioși prin caracterul lor decât mulți dintre cei ce au notorietate.”
+                    <br/><span data-i18n="t2">Veți afla în această Enciclopedie poveștile unor oameni ce nu apar în manualele din care învățăm la școală,
+                        dar sunt mult mai prețioși prin caracterul lor decât mulți dintre cei ce au notorietate.”</span>
                     <p>
-                        <b>Prof. Radu Jugureanu</b>, coordonatorul proiectului</p>
+                        <b data-i18n="t3">Prof. Radu Jugureanu</b><span data-i18n="t4">, coordonatorul proiectului</span></p>
                 </span>
                 <span id="testimonial2">
-                    <br/>„Sunt profesor de istorie și întotdeauna le povestesc elevilor mei, atunci când ajungem la acest capitol,
-                    că anul 1918 este un an miraculos. Început în cele mai grele condiții, cu mai mult de jumătate de țară
-                    sub ocupația inamicului, anul 1918 s-a încheiat cu o Românie învingătoare, întregită prin voința românilor
-                    din teritoriile aflate până atunci sub stăpânire străină. O Românie în care totul trebuia reconstruit,
-                    dar care își vedea pe deplin îndeplinite năzuințele naționale. Am încercat să redau această credință
-                    în paginile enciclopediei.”
-                    <p>
-                        <b>Magda Stan</b>, profesor de istorie, creatoarea scenariului prezentei enciclopedii</p>
+                    <br/><span data-i18n="t5">„ Sunt profesor de istorie și întotdeauna le povestesc elevilor mei, atunci când ajungem la acest capitol,
+                        că anul 1918 este un an miraculos. Început în cele mai grele condiții, cu mai mult de jumătate de țară
+                        sub ocupația inamicului, anul 1918 s-a încheiat cu o Românie învingătoare, întregită prin voința românilor
+                        din teritoriile aflate până atunci sub stăpânire străină. O Românie în care totul trebuia reconstruit,
+                        dar care își vedea pe deplin îndeplinite năzuințele naționale. Am încercat să redau această credință
+                        în paginile enciclopediei.”</span>
+                        <p>
+                            <b data-i18n="t7">Magda Stan</b><span data-i18n="t8">, profesor de istorie, creatoarea scenariului prezentei enciclopedii</span>
+                        </p>
                 </span>
                 <span id="testimonial3">
-                    <br/> „Enciclopedia “România 1918 – Oameni. Fapte. Imagini” este o producție
-                    <a href="https://www.facebook.com/siveco/?fref=mentions>" target="_blank">SIVECO Romania</a>, dedicată miilor de românce și de români, femei, bărbați și copii, profesori și preoți,
-                    avocați și inventatori, țărănci și prințese, soldați și generali, oameni simpli sau erudiți inventatori
-                    care s-au sacrificat pentru ca România să fie cea întreagă de astăzi; lucrare epică, construită prin
-                    voluntariat și generozitate, ce este oferită gratuit școlii și societății românești."
+                    <br/> <span data-i18n="t9">„ Enciclopedia “România 1918 – Oameni, memente și imagini” este o producție</span>
+                    <a href="https://www.facebook.com/siveco/?fref=mentions>" target="_blank"  data-i18n="t10">SIVECO Romania</a><span  data-i18n="t11">, dedicată miilor de românce și de români, femei, bărbați și copii, profesori și preoți,
+                        avocați și inventatori, țărănci și prințese, soldați și generali, oameni simpli sau erudiți inventatori
+                        care s-au sacrificat pentru ca România să fie cea întreagă de astăzi; lucrare epică, construită prin
+                        voluntariat și generozitate, ce este oferită gratuit școlii și societății românești."</span>
                     <p>
-                        <b>Prof. Radu Jugureanu</b>, coordonatorul proiectului</p>
+                        <b data-i18n="t3">Prof. Radu Jugureanu</b><span data-i18n="t4">coordonatorul proiectului</span>, 
+                    </p>
                 </span>
 
             </div>
@@ -142,18 +137,16 @@
         <!-- start content -->
         <section id="cuprins" class="section__sm">
             <div class="description">
-                <h1>I. Primul război mondial </h1>
+                <h1 data-i18n="c11">I. Primul război mondial </h1>
                 <p>
-                    <b>Marele război</b>
+                    <b data-i18n="c12">Marele război</b>
                     <br/>
-                    <br/>Harta lumii în 1914 și alianțele politico-militare. Dinamica fronturilor de luptă, evenimentele memorabile
-                    derulate pe parcursul fiecărui an de război. Harta lumii în 1918-1920
+                    <br/><span data-i18n="c13">Harta lumii în 1914 și alianțele politico-militare. Dinamica fronturilor de luptă, evenimentele memorabile derulate pe parcursul fiecărui an de război. Harta lumii în 1918-1920</span>>
                 </p>
                 <p>
-                    <b>Războiul în cifre și imagini</b>
+                    <b data-i18n="c14">Războiul în cifre și imagini</b>
                     </br>
-                    <br/>Armate, arme și echipamente militare. Pierderi umane și materiale. Mărturii și imagini de pe front și
-                    din spatele frontului
+                    <br/><span data-i18n="c15">Armate, arme și echipamente militare. Pierderi umane și materiale. Mărturii și imagini de pe front și din spatele frontului.
                 </p>
             </div>
 
@@ -169,25 +162,23 @@
 
 
         </section>
-        <section id="chapter2" class="section__bg">
+        <section id="chapter2" class="section__sm">
             <div class="description">
-                <h1>II. România sub arme</h1>
+                <h1 data-i18n="c21">II. România sub arme</h1>
                 <p>
-                    <b>De la neutralitate la beligeranță</b>
+                    <b data-i18n="c22">De la neutralitate la beligeranță</b>
                     <br/>
-                    <br/>Filmul evenimentelor din perioada 1914-1916. Momentul intrării României în război
-                    <br/> Arme și câmpuri de bătălie: aliați și inamici Echipamente militare utilizate pe front. Mărturiile soldaților
-                    și ale comandanților lor
-                    <br/>
-                    <br/>
-                    <b>De la vlădică la opincă: oameni și fapte</b>
+                    <br/><span data-i18n="c23">Filmul evenimentelor din perioada 1914-1916. Momentul intrării României în război</span>
+                    <br/><span data-i18n="c24">Arme și câmpuri de bătălie: aliați și inamici Echipamente militare utilizate pe front. Mărturiile soldaților și ale comandanților lor</span>>
                     <br/>
                     <br/>
-                    <b>Marii eroi:</b> Regele Ferdinand I, Regina Maria, Alexandru Averescu, Ecaterina Teodoroiu, Nadeja Știrbey,
-                    comandanți militari, soldați, preoți, medici etc.
+                    <b data-i18n="c25">De la vlădică la opincă: oameni și fapte</b>
                     <br/>
                     <br/>
-                    <b>Copiii eroi</b> : Măriuca Zaharia, Alexandru Daia, Ioan Guțe
+                    <b data-i18n="c26">Marii eroi:</b> <span data-i18n="c27">Regele Ferdinand I, Regina Maria, Alexandru Averescu, Ecaterina Teodoroiu, Nadeja Știrbey, comandanți militari, soldați, preoți, medici etc.</span>
+                    <br/>
+                    <br/>
+                    <b data-i18n="c28">Copiii eroi</b> : <span data-i18n="c29">Măriuca Zaharia, Alexandru Daia, Ioan Guțe</span>>
                 </p>
             </div>
             <div id="videosList">
@@ -203,17 +194,17 @@
         </section>
         <section id="chapter3" class="section__sm">
             <div class="description">
-                <h1>III. Frontul de acasă </h1>
+                <h1 data-i18n="c31">III. Frontul de acasă </h1>
                 <p>
-                    <b> Familia</b>
+                    <b data-i18n="c32"> Familia</b>
                     <br/>
-                    <br/>Femeile și copiii în spatele frontului. Imagini și mărturii ale epocii
+                    <br/><span data-i18n="c33">Femeile și copiii în spatele frontului. Imagini și mărturii ale epocii</span>
                     <br/>
                     <br/>
-                    <b> Viața cotidiană</b>
+                    <b data-i18n="c34"> Viața cotidiană</b>
                     <br/>
-                    <br/> Viața sub ocupația inamicului între 1916-1918. Viața în zona liberă (Moldova, orașul Iași între 1916-1918
-                    etc.)
+                    <br/> <span data-i18n="c35">Viața sub ocupația inamicului între 1916-1918. Viața în zona liberă (Moldova, orașul Iași între 1916-1918
+                    etc.)</span>
                 </p>
             </div>
             <div id="videosList">
@@ -225,24 +216,23 @@
                 </div>
             </div>
         </section>
-        <section id="chapter4" class="section__sm">
+        <section id="chapter4" class="section__bg">
             <div class="description">
-                <h1>IV. România întregită</h1>
+                <h1 data-i18n="c41">IV. România întregită</h1>
                 <p>
-                    <b>Anul Marii Uniri</b>
+                    <b data-i18n="c42">Anul Marii Uniri</b>
                     <br/>
-                    <br/> Principalele momente ale anului 1918. Harta României între 1914-1918
-                    <br/>
-                    <br/>
-                    <b>Oamenii care au făcut Marea Unire</b>
-                    <br/>
-                    <br/>Oameni politici din Basarabia, Bucovina, Transilvania și Banat, din Regatul României, cunoscuți și mai
-                    puțin cunoscuți. Încoronarea Regelui Ferdinand și a Reginei Maria la Alba Iulia (1922)
+                    <br/> <span data-i18n="c43">Principalele momente ale anului 1918. Harta României între 1914-1918</span>
                     <br/>
                     <br/>
-                    <b>La masa tratativelor</b>
+                    <b data-i18n="c44">Oamenii care au făcut Marea Unire</b>
                     <br/>
-                    <br/> Tratativele privind România întregită la Conferința de Pace de la Paris (1919-1920)
+                    <br/><span data-i18n="c45">Oameni politici din Basarabia, Bucovina, Transilvania și Banat, din Regatul României, cunoscuți și mai puțin cunoscuți. Încoronarea Regelui Ferdinand și a Reginei Maria la Alba Iulia (1922)</span>
+                    <br/>
+                    <br/>
+                    <b data-i18n="c46">La masa tratativelor</b>
+                    <br/>
+                    <br/> <span data-i18n="c47">Tratativele privind România întregită la Conferința de Pace de la Paris (1919-1920)</span>
                 </p>
             </div>
             <div id="videosList">
@@ -254,30 +244,32 @@
                 </div>
             </div>
         </section>
-        <section id="chapter5" class="section__sm textOnly">
+        <section id="chapter5" class="section__sm">
 
             <div class="description">
-                <h1>V. Locuri ale memoriei</h1>
+                <h1 data-i18n="c51">V. Locuri ale memoriei</h1>
                 <p>
-                    <b>Prin obiectivul aparatului de fotografiat</b>
+                    <b data-i18n="c52">Prin obiectivul aparatului de fotografiat</b>
                     <br/>
-                    <br/> Fotografi care au luptat sau doar au realizat fotografii ce s-au păstrat până azi. Resurse istorice
-                    rare sau unice
+                    <br/> <span data-i18n="c53">Fotografi care au luptat sau doar au realizat fotografii ce s-au păstrat până azi. Resurse istorice rare sau unice</span>
                     <br/>
                 </p>
-            </div>
-            <div class="description">
+                <b data-i18n="c54">Traseele memoriei</b>
                 <br/>
-                <b>Traseele memoriei</b>
-                <br/>
-                <br/>Harta cimitirelor și monumentelor dedicate românilor care au luptat în Primul Război Mondial, în țară și
-                în străinătate.
+                <br/><span data-i18n="c55">Harta cimitirelor și monumentelor dedicate românilor care au luptat în Primul Război Mondial, în țară și în străinătate.</span>
                 <p>
-                    <b>Marele Război în știință, literatură, arte plastice și muzică: Imagini, fragmente de opere literare,
-                        muzică militară
+                    <b data-i18n="c56">Marele Război în știință, literatură, arte plastice și muzică: Imagini, fragmente de opere literare, muzică militară
                     </b>
-                </p>
+                </p>                
             </div>
+            <div id="videosList">
+                <div class="video">
+                    <video class="thevideo" loop preload="auto">
+                        <source src="assets/video/video_3.mp4" type="video/mp4">
+                        <!-- <source src="https://giant.gfycat.com/VerifiableTerrificHind.webm" type="video/webm"> Your browser does not support the video tag. -->
+                    </video>
+                </div>
+            </div>            
         </section>
 
         <!-- end content -->
@@ -294,45 +286,42 @@
 
         <!-- features -->
         <div id="featuresLink" class="features">
-            <h1>Funcționalități</h1>
+            <h1 data-i18n="f1">Funcționalități</h1>
             <div class="feature">
                 <object class="language_icon"></object>
-                <h3>Versiuni de limbă </h3>
-                <p>Enciclopedia este disponibilă în trei versiuni: română, engleză și franceză </p>
+                <h3 data-i18n="f2">Versiuni de limbă </h3>
+                <p data-i18n="f3">Enciclopedia este disponibilă în trei versiuni: română, engleză și franceză </p>
             </div>
             <div class="feature">
                 <object class="img_icon"></object>
-                <h3>Imagini </h3>
-                <p>Peste 300 de fotografii rare, din colecții particulare sau muzeale. Din acestea, 12 sunt animate.</p>
+                <h3 data-i18n="f4">Imagini </h3>
+                <p data-i18n="f5">Peste 300 de fotografii rare, din colecții particulare sau muzeale. Din acestea, 12 sunt animate</p>
             </div>
             <div class="feature">
                 <object class="video_icon"></object>
-                <h3>Video </h3>
-                <p>8 scurte mărturii filmate din război</p>
+                <h3 data-i18n="f6">Video </h3>
+                <p data-i18n="f7">8 scurte mărturii filmate din război</p>
             </div>
             <div class="feature">
                 <object class="d_icon"></object>
                 <h3>3D</h3>
-                <p>12 obiecte 3D, monumente-simbol ale Primului Război Mondial și Marii Unirii, care pot fi explorate din toate
-                    unghiurile
+                <p data-i18n="f8">12 obiecte 3D, monumente-simbol ale Primului Război Mondial și Marii Unirii, care pot fi explorate din toate unghiurile
                 </p>
             </div>
             <div class="feature">
                 <object class="maps_icon"></object>
-                <h3>Hărți interactive</h3>
-                <p>24 hărți dinamice, în care se poate urmări progresul evenimentelor și implicarea tuturor actorilor din teatrul
-                    de război </p>
+                <h3 data-i18n="f9">Hărți interactive</h3>
+                <p data-i18n="f10">24 hărți dinamice, în care se poate urmări progresul evenimentelor și implicarea tuturor actorilor din teatrul de război </p>
             </div>
             <div class="feature">
                 <object class="acces_icon"></object>
-                <h3>Accesibilitate </h3>
-                <p>Fontul poate fi mărit sau micșorat în funcție de nevoie</p>
+                <h3 data-i18n="f11">Accesibilitate </h3>
+                <p data-i18n="f12">Fontul poate fi mărit sau micșorat în funcție de nevoie</p>
             </div>
             <div class="feature">
                 <object class="adapt_icon"></object>
-                <h3>Adaptabilitate</h3>
-                <p>Enciclopedia este adaptată oricărui tip de echipament și poate fi vizualizată pe PC, laptop, tabletă sau
-                    smartphone
+                <h3 data-i18n="f13">Adaptabilitate</h3>
+                <p data-i18n="f14">Enciclopedia este adaptată oricărui tip de echipament și poate fi vizualizată pe PC, laptop, tabletă sau smartphone
                 </p>
             </div>
         </div>
@@ -340,106 +329,104 @@
 
         <!-- colaboratori -->
         <div id="colaboratori" class="collaborate">
-            <h1>Creatori</h1>
-            <h2>Enciclopedia “România 1918, Oameni. Fapte. Imagini.” este o producție SIVECO Romania, în parteneriat cu instituții
-                prestigioase de cultură și personalități ale societății românești. </h2>
+            <h1 data-i18n="cr1">Creatori</h1>
+            <h2 data-i18n="cr2">Enciclopedia “România 1918, Oameni. Fapte. Imagini.” este o producție SIVECO Romania, în parteneriat cu instituții prestigioase de cultură și personalități ale societății românești. </h2>
             <div>
                 <div>
-                    <h3>Consiliul științific</h3>
-                    <br/>General Prof. Univ. Dr. Mihail E. Ionescu
-                    <br/>Prof. Univ. Dr. Corneliu Mihail Lungu
-                    <br/>Istoric Neculai Moghior
-                    <br/>Prof. Univ. Dr. Ioan Opriș
-                    <br/>General Dr. Dumitru Dorin Prunariu
-                    <br/>Prof. Univ. Dr. Gheorghe Sbârnă
-                    <br/>Prof. Univ. Dr. Ioan Scurtu
-                    <br/>Simona Tănăsescu
+                    <h3 data-i18n="cs1">Consiliul științific</h3>
+                    <br/><span data-i18n="cs2">General Prof. Univ. Dr. Mihail E. Ionescu</span>
+                    <br/><span data-i18n="cs3">Prof. Univ. Dr. Corneliu Mihail Lungu</span>
+                    <br/><span data-i18n="cs4">Istoric Neculai Moghior</span>
+                    <br/><span data-i18n="cs5">Prof. Univ. Dr. Ioan Opriș</span>
+                    <br/><span data-i18n="cs6">Lt. Gen. (ret.) Dr. Dumitru Dorin Prunariu</span>
+                    <br/><span data-i18n="cs7">Prof. Univ. Dr. Gheorghe Sbârnă</span>
+                    <br/><span data-i18n="cs8">Prof. Univ. Dr. Ioan Scurtu</span>
+                    <br/><span data-i18n="cs9">Simona Tănăsescu</span>
                     <br/>
                     <br/>
-                    <h3>Consiliul Științific Pedagogic</h3>
-                    <br/>Prof. Dr. Doru Dumitrescu
-                    <br/>Prof. Dr. Gabriel Leahu
-                    <br/>Prof. Simona Tănase
+                    <h3 data-i18n="csp1">Consiliul Științific Pedagogic</h3>
+                    <br/><span data-i18n="csp2">Dr. Doru Dumitrescu</span>
+                    <br/><span data-i18n="csp3">Prof. Dr. Gabriel Leahu</span>
+                    <br/><span data-i18n="csp4">Prof. Simona Tănase</span>
                 </div>
             </div>
             <div>
-                <h3>Coordonator proiect:</h3> Radu Jugureanu
+                <h3 data-i18n="cop1">Coordonator proiect:</h3> Radu Jugureanu
                 <br/>
-                <h3>Autor și scenarist:</h3> Profesor Magda Stan
-            </div>
-
-
-            <div>
-                <h3>Colecționari contributori </h3>
-                <br/>Prof. Univ. Dr. A. Atanasiu
-                <br/>Prof. Dr. Carol Căpiță
-                <br/>Alexandra Crăciunoiu (Colecția Cristian Crăciunoiu)
-                <br/>Mihaela Kloos-Ilea, autor blog
-                <a href="https://povestisasesti.com/author/povestisasesti/" title="Povestiri Săsești"> Povestiri Săsești</a>
-                <br/>Alin Dimăncescu, autor blog
-                <a href="http://fratii-dimancescu.blogspot.ro/" title="Alin Dimăncescu">Frații Alin Dimăncescu</a>
-                <br/>Prof. Adrian Mihai Olaru
-                <br/>Prof. Corneliu Stoica
-                <br/>Simona Tănăsescu
+                <h3 data-i18n="cop2">Autor și scenarist:</h3> <span data-i18n="cop3">Profesor Magda Stan</span>
             </div>
 
             <div>
-                <h3>Contributori, autori articole </h3>
+                <h3 data-i18n="cont1">Contributori, autori articole </h3>
                 <br/>
-                <b>Prof. Univ. Dr. Alin Ciupală –</b>
-                <em>„Bătălia lor. Femeile din România în Primul Război Mondial”, Editura Polirom </em>
+                <b data-i18n="cont2">Prof. Univ. Dr. Alin Ciupală –</b>
+                <em data-i18n="cont3">„Bătălia lor. Femeile din România în Primul Război Mondial”, Editura Polirom </em>
                 <br/>
-                <b>Cercet. Dr. Adrian-Silvan Ionescu -</b>
-                <em>”Serviciul Fotografic al Armatei şi contribuţia sa la iconografia Războiului cel Mare”, Muzeul Național,
+                <b data-i18n="cont4">Cercet. Dr. Adrian-Silvan Ionescu -</b>
+                <em data-i18n="cont5">”Serviciul Fotografic al Armatei şi contribuţia sa la iconografia Războiului cel Mare”, Muzeul Național,
                     nr. XXV, 2013</em>
                 <br/>
-                <b>Prof. Univ. Dr. Corneliu Mihail Lungu -</b>
-                <em>Conținut științific Cap. IV </em>
+                <b data-i18n="cont6">Prof. Univ. Dr. Corneliu Mihail Lungu -</b>
+                <em data-i18n="cont7">Conținut științific Cap. IV </em>
                 <br/>
-                <b>Istoric Neculai Moghior -</b>
-                <em> Conținut științific Cap. II </em>
+                <b data-i18n="cont8">Istoric Neculai Moghior -</b>
+                <em data-i18n="cont9"> Conținut științific Cap. II </em>
                 <br/>
-                <b>Prof. Adrian Mihai Olaru -</b>
-                <em>Conținut științific Capitolele IV, V </em>
+                <b data-i18n="cont10">Prof. Adrian Mihai Olaru -</b>
+                <em data-i18n="cont11">Conținut științific Capitolele IV, V </em>
                 <br/>
-                <b>Prof. Univ. Dr. Ioan Opriș -</b>
-                <em>Conținut științific Cap. IV </em>
+                <b data-i18n="cont12">Prof. Univ. Dr. Ioan Opriș -</b>
+                <em data-i18n="cont13">Conținut științific Cap. IV </em>
                 <br/>
-                <b>Cercet. Dr. Claudiu Porumbăcean -</b>
-                <em>Conținut științific Cap. IV </em>
+                <b data-i18n="cont14">Cercet. Dr. Claudiu Porumbăcean -</b>
+                <em data-i18n="cont15">Conținut științific Cap. IV </em>
                 <br/>
-                <b>Prof. Univ. Dr. Gheorghe Sbârnă -</b>
-                <em>Conținut științific Cap. IV </em>
+                <b data-i18n="cont16">Prof. Univ. Dr. Gheorghe Sbârnă -</b>
+                <em data-i18n="cont17">Conținut științific Cap. IV </em>
                 <br/>
-                <b>Prof. Univ. Dr. Ioan Scurtu -</b>
-                <em>Conținut științific Cap. IV </em>
+                <b data-i18n="cont18">Prof. Univ. Dr. Ioan Scurtu -</b>
+                <em data-i18n="cont19">Conținut științific Cap. IV </em>
                 <br/>
-                <b>Prof. Corneliu Stoica -</b>
-                <em>Conținut științific Cap. V </em>
+                <b data-i18n="cont20">Prof. Corneliu Stoica -</b>
+                <em data-i18n="cont21">Conținut științific Cap. V </em>
                 <br/>
-                <b>Cercet. Dr. Horia Șerbănescu -</b>
-                <em>Conținut științific Cap. II</em>
+                <b data-i18n="cont22">Cercet. Dr. Horia Șerbănescu -</b>
+                <em data-i18n="cont23">Conținut științific Cap. II</em>
 
             </div>
+
             <div>
-                <h3>Creație digitală</h3>
+                <h3 data-i18n="conl1">Colecționari contributori </h3>
+                <br/><span data-i18n="conl2">Univ. Dr. A. Atanasiu</span> 
+                <br/><span data-i18n="conl3"> Dr. Carol Căpiță</span>
+                <br/><span data-i18n="conl4">Alexandra Crăciunoiu (Colecția Cristian Crăciunoiu)</span>
+                <br/><span data-i18n="conl5">Kloos-Ilea, autor blog</span> 
+                <a href="https://povestisasesti.com/author/povestisasesti/" title="Povestiri Săsești" data-i18n="conl6"> Povestiri Săsești</a>
+                <br/><span data-i18n="conl7"> Dimăncescu, autor blog</span>
+                <a href="http://fratii-dimancescu.blogspot.ro/" title="Alin Dimăncescu" data-i18n="conl8">Frații Alin Dimăncescu</a>
+                <br/><span data-i18n="conl9">Adrian Mihai Olaru</span> 
+                <br/><span data-i18n="conl10">Corneliu Stoica</span> 
+                <br/><span data-i18n="conl11">Tănăsescu</span> 
+            </div>
+
+            <div>
+                <h3 data-i18n="cd1">Creație digitală</h3>
                 <br/>
-                <b>Coordonator</b>: Bogdan Gornea
+                <b><span data-i18n="cd2">Coordonator</span></b>: Bogdan Gornea
                 <br/>
-                <b>Coordonator parteneri</b>: Prof. Emil Dragomirescu
+                <b><span data-i18n="cd3">Traducere</span></b>: Dr. Alexandra Jugureanu
                 <br/>
-                <b>Traducere</b>: Dr. Alexandra Jugureanu
+                <b><span data-i18n="cd4">Dezvoltatori</span> </b> :  Marius Curcă, Adrian Dragomir, Daniel Gherghiceanu, Alexandru Indreas, Octavian Miu, Andrei Nedelciu 
                 <br/>
-                <b>Dezvoltatori</b> : Marius Curcă, Adrian Dragomir, Daniel Gherghiceanu, Alexandru Indreas, Andrei Nedelciu
-                <br/>
-                <b>Grafică, design, animație, film</b>: Silviu Artene, Marian Negrișan, Cristiana Stermin, Sigrid Iuhas, Bogdan
-                Jugureanu
+                <b><span data-i18n="cd5">Grafică, design, animație, film</span> </b>: Silviu Artene, Sigrid Iuhas, Bogdan Jugureanu, Marian Negrișan, Cristiana Stermin
                 <br/>
                 <b>Web design</b>: Ancuța Creiță
                 <br/>
-                <b>Testare</b>: Cătălin Petrea (coordonator), Alexandru Binig, Radu Ilia
+                <b><span data-i18n="cd6">Testare</span> </b>: Cătălin Petrea <span data-i18n="cd10">(coordonator)</span>, Alexandru Binig, Radu Ilia 
                 <br/>
-                <b>Marketing și comunicare</b>: Daniela Mironov Bănuță, Cătălin Parascan
+                <b><span data-i18n="cd7">Coordonator parteneri</span> </b>: Prof. Emil Dragomirescu                
+                <br/>
+                <b><span data-i18n="cd8">Marketing și comunicare</span> </b>: Daniela Mironov Bănuță, Cătălin Parascan
             </div>
 
         </div>
@@ -552,12 +539,302 @@
 
     <script>
         $.i18n().load({
-            "en": {
-                "text1": "People. Images. Facts.",
-            },
             "ro": {
-                "text1": "Oameni. Imagini. Fapte",
+                "m1": "Acasă",
+                "m2": "Testimoniale",
+                "m3": "Cuprins",
+                "m4": "Demo",
+                "m5": "Funcționalități",
+                "m6": "Creatori",
+                "m7": "Parteneri",
+
+                "h1": "România 1918",
+                "h2": "Oameni, momente și imagini",
+                "h3": "Un produs creat de",
+                "h4": "SIVECO România",
+                "h5": ", în parteneriat cu instituții prestigioase de cultură și personalități ale societății românești",
+                "h6": "Anul 1918 a fost, pentru națiunea română, un miracol împlinit. Enciclopedia digitală „România 1918” celebrează oamenii și momentele cheie care au făcut posibilă întregirea României.",
+                "h7": "Aplicația este oferită  românilor de pretutindeni, ca un memento al celui mai important proiect național.",
+
+                "t1": "„Veți fi pentru o clipă măcar contemporani cu acele modele reale, autentice, care prin generozitate, toleranță, sacrificiu și simplitate ne-au oferit nouă, astăzi, o Românie frumoasă.",
+                "t2": "Veți afla în această Enciclopedie poveștile unor oameni ce nu apar în manualele din care învățăm la școală, dar sunt mult mai prețioși prin caracterul lor decât mulți dintre cei ce au notorietate.”",
+                "t3": "Prof. Radu Jugureanu",
+                "t4": ", coordonatorul proiectului",
+                "t5": "„Sunt profesor de istorie și întotdeauna le povestesc elevilor mei, atunci când ajungem la acest capitol, că anul 1918 este un an miraculos. Început în cele mai grele condiții, cu mai mult de jumătate de țară sub ocupația inamicului, anul 1918 s-a încheiat cu o Românie învingătoare, întregită prin voința românilor din teritoriile aflate până atunci sub stăpânire străină. O Românie în care totul trebuia reconstruit, dar care își vedea pe deplin îndeplinite năzuințele naționale. Am încercat să redau această credință în paginile enciclopediei.”",
+                "t7": "Magda Stan",                            
+                "t8": ", profesor de istorie, creatoarea scenariului prezentei enciclopedii",
+                "t9": "„ Enciclopedia “România 1918 – Oameni, memente și imagini” este o producție",
+                "t10": "SIVECO Romania",
+                "t11": ", dedicată miilor de românce și de români, femei, bărbați și copii, profesori și preoți,  avocați și inventatori, țărănci și prințese, soldați și generali, oameni simpli sau erudiți inventatori care s-au sacrificat pentru ca România să fie cea întreagă de astăzi; lucrare epică, construită prin voluntariat și generozitate, ce este oferită gratuit școlii și societății românești.",
+
+                "c11": "I. Primul război mondial ",
+                "c12": "Marele război",
+                "c13": "Harta lumii în 1914 și alianțele politico-militare. Dinamica fronturilor de luptă, evenimentele memorabile derulate pe parcursul fiecărui an de război. Harta lumii în 1918-1920",
+                "c14": "Războiul în cifre și imagini",
+                "c15": "Armate, arme și echipamente militare. Pierderi umane și materiale. Mărturii și imagini de pe front și din spatele frontului.",
+
+                "c21": "II. România sub arme",
+                "c22": "De la neutralitate la beligeranță",
+                "c23": "Filmul evenimentelor din perioada 1914-1916. Momentul intrării României în război",
+                "c24": "Arme și câmpuri de bătălie: aliați și inamici Echipamente militare utilizate pe front. Mărturiile soldaților și ale comandanților lor",
+                "c25": "De la vlădică la opincă: oameni și fapte",
+                "c26": "Marii eroi:",
+                "c27": "Regele Ferdinand I, Regina Maria, Alexandru Averescu, Ecaterina Teodoroiu, Nadeja Știrbey, comandanți militari, soldați, preoți, medici etc.",
+                "c28": "Copiii eroi",
+                "c29": "Măriuca Zaharia, Alexandru Daia, Ioan Guțe",
+
+                "c31": "III. Frontul de acasă",
+                "c32": "Familia",
+                "c33": "Femeile și copiii în spatele frontului. Imagini și mărturii ale epocii",
+                "c34": "Viața cotidiană",
+                "c35": "Viața sub ocupația inamicului între 1916-1918. Viața în zona liberă (Moldova, orașul Iași între 1916-1918 etc.)",
+
+                "c41": "IV. România întregită",
+                "c42": "Anul Marii Uniri",
+                "c43": "Principalele momente ale anului 1918. Harta României între 1914-1918",
+                "c44": "Oamenii care au făcut Marea Unire",
+                "c45": "Oameni politici din Basarabia, Bucovina, Transilvania și Banat, din Regatul României, cunoscuți și mai puțin cunoscuți. Încoronarea Regelui Ferdinand și a Reginei Maria la Alba Iulia (1922)",
+                "c46": "La masa tratativelor",
+                "c47": "Tratativele privind România întregită la Conferința de Pace de la Paris (1919-1920)",
+
+                "c51": "V. Locuri ale memoriei",
+                "c52": "Prin obiectivul aparatului de fotografiat",
+                "c53": "Fotografi care au luptat sau doar au realizat fotografii ce s-au păstrat până azi. Resurse istorice rare sau unice",
+                "c54": "Traseele memoriei",
+                "c55": "Harta cimitirelor și monumentelor dedicate românilor care au luptat în Primul Război Mondial, în țară și în străinătate.",
+                "c56": "Marele Război în știință, literatură, arte plastice și muzică: Imagini, fragmente de opere literare, muzică militară",
+
+                "f1": "Funcționalități",
+                "f2": "Versiuni de limbă",
+                "f3": "Enciclopedia este disponibilă în trei versiuni: română, engleză și franceză",
+                "f4": "Imagini",
+                "f5": "Peste 300 de fotografii rare, din colecții particulare sau muzeale. Din acestea, 12 sunt animate",
+                "f6": "Video",
+                "f7": "8 scurte mărturii filmate din război",
+                "f8": "12 obiecte 3D, monumente-simbol ale Primului Război Mondial și Marii Unirii, care pot fi explorate din toate unghiurile",
+                "f9": "Hărți interactive",
+                "f10": "24 hărți dinamice, în care se poate urmări progresul evenimentelor și implicarea tuturor actorilor din teatrul de război",
+                "f11": "Accesibilitate",
+                "f12": "Fontul poate fi mărit sau micșorat în funcție de nevoie",
+                "f13": "Adaptabilitate",
+                "f14": "Enciclopedia este adaptată oricărui tip de echipament și poate fi vizualizată pe PC, laptop, tabletă sau smartphone",
+
+                "cr1": "Creatori",
+                "cr2": "Enciclopedia “România 1918, Oameni. Fapte. Imagini.” este o producție SIVECO Romania, în parteneriat cu instituții prestigioase de cultură și personalități ale societății românești.",
+                "cs1": "Consiliul științific",
+                "cs2": "General Prof. Univ. Dr. Mihail E. Ionescu",
+                "cs3": "Prof. Univ. Dr. Corneliu Mihail Lungu",
+                "cs4": "Istoric Neculai Moghior",
+                "cs5": "Prof. Univ. Dr. Ioan Opriș",
+                "cs6": "Lt. Gen. (ret.) Dr. Dumitru Dorin Prunariu",
+                "cs7": "Prof. Univ. Dr. Gheorghe Sbârnă",
+                "cs8": "Prof. Univ. Dr. Ioan Scurtu",
+                "cs9": "Simona Tănăsescu",
+                "csp1": "Consiliul Științific Pedagogic",
+                "csp2": "Dr. Doru Dumitrescu",
+                "csp3": "Prof. Dr. Gabriel Leahu",
+                "csp4": "Prof. Simona Tănase",
+
+                "cop1": "Coordonator proiect:",
+                "cop2": "Autor și scenarist:",
+                "cop3": "Profesor Magda Stan",
+
+                "cont1": "Contributori, autori articole ",
+                "cont2": "Prof. Univ. Dr. Alin Ciupală –",
+                "cont3": "„Bătălia lor. Femeile din România în Primul Război Mondial”, Editura Polirom ",
+                "cont4": "Cercet. Dr. Adrian-Silvan Ionescu -",
+                "cont5": "”Serviciul Fotografic al Armatei şi contribuţia sa la iconografia Războiului cel Mare”, Muzeul Național, nr. XXV, 2013",
+                "cont6": "Prof. Univ. Dr. Corneliu Mihail Lungu -",
+                "cont7": "Conținut științific Cap. IV",
+                "cont8": "Istoric Neculai Moghior -",
+                "cont9": "Conținut științific Cap. II",
+                "cont10": "Prof. Adrian Mihai Olaru -",
+                "cont11": "Conținut științific Capitolele IV, V ",
+                "cont12": "Prof. Univ. Dr. Ioan Opriș -",
+                "cont13": "Conținut științific Cap. IV",
+                "cont14": "Cercet. Dr. Claudiu Porumbăcean -",
+                "cont15": "Conținut științific Cap. IV ",
+                "cont16": "Prof. Univ. Dr. Gheorghe Sbârnă -",
+                "cont17": "Conținut științific Cap. IV ",
+                "cont18": "Prof. Univ. Dr. Ioan Scurtu -",
+                "cont19": "Conținut științific Cap. IV ",
+                "cont20": "Prof. Corneliu Stoica -",
+                "cont21": "Conținut științific Cap. V",
+                "cont22": "Cercet. Dr. Horia Șerbănescu -",
+                "cont23": "Conținut științific Cap. II",   
+
+                "conl1": "Colecționari contributori ",
+                "conl2": "Univ. Dr. A. Atanasiu",
+                "conl3": "Dr. Carol Căpiță",
+                "conl4": "Alexandra Crăciunoiu (Colecția Cristian Crăciunoiu)",
+                "conl5": "Kloos-Ilea, autor blog",
+                "conl6": "Povestiri Săsești",
+                "conl7": "Dimăncescu, autor blog",
+                "conl8": "Frații Alin Dimăncescu",
+                "conl9": "Adrian Mihai Olaru",
+                "conl10": "Corneliu Stoica",
+                "conl11": "Tănăsescu",
+
+                "cd1": "Creație digitală",
+                "cd2": "Coordonator",
+                "cd3": " Traducere",
+                "cd4": " Dezvoltatori",
+                "cd5": " Grafică, design, animație, film",
+                "cd6": " Testare",
+                "cd7": " Coordonator parteneri",
+                "cd8": " Marketing și comunicare",
+                "cd10": " (coordonator)",                         
+
+            },            
+            "en": {
+                "m1": "Home",
+                "m2": "Testimonials",
+                "m3": "Chapters",
+                "m4": "Demo",
+                "m5": "Features",
+                "m6": "Contributors",
+                "m7": "Partners",
+
+                "h1": "Romania 1918",
+                "h2": "People, moments and images",
+                "h3": "A digital product created by",
+                "h4": "SIVECO Romania",
+                "h5": ", in partnership with prestigious cultural institutions and personalities of Romanian society.",
+                "h6": "In Romanian history, 1918 is the year of a miracle becoming reality. Equipped with state-of- the-art technology, this digital encyclopedia celebrates the people who, through their deeds, have made this miracle possible: uniting all Romanians into one nation.",
+                "h7": "The Encyclopedia is offered to Romanians everywhere, as a reminder of the most important national project.",
+
+                "t1": "„ For a moment, you will be contemporaries to those real, authentic models that, through generosity, tolerance, sacrifice and simplicity, have offered us, today, a beautiful Romania.",
+                "t2": " You will find in this encyclopedia the stories of people who do not appear in the schoolbooks we learn, but who are more precious in their character than many of those who have notoriety.”",
+                "t3": "Prof. Radu Jugureanu",
+                "t4": ", project coordinator",
+                "t5": "„ I am a history teacher and I always tell my students, when we come to this chapter, that 1918 is a miraculous year. Beginning in the toughest conditions, with more than half a country under the enemys occupation, 1918 has ended with a victorious Romania, completed by the will of the Romanians in the territories that were previously under foreign rule. A Romania in which everything had to be rebuilt, but who fully understood their national aspirations. I tried to bring this faith into the pages of the encyclopedia.”",
+                "t7": "Magda Stan",                            
+                "t8": ", author of the encyclopedia",
+                "t9": "„ The 'Romania 1918 - People, moments and images' encyclopedia made by",
+                "t10": "SIVECO Romania",
+                "t11": "is dedicated to the thousands of Romanians, women, men and children, teachers and priests, lawyers and inventors, peasants and princesses, soldiers and generals, simple people or erudite inventors who sacrificed themselves for Romania to be the united nation of today; epic work, built by volunteering and generosity. The encyclopedia is offered free of charge to Romanian academia and society.”",
+
+                "c11": "I. First World War ",
+                "c12": "The Great War",
+                "c13": "World map in 1914 and political-military alliances. Dynamics of the battle fronts; memorable events during each year of war. Map of the world in 1918-1920",
+                "c14": "The War in numbers and images",
+                "c15": "Armies, Weapons and Military Equipment. Human and material losses. Testimonies and pictures on the front and behind the front",
+
+                "c21": "II. Romania under arms",
+                "c22": "From neutrality to belligerence",
+                "c23": "The events from 1914-1916. Romania enters the war",
+                "c24": "Weapons and battlefields: Allies and enemies Military equipment used on the front. Testimonies of the soldiers and commanders",
+                "c25": "From noblemen to peasants: people and deeds",
+                "c26": "The big heroes:",
+                "c27": "King Ferdinand I, Queen Maria, Alexander Averescu, Ecaterina Teodoroiu, Nadeja Ştirbey, military commanders, soldiers, priests, doctors, etc. The little heroes: Măriuca Zaharia, Alexandru Daia, Ioan Guţe",
+                "c28": "The little heroes",
+                "c29": "Măriuca Zaharia, Alexandru Daia, Ioan Guțe",
+
+                "c31": "III. Homefront",
+                "c32": "The family",
+                "c33": "Women and children behind the front. Images and testimonies of the time",
+                "c34": "Everyday life",
+                "c35": "Life under the enemy occupation between 1916-1918. Life in the Free Zone (Moldova, Iasi between 1916-1918, etc.)",
+
+                "c41": "IV. Romania united",
+                "c42": "The year of the Great Union",
+                "c43": "The film of the main moments of 1918. The map of Romania between 1914-1918",
+                "c44": "The people who made the Great Union possible",
+                "c45": "Political people from Bessarabia, Bucovina, Transylvania and Banat, from the Kingdom of Romania, either famous or less well-known. The Coronation of King Ferdinand and Queen Mary in Alba Iulia (1922)",
+                "c46": "At the treaty table",
+                "c47": "The Treaties on Romania Completed at the Peace Conference in Paris (1919-1920)",
+
+                "c51": "Memory places",
+                "c52": "Through the camera lens",
+                "c53": "The photographers that have fought or just made photos that have been preserved until today. Rare or unique historical resources",
+                "c54": "Memory paths",
+                "c55": "The map of cemeteries and monuments dedicated to Romanians who fought in World War I in the country and abroad.",
+                "c56": "The Great War in Science, Literature, Fine Arts and Music: Images, fragments of literary works, military music",
+
+                "f1": "Features",
+                "f2": "Language versions",
+                "f3": "The encyclopedia is available in three languages: Romanian, English, French",
+                "f4": "Images",
+                "f5": "Over 300 rare photographs, from private collections or museums. Of these, 12 were animated",
+                "f6": "Video",
+                "f7": "8 short filmed testimonies from the war",
+                "f8": "12 3D objects, symbolic monuments of World War I and the Great Union, which can be explored from all angles",
+                "f9": "Interactive maps",
+                "f10": "24 dynamic maps to track the progress of events and actors in the theater of war",
+                "f11": "Visibility",
+                "f12": "The font can be enlarged or reduced as needed",
+                "f13": "Accessibility",
+                "f14": "The encyclopedia is tailored to any type of device and can be viewed on your PC, laptop, tablet, or smartphone",
+
+                "cr1": "Contributors",
+                "cr2": "The digital encyclopedia “Romania 1918. People, moments and images” is a SIVECO Romania production, developed in partnership with prestigious cultural institutions and personalities of Romanian society.",
+                "cs1": "The Scientific Council",
+                "cs2": "Gen. Prof. Mihail E. Ionescu, PhD.",
+                "cs3": "Prof. Corneliu Mihail Lungu, PhD.",
+                "cs4": "Historian Neculai Moghior",
+                "cs5": "Prof. Ioan Opriș, PhD.",
+                "cs6": "Lt-Gen.(ret.). Dumitru Dorin Prunariu, PhD.",
+                "cs7": "Prof. Gheorghe Sbârnă, PhD.",
+                "cs8": "Prof. Ioan Scurtu, PhD.",
+                "cs9": "Simona Tănăsescu",
+                "csp1": "The Scientific Pedagogical Council",
+                "csp2": "Doru Dumitrescu, PhD.",
+                "csp3": "Prof. Gabriel Leahu, PhD.",
+                "csp4": "Prof. Simona Tănase",
+
+                "cop1": "Project Coordinator:",
+                "cop2": "Instructional Designer and Author:",
+                "cop3": "Prof. Magda Stan",
+
+                "cont1": "Contributing authors ",
+                "cont2": "Prof. Alin Ciupală, PhD –",
+                "cont3": "„Their battle. The Romanian women during the First World War”, Polirom Publishing House ",
+                "cont4": "Researcher Prof. Adrian-Silvan Ionescu, PhD -",
+                "cont5": "„The Army's Photographic Service and its Contribution to the Great War iconography„ the National Museum, nr. XXV, 2013",
+                "cont6": "Prof. Corneliu Mihail Lungu, PhD -",
+                "cont7": "Scientific content Chap. IV",
+                "cont8": "Hist. Neculai Moghior -",
+                "cont9": "Scientific content Chap. II",
+                "cont10": "Prof. Adrian Mihai Olaru -",
+                "cont11": "Scientific content Chap. IV, V ",
+                "cont12": "Prof. Dr. Ioan Opriș, PhD -",
+                "cont13": "Scientific content Chap. IV",
+                "cont14": "Researcher Claudiu Porumbăcean, PhD -",
+                "cont15": "Scientific content Chap. IV ",
+                "cont16": "Prof. Gheorghe Sbârnă, PhD -",
+                "cont17": "Scientific content Chap. IV ",
+                "cont18": "Prof. Ioan Scurtu, PhD -",
+                "cont19": "Scientific content Chap. IV ",
+                "cont20": "Prof. Corneliu Stoica -",
+                "cont21": "Scientific content Chap. V",
+                "cont22": "Researcher Horia Șerbănescu, PhD -",
+                "cont23": "Scientific content Chap. II",
+
+                "conl1": "Contributing collectors",
+                "conl2": "Prof. A. Atanasiu, PhD",
+                "conl3": "Prof. Carol Căpiță, PhD",
+                "conl4": "Alexandra Crăciunoiu (Cristian Crăciunoiu collection)",
+                "conl5": "Kloos-Ilea, blog author of",
+                "conl6": "Povestiri Săsești",
+                "conl7": "Dimăncescu, blog author of",
+                "conl8": "Frații Alin Dimăncescu",
+                "conl9": " Prof. Adrian Mihai Olaru",
+                "conl10": "Prof. Corneliu Stoica",
+                "conl11": "Prof. Simona Tănăsescu",
+
+                "cd1": "Digital Creation",
+                "cd2": "Coordinator",
+                "cd3": " Translation:",
+                "cd4": " Developers:",
+                "cd5": " Graphics, design, animation, movie:",
+                "cd6": " Testing:",
+                "cd7": " Partners Coordinator:",
+                "cd8": " Marketing and communication",
+                "cd10": " (coordinator),",
+               
+
             },
+
             "fr": {
                 "text1": "French",
             }
