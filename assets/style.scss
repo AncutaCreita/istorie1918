@@ -236,15 +236,15 @@ section img {
 }
 
 .__img1 {
-  background: url(images/img1.png);
+  // background: url(images/img1.png);
 }
 
 .__img2 {
-  background: url(images/img2.png);
+  // background: url(images/img2.png);
 }
 
 .__img3 {
-  background: url(images/img3.png);
+  // background: url(images/img3.png);
 }
 
 // .__img4 {
@@ -278,7 +278,7 @@ section img {
   video {
     height: auto !important;
     min-height: 350px;
-    max-width: 500px;
+    max-width: 300px;
   }
 }
 
@@ -381,7 +381,7 @@ figure a {
 .testimoniale {
   // grid-column: 2 / 2;
   grid-column-start: 1;
-  grid-column-end: span1;
+  grid-column-end: -1;
   color: var(--white);
   opacity: 0.8;
   border: 1px solid var(--gold);
@@ -392,6 +392,7 @@ figure a {
   margin-bottom: 40px;
   padding: 40px 65px;
   position: relative;
+  width: 100%;
 
   &::before {
     content: "\201C"; /*Unicode for Left Double Quote*/
@@ -901,10 +902,10 @@ li.up {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     clear: both;
     width: 100%;
-    align-self: flex-start;
+    align-self: center;
 
     h1 {
       width: 100%;
@@ -922,6 +923,21 @@ li.up {
         word-wrap: break-word;
         width: 100%;
       }
+    }
+
+    figure,
+    figcaption {
+      width: 320px;
+      margin: 10px;
+    }
+
+    figure a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      flex-wrap: wrap;
+      padding: 10px;
     }
   }
 
