@@ -81,7 +81,6 @@ h6 {
     top: 0;
     z-index: 10;
     padding: 5px 40px;
-    
   }
 }
 
@@ -97,7 +96,7 @@ h6 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
-  grid-gap: 10px;
+  grid-gap: 2px;
   padding: 0;
 }
 
@@ -105,7 +104,8 @@ h6 {
   list-style-type: none;
 }
 
-.menu a {
+.menu a,
+.menu select {
   background-color: transparent;
   color: var(--gold);
   display: block;
@@ -134,15 +134,15 @@ h6 {
   grid-gap: 40px;
   margin-top: 40px;
 
-  .appStore{
+  .appStore {
     grid-column-start: 1;
     grid-column-end: span 4;
     -ms-grid-column-span: 4;
-    justify-content: space-around; 
+    justify-content: space-around;
 
     button {
       margin: 10px;
-    }     
+    }
   }
 }
 
@@ -165,7 +165,6 @@ h6 {
 .hero p {
   max-width: 500px;
 }
-
 
 h1 {
   font-size: 50px;
@@ -361,10 +360,10 @@ section img {
     color: #af9073;
     fill: #af9073;
   }
-
 }
 
-figure, figure a{
+figure,
+figure a {
   // display: flex;
   // justify-content: center;
   // align-items: center;
@@ -393,6 +392,7 @@ figure, figure a{
   margin-bottom: 40px;
   padding: 40px 65px;
   position: relative;
+
   &::before {
     content: "\201C"; /*Unicode for Left Double Quote*/
 
@@ -407,7 +407,7 @@ figure, figure a{
     top: 5px;
   }
 
-  a{
+  a {
     color: white;
   }
 }
@@ -527,16 +527,17 @@ li.up {
   span {
     text-decoration: none;
     padding: 30px;
-  } 
-  
-  &.hide{
+  }
+
+  &.hide {
     opacity: 0;
     animation-name: fadeOut;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
     animation-duration: 0.5s;
   }
-  &.show{
+
+  &.show {
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
@@ -547,21 +548,25 @@ li.up {
 //transitions
 
 @keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
+
 @keyframes fadeOut {
-	0% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
+
 @media (max-width: 950px) {
 
   /* menu */
@@ -612,11 +617,11 @@ li.up {
     }
 
     video {
-      width: auto!important;
+      width: auto !important;
       max-height: 300px;
       // height: auto !important;
       // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
-    }    
+    }
   }
 
   .section__bg {
@@ -624,15 +629,15 @@ li.up {
 
     .description {
       padding: 20px;
-    }  
+    }
 
     #videosList .video video {
-      width: 100%!important;
+      width: 100% !important;
 
       // max-height: 300px;
       height: auto !important;
       // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
-    } 
+    }
   }
 }
 
@@ -754,6 +759,7 @@ li.up {
   color: white;
   cursor: pointer;
 }
+
 .features object {
   width: 160px;
   height: 160px;
@@ -807,7 +813,7 @@ li.up {
   .sticky-header .menu {
     grid-column-start: 1;
     -ms-grid-column-span: 1;
-    left:0;
+    left: 0;
     min-width: 100%;
   }
 
@@ -816,10 +822,10 @@ li.up {
     display: flex;
     flex-direction: column;
 
-    .appStore{
+    .appStore {
       display: flex;
       justify-content: flex-start;
-    }    
+    }
   }
 
   .testimoniale {
@@ -852,7 +858,8 @@ li.up {
     -ms-grid-row: 9;
   }
 
-  .section__bg, .section__sm {
+  .section__bg,
+  .section__sm {
     .description {
       grid-column-start: 1;
       grid-row: 1;
@@ -929,7 +936,6 @@ li.up {
     }
   }
 
-
   @media (max-width: 950px) {
 
     /* menu */
@@ -937,48 +943,51 @@ li.up {
       display: block;
       left: 0;
     }
-  
+
     .menu ul {
       // max-height: 0;
     }
-  
+
     [aria-expanded="true"]~ ul {
       display: flex;
     }
-  
+
     [aria-expanded="false"]~ ul {
       display: none;
       max-height: 0;
     }
-  
+
     [aria-expanded="false"] .close {
       display: none;
       max-height: 0;
     }
-  
+
     [aria-expanded="true"] .open {
       display: none;
       max-height: 0;
     }
 
     .section__sm,
-    .section__bg{
+    .section__bg {
       display: flex;
       // flex-direction: column;
-      .description{
-      width: 100%;
+      .description {
+        width: 100%;
       }
+
       .videoList {
         width: 100%;
       }
     }
-  } 
-  .section__sm video{
+  }
+
+  .section__sm video {
     min-height: 100%;
-  } 
-  .section__bg video{
+  }
+
+  .section__bg video {
     min-height: 100%;
     align-self: center;
-  } 
+  }
 }
 
