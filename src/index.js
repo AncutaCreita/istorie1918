@@ -105,25 +105,25 @@ navButton.addEventListener('click', toggleNav);
 // $('#vid')[0].play();
 
 // modal script
-// var modal = document.querySelector("#modal");
-// var modalOverlay = document.querySelector("#modal-overlay");
+var modal = document.querySelector("#modal");
+var modalOverlay = document.querySelector("#modal-overlay");
 
-// var closeButton = document.querySelector("#close-button");
-// var openButton = document.querySelector("#open-button");
+var closeButton = document.querySelector("#close-button");
+var openButton = document.querySelector("#open-button");
 
-// closeButton.addEventListener("click", function () {
-//     modal.classList.toggle("closed");
-//     modalOverlay.classList.toggle("closed");
-//     vid01.pause();
-//     vid01.currentTime = 0;
-// });
+closeButton.addEventListener("click", function () {
+    modal.classList.toggle("closed");
+    modalOverlay.classList.toggle("closed");
+    vid01.pause();
+    vid01.currentTime = 0;
+});
 
-// openButton.addEventListener("click", function () {
-//     modal.classList.toggle("closed");
-//     modalOverlay.classList.toggle("closed");
+openButton.addEventListener("click", function () {
+    modal.classList.toggle("closed");
+    modalOverlay.classList.toggle("closed");
 
-//     vid01.play();
-// });
+    vid01.play();
+});
 
 // video loop on hover script
 var figure = $(".video").hover( hoverVideo, hideVideo );
@@ -139,6 +139,7 @@ function hideVideo(e) {
 
 $.i18n().load({
     "ro": {
+        "title": "România 1918 - Oameni, Momente și Imagini",
         "m1": "Acasă",
         "m2": "Testimoniale",
         "m3": "Cuprins",
@@ -166,8 +167,8 @@ $.i18n().load({
         "t10": "SIVECO Romania",
         "t11": "Veți afla în această Enciclopedie poveștile unor oameni ce nu apar în manualele din care învățăm la școală, dar sunt mult mai prețioși prin caracterul lor decât mulți dintre cei ce au notorietate.” ",
 
-        "c11": "I. Primul război mondial ",
-        "c12": "Marele război",
+        "c11": "I. Primul Război Mondial ",
+        "c12": "Marele Război",
         "c13": "Harta lumii în 1914 și alianțele politico-militare. Dinamica fronturilor de luptă, evenimentele memorabile derulate pe parcursul fiecărui an de război. Harta lumii în 1918-1920",
         "c14": "Războiul în cifre și imagini",
         "c15": "Armate, arme și echipamente militare. Pierderi umane și materiale. Mărturii și imagini de pe front și din spatele frontului.",
@@ -288,6 +289,7 @@ $.i18n().load({
 
     },
     "en": {
+        "title": "Romania 1918 - People, Moments and Images",        
         "m1": "Home",
         "m2": "Testimonials",
         "m3": "Chapters",
@@ -444,7 +446,7 @@ $.i18n().load({
 
 $('#lang_select').on('change', function () {
     $.i18n().locale = this.value;
-    $('body').i18n();
+    $('html').i18n();
     localStorage.setItem("language", this.value);
     $('html').attr('lang', this.value);
 })
@@ -457,7 +459,7 @@ function languageSelector(){
     } else {
         $('html').attr('lang', localLanguage)
         $.i18n().locale = localLanguage;
-        $('body').i18n();
+        $('html').i18n();
         $('#lang_select option[value=' + localLanguage +']').attr('selected','selected');
     }
 }

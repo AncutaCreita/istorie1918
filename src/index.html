@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>România 1918 - Oameni, Momente și Imagini</title>
+    <title data-i18n="title">România 1918 - Oameni, Momente și Imagini</title>
     <!-- <link href="assets/css/slick.css" media="all" rel="stylesheet" type="text/css" />
     <link href="assets/css/slick-theme.css" media="all" rel="stylesheet" type="text/css" /> -->
     <link rel="icon" type="image/png" href="assets/images/favicon.png" />
@@ -23,13 +23,11 @@
 
 
     <div id="upToHeader" class="wrapper">
-
         <!-- start menu -->
         <nav class="menu">
             <button aria-expanded="false" aria-controls="menu-list">
                 <span class="open">☰</span>
-                <span class="close">×</span>
-                Menu
+                <span class="close">×</span>` Menu
             </button>
             <ul id="menu-list">
                 <li>
@@ -66,20 +64,23 @@
 
         <!-- start header -->
         <div class="header">
+            <button id="open-button" class="infoButton">
+                Copiii și războiul
+            </button>
             <header id="home" class="hero">
                 <h1 class="title" data-i18n="h1">România 1918</h1>
-                <h2 data-i18n="h2">Oameni, Momente și Imagini</h2>
+                <h2 data-i18n="h2" class="tricolor">Oameni, Momente și Imagini</h2>
                 <p>
                     <span data-i18n="h3">Un produs creat de</span>
                     <em data-i18n="h4">SIVECO România</em>
                     <span data-i18n="h5">, în parteneriat cu instituții prestigioase de cultură și personalități ale societății românești.</span>
                     </br>
                     </br>
-                    <span data-i18n="h6">Anul 1918 a fost, pentru națiunea română, un miracol împlinit. Enciclopedia digitală „România 1918” celebrează
+                    <span data-i18n="h7">Anul 1918 a fost, pentru națiunea română, un miracol împlinit. Enciclopedia digitală „România 1918” celebrează
                         oamenii și momentele cheie care au făcut posibilă întregirea României.</span>
                     </br>
                     </br>
-                    <span data-i18n="h7">Aplicația este oferită românilor de pretutindeni, ca un memento al celui mai important proiect național.</span>
+                    <span data-i18n="h6">Aplicația este oferită românilor de pretutindeni, ca un memento al celui mai important proiect național.</span>
                 </p>
             </header>
             <div class="appStore">
@@ -97,6 +98,8 @@
                     <a href="/">
                         <img src="assets/images/android.svg" alt="Android store" height="40" width="40"> App Android</a>
                 </button>
+
+
             </div>
 
         </div>
@@ -173,7 +176,6 @@
                 <div class="video">
                     <video class="thevideo" loop preload="auto">
                         <source src="assets/video/video_1.mp4" type="video/mp4">
-                        <!-- <source src="https://giant.gfycat.com/VerifiableTerrificHind.webm" type="video/webm"> Your browser does not support the video tag. -->
                     </video>
                 </div>
             </div>
@@ -209,7 +211,6 @@
                 <div class="video">
                     <video class="thevideo" loop preload="auto">
                         <source src="assets/video/video_2.mp4" type="video/mp4">
-                        <!-- <source src="https://giant.gfycat.com/VerifiableTerrificHind.webm" type="video/webm"> Your browser does not support the video tag. -->
                     </video>
                 </div>
             </div>
@@ -238,7 +239,6 @@
                 <div class="video">
                     <video class="thevideo" loop preload="auto">
                         <source src="assets/video/video_3.mp4" type="video/mp4">
-                        <!-- <source src="https://giant.gfycat.com/VerifiableTerrificHind.webm" type="video/webm"> Your browser does not support the video tag. -->
                     </video>
                 </div>
             </div>
@@ -611,7 +611,7 @@
         </div>
 
         <p>Copyright@
-            <a href="http://www.siveco.ro/en"> Siveco Romania</a> - 2018</p>
+            <a href="http://www.siveco.ro/en"> SIVECO Romania</a> - 2018</p>
         <a href="http://www.siveco.ro/en" alt="SIVECO Romania" target="_blank">
             <img src="assets/images/siveco.svg" title="SIVECO Romania" />
         </a>
@@ -626,12 +626,15 @@
     <div class="modal closed" id="modal">
         <button class="close-button" id="close-button">Închide</button>
         <div class="modal-guts">
-            <!-- <h1>Video 1</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae expedita corrupti laudantium aperiam, doloremque explicabo ipsum earum dicta saepe delectus totam vitae ipsam doloribus et obcaecati facilis eius assumenda, cumque.</p> -->
-            <div class="video">
-                <!-- <video preload loop muted id="vid01" src="https://player.vimeo.com/external/118310608.sd.mp4?s=16baa73f581d93200fbfc4ffb15c1f04">
-                </video> -->
-            </div>
+            <h1>360.728.</h1>
+            <p class="pictureInfo">360.728. Acesta este numărul orfanilor de război în Primul Război Mondial, din care o treime proveneau din București.
+                <br/>Pentru ei, au fost înființate orfelinate pe tot cuprinsul țării, din donații particulare și ajutoare oferite
+                de armată, de familia regală sau de membri ai înaltei societăți.
+                <br/>Organizarea orfelinatelor se făcea adesea pe principii militare.
+                <br/>Copiii peste 12 ani lucrau în ateliere pentru a învăţa o meserie, cei între 8 şi 12 ani erau trimişi la şcolile
+                din zonă, iar cei sub 7 ani rămâneau permanent în orfelinat unde se jucau, învăţau să citească şi să scrie
+                sub supravegherea unor educatoare.
+            </p>
         </div>
     </div>
 
