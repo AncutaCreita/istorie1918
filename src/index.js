@@ -445,6 +445,21 @@ $.i18n().load({
 $('#lang_select').on('change', function () {
     $.i18n().locale = this.value;
     $('body').i18n();
+    localStorage.setItem("language", this.value);
+    $('html').attr('lang', this.value);
 })
 
-$('body').i18n();
+function languageSelector(){
+    localLanguage = localStorage.getItem("language");
+
+    if(!localLanguage){
+        localStorage.setItem("language", $('html').attr('lang'))
+    } else {
+        $('html').attr('lang', localLanguage)
+        $.i18n().locale = localLanguage;
+        $('body').i18n();
+        $('#lang_select option[value=' + localLanguage +']').attr('selected','selected');
+    }
+}
+
+languageSelector()
