@@ -1,39 +1,71 @@
 const path = require('path'),
   webpack = require('webpack'),
-  ExtractTextPlugin = require('extract-text-webpack-plugin');
-HtmlWebpackPlugin = require('html-webpack-plugin');
-CopyWebpackPlugin = require('copy-webpack-plugin');
+  ExtractTextPlugin = require('extract-text-webpack-plugin'),
+  CopyWebpackPlugin = require('copy-webpack-plugin'),
+  HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+  context: path.resolve(__dirname, 'src'),
   entry: './index.js',
   output: {
+    filename: 'index.js',
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].bundle.js'
+  },
+  resolve: {
+    modules: [
+      path.resolve(__dirname, 'src'),
+      path.resolve(__dirname, 'node_modules')
+    ],
+    extensions: ['.js', '.json'],
   },
   devServer: {
+    historyApiFallback: true,
     open: true,
     hot: true,
+    inline: true,
+    progress: true,
+    contentBase: './src',
+    watchContentBase: true,
     port: 1918,
-    host: '0.0.0.0',
+    host: 'localhost',
   },
-  devtool: 'eval-source-map',
+  devtool: 'eval',
   module: {
-    rules: [
+    rules: [{
+      test: /\.html$/,
+      use: [ {
+        loader: 'html-loader',
+        options: {
+          minimize: true
+        }
+      }]},
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel-loader',
+        options: {
+          presets: [],
+          cacheDirectory: false,
+        },
+      },
       {
         test: /\.scss$/,
-        use: [{
-          loader: "style-loader" // creates style nodes from JS strings
-        }, {
-          loader: "css-loader" // translates CSS into CommonJS
-        }, {
-          loader: 'postcss-loader',
-        }, {
-          loader: "sass-loader" // compiles Sass to CSS
-        }]
+        use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
+          use: [{
+              loader: 'css-loader'
+            },
+            {
+              loader: 'postcss-loader'
+            },
+            {
+              loader: 'sass-loader'
+            },
+          ],
+          fallback: 'style-loader',
+        })),
       },
       {
         test: /\.css$/,
-        exclude: /(bower_components)/,
         use: ['css-hot-loader'].concat(ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: 'css-loader',
@@ -43,26 +75,20 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'url-loader?limit=1048576',
       },
-      {
-        test: /\.(html)$/,
-        use: {
-          loader: 'html-loader',
-          options: {
-            attrs: [':data-src']
-          }
-        },
-      },
     ],
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
-      template: 'index.html',
       filename: 'index.html',
+      template: 'index.html'
     }),
-    new ExtractTextPlugin('assets/style.css'),
+    new webpack.NamedModulesPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
+    new ExtractTextPlugin('styles.css'),
     new CopyWebpackPlugin([
-      { from: 'index.php', to: 'index.php' }
+      { from: 'index.php', to: 'index.php' },
+      { from: 'assets/images/favicon.png', to: 'assets/images/favicon.png' },
+      { from: 'assets/video/', to: 'assets/video/' }
     ]),
   ],
 };
