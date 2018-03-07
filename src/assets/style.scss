@@ -75,6 +75,7 @@ h6 {
     position: fixed;
     align-self: flex-end;
     right: 0;
+    top: 80px;
     border-radius: 0;
     background-color: #282934;
     z-index: 2;
@@ -169,19 +170,17 @@ h6 {
 .hero h2.tricolor {
   background-color: var(--gold);
   padding: 15px;
+  position: relative;
+  margin-bottom: 20px;
 
-  &::before {
+  &::after {
     content: '';
-    background: linear-gradient(to right, #002b7f 0%, #002b7f 35%, #fcd116 35%, #fcd116 70%, #ce1126 70%, #ce1126 100%);
-    width: 394px;
-    height: 19px;
     position: absolute;
-    margin-top: 36px;
-    margin-left: -16px;
-  }
-
-  &:lang(en)::before {
-    width: 405px;
+    width: 100%;
+    left: 0;
+    height: 20px;
+    bottom: -20px;
+    background-image: linear-gradient(to left, #002b7f 0%, #002b7f 35%, #fcd116 35%, #fcd116 70%, #ce1126 70%, #ce1126 100%);
   }
 }
 
@@ -767,6 +766,7 @@ li.up {
   .pictureInfo {
     font-size: 16px;
     font-weight: 300;
+    width: 100%;
   }
 
   h1 {
