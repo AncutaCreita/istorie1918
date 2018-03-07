@@ -139,6 +139,7 @@ function hideVideo(e) {
 
 $.i18n().load({
     "ro": {
+        "menu": "Meniu",
         "title": "România 1918 - Oameni, Momente și Imagini",
         "m1": "Acasă",
         "m2": "Testimoniale",
@@ -289,6 +290,7 @@ $.i18n().load({
 
     },
     "en": {
+        "menu": "Menu",
         "title": "Romania 1918 - People, Moments and Images",        
         "m1": "Home",
         "m2": "Testimonials",

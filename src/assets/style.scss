@@ -13,6 +13,7 @@
   --accent-color-red: rgba(136, 23, 31, 0.8);
   --accent-color-dark-blue: rgba(30, 32, 45, 1);
   --accent-color-dark-blue-opacity: rgba(30, 32, 45, 0.8);
+  --accent-color-dark-blue-opacity2: rgba(30, 32, 45, 0.5);
 }
 
 html {
@@ -71,14 +72,21 @@ h6 {
   width: 100%;
   height: 100%;
 
-  button.infoButton {
-    position: fixed;
-    align-self: flex-end;
-    right: 0;
-    top: 80px;
-    border-radius: 0;
-    background-color: #282934;
-    z-index: 2;
+  .infoPicture {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: linear-gradient(to bottom, var(--accent-color-dark-blue-opacity2), var(--accent-color-dark-blue)), url(images/heroBg-min.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 200px;
+
+    button.infoButton {
+      border-radius: 0;
+      background-color: #282934;
+      z-index: 2;
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -719,9 +727,9 @@ li.up {
 
   /* Probably need media queries here */
 
-  width: 900px;
+  // width: 900px;
   max-width: 100%;
-  height: 70vh;
+  height: 90vh;
   max-height: 100%;
   position: fixed;
   z-index: 100;
@@ -770,7 +778,6 @@ li.up {
   }
 
   h1 {
-    background-color: var(--gold);
     padding: 15px;
   }
 }
