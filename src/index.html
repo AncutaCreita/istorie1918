@@ -78,24 +78,32 @@
                         oamenii și momentele cheie care au făcut posibilă întregirea României.</span>
                     </br>
                     </br>
-                    <span data-i18n="h6">Aplicația este oferită românilor de pretutindeni, ca un memento al celui mai important proiect național.</span>
                 </p>
             </header>
             <div class="appStore">
-                <button>
+
+                <p data-i18n="soon">Coming soon...</p>
+
+                <div id="countdown">
+                    <div id="countdowndays" class="box"></div>
+                    <div id="countdownhours" class="box"></div>
+                    <div id="countdownmins" class="box"></div>
+                    <!-- <div id="countdownsecs" class="box"><p></p></div> -->
+                 </div>
+                <!-- <button>
                     <a href="" title="">
                         <img src="assets/images/apple.svg" alt="Apple store" height="40" width="40">
-                        <span>App Store</span>
+                        <span data-i18n="download">App Store</span>
                     </a>
                 </button>
                 <button>
                     <a href="/">
-                        <img src="assets/images/windows.svg" alt="Windows store" height="40" width="40">App Windows</a>
+                        <img src="assets/images/windows.svg" alt="Windows store" height="40" width="40"><span data-i18n="windows">App Windows</span></a>
                 </button>
                 <button>
                     <a href="/">
-                        <img src="assets/images/android.svg" alt="Android store" height="40" width="40"> App Android</a>
-                </button>
+                        <img src="assets/images/android.svg" alt="Android store" height="40" width="40"> <span data-i18n="android">Android</span> </a>
+                </button> -->
 
 
             </div>
@@ -142,7 +150,7 @@
                         ce este oferită gratuit școlii și societății românești."</span>
                     <p>
                         <b data-i18n="t3">Prof. Radu Jugureanu</b>
-                        <span data-i18n="t4">coordonatorul proiectului</span>,
+                        <span data-i18n="t4">coordonatorul proiectului</span>
                     </p>
                 </span>
 
@@ -361,6 +369,13 @@
                     smartphone
                 </p>
             </div>
+            <div class="feature">
+                    <object class="game_icon"></object>
+                    <h3 data-i18n="f15">Adaptabilitate</h3>
+                    <p data-i18n="f16">Enciclopedia este adaptată oricărui tip de echipament și poate fi vizualizată pe PC, laptop, tabletă sau
+                        smartphone
+                    </p>
+                </div>            
         </div>
         <!-- end features  -->
 
@@ -369,8 +384,8 @@
             <h1 data-i18n="cr1">Creatori</h1>
             <h2 data-i18n="cr2">Enciclopedia “România 1918, Oameni. Fapte. Imagini.” este o producție SIVECO Romania, în parteneriat cu instituții
                 prestigioase de cultură și personalități ale societății românești. </h2>
+           
             <div>
-                <div>
                     <h3 data-i18n="cs1">Consiliul științific</h3>
                     <br/>
                     <span data-i18n="cs2">General Prof. Univ. Dr. Mihail E. Ionescu</span>
@@ -397,8 +412,8 @@
                     <span data-i18n="csp3">Prof. Dr. Gabriel Leahu</span>
                     <br/>
                     <span data-i18n="csp4">Prof. Simona Tănase</span>
-                </div>
             </div>
+
             <div>
                 <h3 data-i18n="cop1">Coordonator proiect:</h3> Radu Jugureanu
                 <br/>
@@ -503,8 +518,9 @@
                 </b>Prof. Emil Dragomirescu
                 <br/>
             </div>
+
             <div class="infoPicture">
-                <button id="open-button" class="infoButton">
+                <button id="open-button" class="infoButton"  data-i18n="info0">
                     Povestea imaginii din fundal
                 </button>
             </div>
@@ -585,7 +601,7 @@
             <figure>
                 <a href="http://mnir.ro/" alt="Muzeul Național de Istorie a României" target="_blank">
                     <img src="assets/images/istorie.png" title="Muzeul Național de Istorie a României" />
-                    <figcaption>Național de Istorie a României</figcaption>
+                    <figcaption>Muzeul Național de Istorie a României</figcaption>
                 </a>
             </figure>
             <figure>
@@ -627,16 +643,21 @@
     <!-- modal -->
     <div class="modal-overlay closed" id="modal-overlay"></div>
     <div class="modal closed" id="modal">
-        <button class="close-button" id="close-button">Închide</button>
+        <button class="close-button" id="close-button" data-i18n="close">Închide</button>
         <div class="modal-guts">
-            <h1>360.728.</h1>
-            <p class="pictureInfo">360.728. Acesta este numărul orfanilor de război în Primul Război Mondial, din care o treime proveneau din București.
-                <br/>Pentru ei, au fost înființate orfelinate pe tot cuprinsul țării, din donații particulare și ajutoare oferite
-                de armată, de familia regală sau de membri ai înaltei societăți.
-                <br/>Organizarea orfelinatelor se făcea adesea pe principii militare.
-                <br/>Copiii peste 12 ani lucrau în ateliere pentru a învăţa o meserie, cei între 8 şi 12 ani erau trimişi la şcolile
-                din zonă, iar cei sub 7 ani rămâneau permanent în orfelinat unde se jucau, învăţau să citească şi să scrie
-                sub supravegherea unor educatoare.
+            <h1 data-i18n="info1">360.728.</h1>
+            <p class="pictureInfo">
+                <span  data-i18n="info2"> Acesta este numărul orfanilor de război în Primul Război Mondial, din care o treime proveneau din București.</span>
+                <br/>
+                <span data-i18n="info3">Pentru ei, au fost înființate orfelinate pe tot cuprinsul țării, din donații particulare și ajutoare oferite
+                    de armată, de familia regală sau de membri ai înaltei societăți.</span>
+                <br/>
+                <span data-i18n="info4">Organizarea orfelinatelor se făcea adesea pe principii militare.</span>               
+                <br/>
+                <span data-i18n="info5">Copiii peste 12 ani lucrau în ateliere pentru a învăţa o meserie, cei între 8 şi 12 ani erau trimişi la şcolile
+                    din zonă, iar cei sub 7 ani rămâneau permanent în orfelinat unde se jucau, învăţau să citească şi să scrie
+                    sub supravegherea unor educatoare.
+                </span>
             </p>
         </div>
     </div>

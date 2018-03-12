@@ -137,10 +137,41 @@ function hideVideo(e) {
 }
 
 
+/**
+ * Coming soon
+ */
+
+// COUNTDOWN
+function makeTimer(){
+    
+	var endTime = new Date("26 March 2018 20:00:00 GMT+02:00");			
+	endTime = (Date.parse(endTime) / 1000);
+
+	var now = new Date();
+	now = (Date.parse(now) / 1000);
+
+	var timeLeft = endTime - now;
+
+	var days = Math.floor(timeLeft / 86400); 
+	var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+	var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+	var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+	$("#countdowndays").html(days + $.i18n( 'zile' ));
+	$("#countdownhours").html(hours + $.i18n( 'ore' ));
+	$("#countdownmins").html(minutes + $.i18n( 'minute' ));
+}
+// update every second
+setInterval(function() { makeTimer(); }, 1000);
+
+
+
+
 $.i18n().load({
     "ro": {
+
         "menu": "Meniu",
-        "title": "România 1918 - Oameni, Momente și Imagini",
+        "title": "România 1918 - Oameni, momente și imagini",
         "m1": "Acasă",
         "m2": "Testimoniale",
         "m3": "Cuprins",
@@ -150,21 +181,26 @@ $.i18n().load({
         "m7": "Parteneri",
 
         "h1": "România 1918",
-        "h2": "Oameni, Momente și Imagini",
-        "h3": "Enciclopedia “România 1918 – Oameni, Momente și Imagini” este o producție ",
+        "h2": "Oameni, momente și imagini",
+        "h3": "Enciclopedia “România 1918 – Oameni, momente și imagini” este o producție ",
         "h4": "SIVECO România, ",
         "h5": " în parteneriat cu instituții prestigioase de cultură și personalități ale societății românești. ",
         "h6": "Anul 1918 a fost, pentru națiunea română, un miracol împlinit.",
-        "h7": "Enciclopedia este oferită românilor de pretutindeni, ca un memento al celui mai important proiect național. ",
+        "h7": "Enciclopedia este oferită românilor de pretutindeni, ca un memento al celui mai important proiect național: victoria României în război și întregirea neamului",
+       
+        "soon":"Vom lansa Enciclopedia în curând...",
+        "download":"Descarcă aplicația",
+        "windows":"windows",
+        "android":"android",        
 
-        "t1": "„ Enciclopedia 'România 1918 – Oameni, Momente și Imagini' este dedicată miilor de românce și de români, femei, bărbați și copii, profesori și preoți, avocați și inventatori, țărănci și prințese, soldați și generali,  oameni simpli sau erudiți inventatori care s-au sacrificat pentru ca România să fie cea întreagă de astăzi. ",
-        "t2": "Enciclopedia este creată prin voluntariat și generozitate și este oferită școlii românești și societății românești, pentru o continuă reamintire a celor care au creat România de astăzi. ”",
+        "t1": "„Enciclopedia 'România 1918 – Oameni, momente și imagini' este dedicată miilor de românce și de români, femei, bărbați și copii, profesori și preoți, avocați și inventatori, țărănci și prințese, soldați și generali,  oameni simpli sau erudiți inventatori care s-au sacrificat pentru ca România să fie cea întreagă de astăzi. ",
+        "t2": "Enciclopedia este creată prin voluntariat și generozitate și este oferită școlii românești și societății românești, pentru o continuă reamintire a celor care au creat România de astăzi.”",
         "t3": "Prof. Radu Jugureanu",
         "t4": ", coordonatorul proiectului",
-        "t5": "„ Sunt profesor de istorie și întotdeauna le povestesc elevilor mei, atunci când ajungem la acest capitol, că anul 1918 este un an miraculos. Început în cele mai grele condiții, cu mai mult de jumătate de țară sub ocupația inamicului, anul 1918 s-a încheiat cu o Românie învingătoare, întregită prin voința românilor din teritoriile aflate până atunci sub stăpânire străină. O Românie în care totul trebuia reconstruit, dar care își vedea pe deplin îndeplinite năzuințele naționale. Am încercat să redau această credință în paginile enciclopediei.”",
+        "t5": "„Sunt profesor de istorie și întotdeauna le povestesc elevilor mei, atunci când ajungem la acest capitol, că anul 1918 este un an miraculos. Început în cele mai grele condiții, cu mai mult de jumătate de țară sub ocupația inamicului, anul 1918 s-a încheiat cu o Românie învingătoare, întregită prin voința românilor din teritoriile aflate până atunci sub stăpânire străină. O Românie în care totul trebuia reconstruit, dar care își vedea pe deplin îndeplinite năzuințele naționale. Am încercat să redau această credință în paginile Enciclopediei.”",
         "t7": "Magda Stan",
-        "t8": ", profesor de istorie, creatoarea scenariului prezentei enciclopedii",
-        "t9": "„ Veți fi pentru o clipă contemporani cu acele modele reale, autentice, care prin generozitate, toleranță, sacrificiu și simplitate ne-au oferit nouă, astăzi, o Românie frumoasă.",
+        "t8": ", profesor de istorie, creatoarea scenariului prezentei Enciclopedii",
+        "t9": "„Veți fi pentru o clipă contemporani cu acele modele reale, autentice, care prin generozitate, toleranță, sacrificiu și simplitate ne-au oferit nouă, astăzi, o Românie frumoasă.",
         "t10": "SIVECO Romania",
         "t11": "Veți afla în această Enciclopedie poveștile unor oameni ce nu apar în manualele din care învățăm la școală, dar sunt mult mai prețioși prin caracterul lor decât mulți dintre cei ce au notorietate.” ",
 
@@ -219,9 +255,11 @@ $.i18n().load({
         "f12": "Fontul poate fi mărit sau micșorat în funcție de nevoie",
         "f13": "Adaptabilitate",
         "f14": "Enciclopedia este adaptată oricărui tip de echipament și poate fi vizualizată pe PC, laptop, tabletă sau smartphone",
+        "f15": "Joc",
+        "f16": "The encyclopedia is tailored to any type of device and can be viewed on your PC, laptop, tablet, or smartphone",        
 
         "cr1": "Creatori",
-        "cr2": "Enciclopedia “România 1918, Oameni, Momente și Imagini” este o producție SIVECO Romania, în parteneriat cu instituții prestigioase de cultură și personalități ale societății românești.",
+        "cr2": "Enciclopedia “România 1918, Oameni, momente și imagini” este o producție SIVECO Romania, în parteneriat cu instituții prestigioase de cultură și personalități ale societății românești.",
         "cs1": "Consiliul științific",
         "cs2": "General Prof. Univ. Dr. Mihail E. Ionescu",
         "cs3": "Prof. Univ. Dr. Corneliu Mihail Lungu",
@@ -288,10 +326,23 @@ $.i18n().load({
 
         "p1": " Parteneri",
 
+        "close":"Închide",
+        "info0":"Povestea imaginii din fundal",        
+        "info1":"360.728.",
+        "info2":" Acesta este numărul orfanilor de război în Primul Război Mondial, din care o treime proveneau din București.",
+        "info3":"Pentru ei, au fost înființate orfelinate pe tot cuprinsul țării, din donații particulare și ajutoare oferite de armată, de familia regală sau de membri ai înaltei societăți.",
+        "info4":"Organizarea orfelinatelor se făcea adesea pe principii militare.",
+        "info5":"Copiii peste 12 ani lucrau în ateliere pentru a învăţa o meserie, cei între 8 şi 12 ani erau trimişi la şcolile din zonă, iar cei sub 7 ani rămâneau permanent în orfelinat unde se jucau, învăţau să citească şi să scrie sub supravegherea unor educatoare.",        
+
+        "zile":" zile",
+        "ore":" ore",
+        "minute":" minute",
+
     },
     "en": {
+
         "menu": "Menu",
-        "title": "Romania 1918 - People, Moments and Images",        
+        "title": "Romania 1918 - People, moments and images",        
         "m1": "Home",
         "m2": "Testimonials",
         "m3": "Chapters",
@@ -300,22 +351,27 @@ $.i18n().load({
         "m6": "Contributors",
         "m7": "Partners",
 
+        "soon":"Coming soon...",
+        "download":"Download",
+        "windows":"windows",
+        "android":"android",
+
         "h1": "Romania 1918",
-        "h2": "People, Moments and Images",
-        "h3": "Romania 1918. People, Moments and Images” is a digital product created by ",
+        "h2": "People, moments and images",
+        "h3": "Romania 1918. People, moments and images” is a digital product created by ",
         "h4": "SIVECO Romania",
         "h5": ", in partnership with prestigious cultural institutions and personalities of Romanian society.",
         "h6": "In Romanian history, 1918 is the year of a miracle becoming reality.  ",
         "h7": "The Encyclopedia is offered to Romanians everywhere, as a reminder of the most important national project.",
 
-        "t1": "„ The 'Romania 1918 – People, Moments and Images' encyclopedia made by SIVECO Romania is dedicated to the thousands of Romanians, women, men and children, teachers and priests, lawyers and inventors, peasants and princesses, soldiers and generals, simple people or erudite inventors who sacrificed themselves for Romania to be the united nation of today.",
+        "t1": "„The 'Romania 1918 – People, moments and images' encyclopedia made by SIVECO Romania is dedicated to the thousands of Romanians, women, men and children, teachers and priests, lawyers and inventors, peasants and princesses, soldiers and generals, simple people or erudite inventors who sacrificed themselves for Romania to be the united nation of today.",
         "t2": "Built by volunteering and generosity, the encyclopedia is offered to Romanian school and society, as a continuous memento of those who created contemporary Romania.”",
         "t3": "Prof. Radu Jugureanu",
         "t4": ", project coordinator",
-        "t5": "„ I am a history teacher and I always tell my students, when we come to this chapter, that 1918 is a miraculous year. Beginning in the toughest conditions, with more than half a country under the enemys occupation, 1918 has ended with a victorious Romania, completed by the will of the Romanians in the territories that were previously under foreign rule. A Romania in which everything had to be rebuilt, but who fully understood their national aspirations. I tried to bring this faith into the pages of the encyclopedia.”",
+        "t5": "„I am a history teacher and I always tell my students, when we come to this chapter, that 1918 is a miraculous year. Beginning in the toughest conditions, with more than half a country under the enemys occupation, 1918 has ended with a victorious Romania, completed by the will of the Romanians in the territories that were previously under foreign rule. A Romania in which everything had to be rebuilt, but who fully understood their national aspirations. I tried to bring this faith into the pages of the encyclopedia.”",
         "t7": "Magda Stan",
         "t8": ", author of the encyclopedia",
-        "t9": "„ For a moment, you will be contemporaries to those real, authentic models that, through generosity, tolerance, sacrifice and simplicity, have offered us, today, a beautiful Romania.",
+        "t9": "„For a moment, you will be contemporaries to those real, authentic models that, through generosity, tolerance, sacrifice and simplicity, have offered us, today, a beautiful Romania.",
         // "t10": "SIVECO Romania",
         "t11": "You will find in this encyclopedia the stories of people who do not appear in the schoolbooks we learn, but who are more precious in their character than many of those who have notoriety.”",
 
@@ -370,9 +426,11 @@ $.i18n().load({
         "f12": "The font can be enlarged or reduced as needed",
         "f13": "Accessibility",
         "f14": "The encyclopedia is tailored to any type of device and can be viewed on your PC, laptop, tablet, or smartphone",
+        "f15": "Game",
+        "f16": "The encyclopedia is tailored to any type of device and can be viewed on your PC, laptop, tablet, or smartphone",
 
         "cr1": "Contributors",
-        "cr2": "The digital encyclopedia “Romania 1918. People, Moments and Images” is a SIVECO Romania production, developed in partnership with prestigious cultural institutions and personalities of Romanian society.",
+        "cr2": "The digital encyclopedia “Romania 1918. People, moments and images” is a SIVECO Romania production, developed in partnership with prestigious cultural institutions and personalities of Romanian society.",
         "cs1": "The Scientific Council",
         "cs2": "Gen. Prof. Mihail E. Ionescu, PhD.",
         "cs3": "Prof. Corneliu Mihail Lungu, PhD.",
@@ -439,6 +497,18 @@ $.i18n().load({
 
         "p1": " Partners",
 
+        "close":"close",
+        "info0":"Povestea imaginii din fundal",
+        "info1":"360.728.",
+        "info2":" Acesta este numărul orfanilor de război în Primul Război Mondial, din care o treime proveneau din București.",
+        "info3":"Pentru ei, au fost înființate orfelinate pe tot cuprinsul țării, din donații particulare și ajutoare oferite de armată, de familia regală sau de membri ai înaltei societăți.",
+        "info4":"Organizarea orfelinatelor se făcea adesea pe principii militare.",
+        "info5":"Copiii peste 12 ani lucrau în ateliere pentru a învăţa o meserie, cei între 8 şi 12 ani erau trimişi la şcolile din zonă, iar cei sub 7 ani rămâneau permanent în orfelinat unde se jucau, învăţau să citească şi să scrie sub supravegherea unor educatoare.",
+
+
+        "zile":" days",
+        "ore":" hours",
+        "minute":" minutes",
     },
 
     "fr": {

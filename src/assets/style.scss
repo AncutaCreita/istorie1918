@@ -308,7 +308,7 @@ section img {
   video {
     height: auto !important;
     min-height: 350px;
-    max-width: 300px;
+    max-width: 400px;
   }
 }
 
@@ -365,8 +365,8 @@ section img {
   -ms-grid-column-span: 3;
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-  -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
   justify-content: center;
   background: var(--white);
   color: var(--black);
@@ -515,7 +515,7 @@ blockquote::after {
 }
 
 #videosList {
-  max-width: 600px;
+  // max-width: 600px;
   overflow: hidden;
   margin-right: 5px;
 }
@@ -670,6 +670,14 @@ li.up {
       height: auto !important;
       // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
     }
+  }
+
+  #videoList{
+    max-width: auto;
+  }
+  .video{
+    justify-content: center;
+    display: grid;
   }
 }
 
@@ -841,6 +849,9 @@ li.up {
 
 .acces_icon {
   background: url(images/GUI_v2.png) 765px -560px;
+}
+.game_icon {
+  background: url(images/GUI_v2.png) 605px -560px;
 }
 
 //only apply to IE
@@ -1125,4 +1136,33 @@ li.up {
   opacity: .75;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
   /* color: black; */
+}
+@media only screen and (max-width: 480px){
+
+  .collaborate {
+    grid-template-columns: 1fr;
+  }
+  .video{
+    justify-content: center;
+    display: grid;
+  }
+
+}
+
+/* Countdown */
+
+#countdown{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  border-top: 1px solid   var(--light-gold);
+  border-bottom: 1px solid  var(--light-gold);
+  font-size: 2rem;
+
+  div:nth-child(n+1){
+    color: var(--gold);
+  }
 }
