@@ -144,7 +144,7 @@ function hideVideo(e) {
 // COUNTDOWN
 function makeTimer(){
     
-	var endTime = new Date("26 March 2018 20:00:00 GMT+02:00");			
+	var endTime = new Date("3 April 2018 20:00:00 GMT+02:00");			
 	endTime = (Date.parse(endTime) / 1000);
 
 	var now = new Date();
@@ -183,10 +183,10 @@ $.i18n().load({
         "h1": "România 1918",
         "h2": "Oameni, momente și imagini",
         "h3": "Enciclopedia “România 1918 – Oameni, momente și imagini” este o producție ",
-        "h4": "SIVECO România, ",
+        "h4": "SIVECO România,",
         "h5": " în parteneriat cu instituții prestigioase de cultură și personalități ale societății românești. ",
         "h6": "Anul 1918 a fost, pentru națiunea română, un miracol împlinit.",
-        "h7": "Enciclopedia este oferită românilor de pretutindeni, ca un memento al celui mai important proiect național: victoria României în război și întregirea neamului",
+        "h7": "Enciclopedia este oferită românilor de pretutindeni, ca un memento al celui mai important proiect național: victoria României în război și întregirea neamului.",
        
         "soon":"Vom lansa Enciclopedia în curând...",
         "download":"Descarcă aplicația",
@@ -203,6 +203,11 @@ $.i18n().load({
         "t9": "„Veți fi pentru o clipă contemporani cu acele modele reale, autentice, care prin generozitate, toleranță, sacrificiu și simplitate ne-au oferit nouă, astăzi, o Românie frumoasă.",
         "t10": "SIVECO Romania",
         "t11": "Veți afla în această Enciclopedie poveștile unor oameni ce nu apar în manualele din care învățăm la școală, dar sunt mult mai prețioși prin caracterul lor decât mulți dintre cei ce au notorietate.” ",
+        "t12": "„Răsfoind filele acestui document am conștientizat mai mult decât oricând faptul că istoria neamului meu se racordează la un șir de fapte importante, că ”parohia” mea spirituală mă legitimează și mă ancorează temeinic într-un spațiu și un timp remarcabil - într-o țară cu o istorie puternică, într-un popor real și într-o familie vrednică de neuitare.",
+        "t13": "Cuvine-se cu adevărat să fim locuiți în adâncul firii noastre de emoție, iar din cronica acelor momente de răscruce să facem diferența specifică dintre povești individuale și experiența unei deveniri - să trecem de la contemplarea pasivă a unor legende, la desăvârșirea monumentului recunoștinței noastre.”",
+        "t14": "Dr. Simona Tănăsescu,",
+        "t15":"Consiliul Științific", 
+
 
         "c11": "I. Primul Război Mondial ",
         "c12": "Marele Război",
@@ -255,8 +260,8 @@ $.i18n().load({
         "f12": "Fontul poate fi mărit sau micșorat în funcție de nevoie",
         "f13": "Adaptabilitate",
         "f14": "Enciclopedia este adaptată oricărui tip de echipament și poate fi vizualizată pe PC, laptop, tabletă sau smartphone",
-        "f15": "Joc",
-        "f16": "The encyclopedia is tailored to any type of device and can be viewed on your PC, laptop, tablet, or smartphone",        
+        "f15": "Joc 3D",
+        "f16": "Joc 3D care simulează bătălia de la Villers-Bretonneux, din 1918, cu armament original.",        
 
         "cr1": "Creatori",
         "cr2": "Enciclopedia “România 1918, Oameni, momente și imagini” este o producție SIVECO Romania, în parteneriat cu instituții prestigioase de cultură și personalități ale societății românești.",
@@ -268,7 +273,7 @@ $.i18n().load({
         "cs6": "Lt. Gen. (ret.) Dr. Dumitru Dorin Prunariu",
         "cs7": "Prof. Univ. Dr. Gheorghe Sbârnă",
         "cs8": "Prof. Univ. Dr. Ioan Scurtu",
-        "cs9": "Simona Tănăsescu",
+        "cs9": "Dr. Simona Tănăsescu",
         "csp1": "Consiliul Științific Pedagogic",
         "csp2": "Dr. Doru Dumitrescu",
         "csp3": "Prof. Dr. Gabriel Leahu",
@@ -276,7 +281,8 @@ $.i18n().load({
 
         "cop1": "Coordonator proiect:",
         "cop2": "Autor și scenarist:",
-        "cop3": "Profesor Magda Stan",
+        "cop3": "Prof. Magda Stan",
+        "cop4" :"Prof. Radu Jugureanu",
 
         "cont1": "Contributori, autori articole ",
         "cont2": "Prof. Univ. Dr. Alin Ciupală –",
@@ -312,7 +318,7 @@ $.i18n().load({
         "conl8": "Frații Alin Dimăncescu",
         "conl9": "Prof. Adrian Mihai Olaru",
         "conl10": "Prof. Corneliu Stoica",
-        "conl11": "Simona Tănăsescu",
+        "conl11": "Dr. Simona Tănăsescu",
 
         "cd1": "Creație digitală",
         "cd2": "Coordonator:",
@@ -359,21 +365,26 @@ $.i18n().load({
         "h1": "Romania 1918",
         "h2": "People, moments and images",
         "h3": "Romania 1918. People, moments and images” is a digital product created by ",
-        "h4": "SIVECO Romania",
-        "h5": ", in partnership with prestigious cultural institutions and personalities of Romanian society.",
+        "h4": "SIVECO Romania, ",
+        "h5": " in partnership with prestigious cultural institutions and personalities of Romanian society.",
         "h6": "In Romanian history, 1918 is the year of a miracle becoming reality.  ",
-        "h7": "The Encyclopedia is offered to Romanians everywhere, as a reminder of the most important national project.",
+        "h7": "The Encyclopedia is offered to Romanians everywhere, as a reminder of the most important national project: the victory of Romania in World War I and the national union from 1918.",
 
-        "t1": "„The 'Romania 1918 – People, moments and images' encyclopedia made by SIVECO Romania is dedicated to the thousands of Romanians, women, men and children, teachers and priests, lawyers and inventors, peasants and princesses, soldiers and generals, simple people or erudite inventors who sacrificed themselves for Romania to be the united nation of today.",
-        "t2": "Built by volunteering and generosity, the encyclopedia is offered to Romanian school and society, as a continuous memento of those who created contemporary Romania.”",
+        "t1": "„The 'Romania 1918 – People, moments and images' Encyclopedia is dedicated to the thousands of Romanians, women, men and children, teachers and priests, lawyers and inventors, peasants and princesses, soldiers and generals, simple people or erudite inventors who sacrificed themselves for Romania to be the united nation of today.",
+        "t2": "Built by volunteering and generosity, the Encyclopedia is offered to Romanian school and society, as a constant reminder of those who created contemporary Romania.”",
         "t3": "Prof. Radu Jugureanu",
         "t4": ", project coordinator",
-        "t5": "„I am a history teacher and I always tell my students, when we come to this chapter, that 1918 is a miraculous year. Beginning in the toughest conditions, with more than half a country under the enemys occupation, 1918 has ended with a victorious Romania, completed by the will of the Romanians in the territories that were previously under foreign rule. A Romania in which everything had to be rebuilt, but who fully understood their national aspirations. I tried to bring this faith into the pages of the encyclopedia.”",
+        "t5": "„I am a history teacher and I always tell my students, when we come to this chapter, that 1918 is a miraculous year. While it began in the toughest conditions, with more than half a country under the enemys occupation, 1918 has ended with a victorious Romania, completed by the will of the Romanians in the territories that were previously under foreign rule. A Romania in which everything had to be rebuilt, but who fully understood their national aspirations. I tried to bring this faith into the pages of the Encyclopedia.”",
         "t7": "Magda Stan",
-        "t8": ", author of the encyclopedia",
+        "t8": ", author of the Encyclopedia",
         "t9": "„For a moment, you will be contemporaries to those real, authentic models that, through generosity, tolerance, sacrifice and simplicity, have offered us, today, a beautiful Romania.",
         // "t10": "SIVECO Romania",
-        "t11": "You will find in this encyclopedia the stories of people who do not appear in the schoolbooks we learn, but who are more precious in their character than many of those who have notoriety.”",
+        "t11": "You will find in this Encyclopedia the stories of people who do not appear in the schoolbooks we learn, but who are more precious in their character than many of those who have notoriety.”",
+        "t12": "„Looking through these pages, I became more aware than ever that the history of my people is connected to a series of important facts, that my 'spiritual parish' legitimizes me and anchors me in a remarkable space and time - in a country with a strong history, with real people, and a family worthy not to be forgotten.",
+        "t13": "It is truly right to live in the depths of our emotional nature, and from the chronicle of those moments of crossroads to make the distinction between individual stories and the experience of becoming - let's pass from the passive contemplation of legends to the completion of our monument of gratitude.”",
+        "t14": "Simona Tănăsescu, Phd -",
+        "t15":"Member of the Scientific Council", 
+        
 
         "c11": "I. First World War ",
         "c12": "The Great War",
@@ -414,7 +425,7 @@ $.i18n().load({
 
         "f1": "Features",
         "f2": "Language versions",
-        "f3": "The encyclopedia is available in three languages: Romanian, English, French",
+        "f3": "The Encyclopedia is available in three languages: Romanian, English, French",
         "f4": "Images",
         "f5": "Over 300 rare photographs, from private collections or museums. Of these, 12 were animated",
         "f6": "Video",
@@ -425,12 +436,12 @@ $.i18n().load({
         "f11": "Visibility",
         "f12": "The font can be enlarged or reduced as needed",
         "f13": "Accessibility",
-        "f14": "The encyclopedia is tailored to any type of device and can be viewed on your PC, laptop, tablet, or smartphone",
-        "f15": "Game",
-        "f16": "The encyclopedia is tailored to any type of device and can be viewed on your PC, laptop, tablet, or smartphone",
+        "f14": "The Encyclopedia is tailored to any type of device and can be viewed on your PC, laptop, tablet, or smartphone",
+        "f15": "3D Game",
+        "f16": "3D game simulating the Battle of Villers-Bretonneux in 1918 with original weapons.",
 
         "cr1": "Contributors",
-        "cr2": "The digital encyclopedia “Romania 1918. People, moments and images” is a SIVECO Romania production, developed in partnership with prestigious cultural institutions and personalities of Romanian society.",
+        "cr2": "The digital Encyclopedia “Romania 1918. People, moments and images” is a SIVECO Romania production, developed in partnership with prestigious cultural institutions and personalities of Romanian society.",
         "cs1": "The Scientific Council",
         "cs2": "Gen. Prof. Mihail E. Ionescu, PhD.",
         "cs3": "Prof. Corneliu Mihail Lungu, PhD.",
@@ -439,7 +450,7 @@ $.i18n().load({
         "cs6": "Lt-Gen.(ret.). Dumitru Dorin Prunariu, PhD.",
         "cs7": "Prof. Gheorghe Sbârnă, PhD.",
         "cs8": "Prof. Ioan Scurtu, PhD.",
-        "cs9": "Simona Tănăsescu",
+        "cs9": "Dr. Simona Tănăsescu",
         "csp1": "The Scientific Pedagogical Council",
         "csp2": "Doru Dumitrescu, PhD.",
         "csp3": "Prof. Gabriel Leahu, PhD.",
@@ -448,6 +459,7 @@ $.i18n().load({
         "cop1": "Project Coordinator:",
         "cop2": "Instructional Designer and Author:",
         "cop3": "Prof. Magda Stan",
+        "cop4" :"Prof. Radu Jugureanu",        
 
         "cont1": "Contributing authors ",
         "cont2": "Prof. Alin Ciupală, PhD –",
@@ -483,7 +495,7 @@ $.i18n().load({
         "conl8": "Frații Alin Dimăncescu",
         "conl9": " Prof. Adrian Mihai Olaru",
         "conl10": "Prof. Corneliu Stoica",
-        "conl11": "Prof. Simona Tănăsescu",
+        "conl11": "Dr. Simona Tănăsescu",
 
         "cd1": "Digital Creation:",
         "cd2": "Coordinator:",
@@ -498,13 +510,12 @@ $.i18n().load({
         "p1": " Partners",
 
         "close":"close",
-        "info0":"Povestea imaginii din fundal",
+        "info0":"The story of the background image",
         "info1":"360.728.",
-        "info2":" Acesta este numărul orfanilor de război în Primul Război Mondial, din care o treime proveneau din București.",
-        "info3":"Pentru ei, au fost înființate orfelinate pe tot cuprinsul țării, din donații particulare și ajutoare oferite de armată, de familia regală sau de membri ai înaltei societăți.",
-        "info4":"Organizarea orfelinatelor se făcea adesea pe principii militare.",
-        "info5":"Copiii peste 12 ani lucrau în ateliere pentru a învăţa o meserie, cei între 8 şi 12 ani erau trimişi la şcolile din zonă, iar cei sub 7 ani rămâneau permanent în orfelinat unde se jucau, învăţau să citească şi să scrie sub supravegherea unor educatoare.",
-
+        "info2":"This is the number of orphans in World War I, one third of which came from Bucharest.",
+        "info3":"For them, orphanages were established throughout the country, from private donations and aids provided by the army, the royal family or members of the high society.",
+        "info4":" The organization of orphanages was often based on military principles.",
+        "info5":" Children over 12 years of age were working in a workshop to learn a job; the 8 to 12 year olds were sent to local schools, and those under 7 were kept in the orphanage where they were playing, learning to read and write under the supervision of some educators.",
 
         "zile":" days",
         "ore":" hours",
