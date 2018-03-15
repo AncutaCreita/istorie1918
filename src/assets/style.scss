@@ -936,15 +936,15 @@ li.up {
 
   .section__bg,
   .section__sm {
+    display: flex;
+
     .description {
-      grid-column-start: 1;
-      grid-row: 1;
+      width: 60%;
     }
 
     img,
     #videosList {
-      grid-column-start: 2;
-      grid-row: 1;
+      width: 40%;
     }
 
     .video {
