@@ -171,7 +171,7 @@ $.i18n().load({
     "ro": {
 
         "menu": "Meniu",
-        "title": "România 1918 - Oameni, momente și imagini",
+        "title": "România 1918. Oameni, momente și imagini",
         "m1": "Acasă",
         "m2": "Testimoniale",
         "m3": "Cuprins",
@@ -182,7 +182,7 @@ $.i18n().load({
 
         "h1": "România 1918",
         "h2": "Oameni, momente și imagini",
-        "h3": "Enciclopedia “România 1918 – Oameni, momente și imagini” este o producție ",
+        "h3": "Enciclopedia “România 1918. Oameni, momente și imagini” este o producție ",
         "h4": "SIVECO România,",
         "h5": " în parteneriat cu instituții prestigioase de cultură și personalități ale societății românești. ",
         "h6": "Anul 1918 a fost, pentru națiunea română, un miracol împlinit.",
@@ -193,7 +193,7 @@ $.i18n().load({
         "windows":"windows",
         "android":"android",        
 
-        "t1": "„Enciclopedia 'România 1918 – Oameni, momente și imagini' este dedicată miilor de românce și de români, femei, bărbați și copii, profesori și preoți, avocați și inventatori, țărănci și prințese, soldați și generali,  oameni simpli sau erudiți inventatori care s-au sacrificat pentru ca România să fie cea întreagă de astăzi. ",
+        "t1": "„Enciclopedia 'România 1918. Oameni, momente și imagini' este dedicată miilor de românce și de români, femei, bărbați și copii, profesori și preoți, avocați și inventatori, țărănci și prințese, soldați și generali,  oameni simpli sau erudiți inventatori care s-au sacrificat pentru ca România să fie cea întreagă de astăzi. ",
         "t2": "Enciclopedia este creată prin voluntariat și generozitate și este oferită școlii românești și societății românești, pentru o continuă reamintire a celor care au creat România de astăzi.”",
         "t3": "Prof. Radu Jugureanu",
         "t4": ", coordonatorul proiectului",
@@ -264,7 +264,7 @@ $.i18n().load({
         "f16": "Joc 3D care simulează bătălia de la Villers-Bretonneux, din 1918, cu armament original.",        
 
         "cr1": "Creatori",
-        "cr2": "Enciclopedia “România 1918, Oameni, momente și imagini” este o producție SIVECO Romania, în parteneriat cu instituții prestigioase de cultură și personalități ale societății românești.",
+        "cr2": "Enciclopedia “România 1918. Oameni, momente și imagini” este o producție SIVECO Romania, în parteneriat cu instituții prestigioase de cultură și personalități ale societății românești.",
         "cs1": "Consiliul științific",
         "cs2": "General Prof. Univ. Dr. Mihail E. Ionescu",
         "cs3": "Prof. Univ. Dr. Corneliu Mihail Lungu",
@@ -334,7 +334,7 @@ $.i18n().load({
 
         "close":"Închide",
         "info0":"Povestea imaginii din fundal",        
-        "info1":"360.728.",
+        "info1":"360.728",
         "info2":" Acesta este numărul orfanilor de război în Primul Război Mondial, din care o treime proveneau din București.",
         "info3":"Pentru ei, au fost înființate orfelinate pe tot cuprinsul țării, din donații particulare și ajutoare oferite de armată, de familia regală sau de membri ai înaltei societăți.",
         "info4":"Organizarea orfelinatelor se făcea adesea pe principii militare.",
@@ -348,7 +348,7 @@ $.i18n().load({
     "en": {
 
         "menu": "Menu",
-        "title": "Romania 1918 - People, moments and images",        
+        "title": "Romania 1918. People, moments and images",        
         "m1": "Home",
         "m2": "Testimonials",
         "m3": "Chapters",
@@ -370,7 +370,7 @@ $.i18n().load({
         "h6": "In Romanian history, 1918 is the year of a miracle becoming reality.  ",
         "h7": "The Encyclopedia is offered to Romanians everywhere, as a reminder of the most important national project: the victory of Romania in World War I and the national union from 1918.",
 
-        "t1": "„The 'Romania 1918 – People, moments and images' Encyclopedia is dedicated to the thousands of Romanians, women, men and children, teachers and priests, lawyers and inventors, peasants and princesses, soldiers and generals, simple people or erudite inventors who sacrificed themselves for Romania to be the united nation of today.",
+        "t1": "„The 'Romania 1918. People, moments and images' Encyclopedia is dedicated to the thousands of Romanians, women, men and children, teachers and priests, lawyers and inventors, peasants and princesses, soldiers and generals, simple people or erudite inventors who sacrificed themselves for Romania to be the united nation of today.",
         "t2": "Built by volunteering and generosity, the Encyclopedia is offered to Romanian school and society, as a constant reminder of those who created contemporary Romania.”",
         "t3": "Prof. Radu Jugureanu",
         "t4": ", project coordinator",
@@ -511,7 +511,7 @@ $.i18n().load({
 
         "close":"close",
         "info0":"The story of the background image",
-        "info1":"360.728.",
+        "info1":"360.728",
         "info2":"This is the number of orphans in World War I, one third of which came from Bucharest.",
         "info3":"For them, orphanages were established throughout the country, from private donations and aids provided by the army, the royal family or members of the high society.",
         "info4":" The organization of orphanages was often based on military principles.",

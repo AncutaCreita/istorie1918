@@ -51,6 +51,11 @@ h6 {
   margin: 10px 0 5px 0;
 }
 
+p,
+span {
+  line-height: 1.5rem;
+}
+
 .wrapper {
   display: grid;
   justify-content: center;
@@ -408,6 +413,14 @@ figure a {
   padding: 40px;
 }
 
+.sticky-header .testimoniale {
+  top: 20px;
+}
+
+p #testimoniale {
+  margin: 0;
+}
+
 .testimoniale {
   // grid-column: 2 / 2;
   grid-column-start: 1;
@@ -418,7 +431,7 @@ figure a {
   font-style: italic;
   text-align: center;
   font-weight: 100;
-  margin-top: 40px;
+  // margin-top: 40px;
   margin-bottom: 40px;
   padding: 40px 65px;
   position: relative;
@@ -672,10 +685,11 @@ li.up {
     }
   }
 
-  #videoList{
+  #videoList {
     max-width: auto;
   }
-  .video{
+
+  .video {
     justify-content: center;
     display: grid;
   }
@@ -850,6 +864,7 @@ li.up {
 .acces_icon {
   background: url(images/GUI_v2.png) 765px -560px;
 }
+
 .game_icon {
   background: url(images/GUI_v2.png) 605px -560px;
 }
@@ -1087,6 +1102,12 @@ li.up {
   cursor: pointer;
 }
 
+.slick-dots .slick-active button,
+.slick-dots .slick-active button:hover,
+.slick-dots .slick-active button:focus {
+  background-color: #f58821;
+}
+
 .slick-dots li button {
   font-size: 0;
   line-height: 0;
@@ -1104,13 +1125,13 @@ li.up {
 .slick-dots li button:hover,
 .slick-dots li button:focus {
   outline: none;
+  background-color: #e8c29e;
 }
 
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before {
   opacity: 1;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-  /* background-color:  #e8c29e; */
 }
 
 .slick-dots li button:before {
@@ -1137,32 +1158,32 @@ li.up {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
   /* color: black; */
 }
-@media only screen and (max-width: 480px){
 
+@media only screen and (max-width: 480px) {
   .collaborate {
     grid-template-columns: 1fr;
   }
-  .video{
+
+  .video {
     justify-content: center;
     display: grid;
   }
-
 }
 
 /* Countdown */
 
-#countdown{
+#countdown {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100px;
   align-items: center;
   align-content: center;
   text-align: center;
-  border-top: 1px solid   var(--light-gold);
-  border-bottom: 1px solid  var(--light-gold);
+  border-top: 1px solid var(--light-gold);
+  border-bottom: 1px solid var(--light-gold);
   font-size: 2rem;
 
-  div:nth-child(n+1){
+  div:nth-child(n+1) {
     color: var(--gold);
   }
 }
