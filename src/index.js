@@ -450,7 +450,7 @@ $.i18n().load({
         "cs6": "Lt-Gen.(ret.). Dumitru Dorin Prunariu, PhD.",
         "cs7": "Prof. Gheorghe Sbârnă, PhD.",
         "cs8": "Prof. Ioan Scurtu, PhD.",
-        "cs9": "Dr. Simona Tănăsescu",
+        "cs9": "Simona Tănăsescu, Phd",
         "csp1": "The Scientific Pedagogical Council",
         "csp2": "Doru Dumitrescu, PhD.",
         "csp3": "Prof. Gabriel Leahu, PhD.",
@@ -495,7 +495,7 @@ $.i18n().load({
         "conl8": "Frații Alin Dimăncescu",
         "conl9": " Prof. Adrian Mihai Olaru",
         "conl10": "Prof. Corneliu Stoica",
-        "conl11": "Dr. Simona Tănăsescu",
+        "conl11": "Simona Tănăsescu, Phd",
 
         "cd1": "Digital Creation:",
         "cd2": "Coordinator:",
