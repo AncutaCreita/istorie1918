@@ -144,7 +144,7 @@ function hideVideo(e) {
 // COUNTDOWN
 function makeTimer(){
     
-	var endTime = new Date("3 April 2018 20:00:00 GMT+02:00");			
+	var endTime = new Date("April 3, 2018 10:00:00");			
 	endTime = (Date.parse(endTime) / 1000);
 
 	var now = new Date();
@@ -195,11 +195,11 @@ $.i18n().load({
 
         "t1": "„Enciclopedia 'România 1918. Oameni, momente și imagini' este dedicată miilor de românce și de români, femei, bărbați și copii, profesori și preoți, avocați și inventatori, țărănci și prințese, soldați și generali,  oameni simpli sau erudiți inventatori care s-au sacrificat pentru ca România să fie cea întreagă de astăzi. ",
         "t2": "Enciclopedia este creată prin voluntariat și generozitate și este oferită școlii românești și societății românești, pentru o continuă reamintire a celor care au creat România de astăzi.”",
-        "t3": "Prof. Radu Jugureanu",
-        "t4": ", coordonatorul proiectului",
+        "t3": "Prof. Radu Jugureanu,",
+        "t4": " coordonatorul proiectului",
         "t5": "„Sunt profesor de istorie și întotdeauna le povestesc elevilor mei, atunci când ajungem la acest capitol, că anul 1918 este un an miraculos. Început în cele mai grele condiții, cu mai mult de jumătate de țară sub ocupația inamicului, anul 1918 s-a încheiat cu o Românie învingătoare, întregită prin voința românilor din teritoriile aflate până atunci sub stăpânire străină. O Românie în care totul trebuia reconstruit, dar care își vedea pe deplin îndeplinite năzuințele naționale. Am încercat să redau această credință în paginile Enciclopediei.”",
-        "t7": "Magda Stan",
-        "t8": ", profesor de istorie, creatoarea scenariului prezentei Enciclopedii",
+        "t7": "Magda Stan,",
+        "t8": " profesor de istorie, creatoarea scenariului prezentei Enciclopedii",
         "t9": "„Veți fi pentru o clipă contemporani cu acele modele reale, autentice, care prin generozitate, toleranță, sacrificiu și simplitate ne-au oferit nouă, astăzi, o Românie frumoasă.",
         "t10": "SIVECO Romania",
         "t11": "Veți afla în această Enciclopedie poveștile unor oameni ce nu apar în manualele din care învățăm la școală, dar sunt mult mai prețioși prin caracterul lor decât mulți dintre cei ce au notorietate.” ",
@@ -357,7 +357,7 @@ $.i18n().load({
         "m6": "Contributors",
         "m7": "Partners",
 
-        "soon":"Coming soon...",
+        "soon":"We are launching the Encyclopedia in...",
         "download":"Download",
         "windows":"windows",
         "android":"android",
@@ -372,11 +372,11 @@ $.i18n().load({
 
         "t1": "„The 'Romania 1918. People, moments and images' Encyclopedia is dedicated to the thousands of Romanians, women, men and children, teachers and priests, lawyers and inventors, peasants and princesses, soldiers and generals, simple people or erudite inventors who sacrificed themselves for Romania to be the united nation of today.",
         "t2": "Built by volunteering and generosity, the Encyclopedia is offered to Romanian school and society, as a constant reminder of those who created contemporary Romania.”",
-        "t3": "Prof. Radu Jugureanu",
-        "t4": ", project coordinator",
+        "t3": "Prof. Radu Jugureanu,",
+        "t4": " project coordinator",
         "t5": "„I am a history teacher and I always tell my students, when we come to this chapter, that 1918 is a miraculous year. While it began in the toughest conditions, with more than half a country under the enemys occupation, 1918 has ended with a victorious Romania, completed by the will of the Romanians in the territories that were previously under foreign rule. A Romania in which everything had to be rebuilt, but who fully understood their national aspirations. I tried to bring this faith into the pages of the Encyclopedia.”",
-        "t7": "Magda Stan",
-        "t8": ", author of the Encyclopedia",
+        "t7": "Magda Stan,",
+        "t8": " author of the Encyclopedia",
         "t9": "„For a moment, you will be contemporaries to those real, authentic models that, through generosity, tolerance, sacrifice and simplicity, have offered us, today, a beautiful Romania.",
         // "t10": "SIVECO Romania",
         "t11": "You will find in this Encyclopedia the stories of people who do not appear in the schoolbooks we learn, but who are more precious in their character than many of those who have notoriety.”",

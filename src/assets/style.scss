@@ -193,7 +193,7 @@ span {
     left: 0;
     height: 20px;
     bottom: -20px;
-    background-image: linear-gradient(to left, #002b7f 0%, #002b7f 35%, #fcd116 35%, #fcd116 70%, #ce1126 70%, #ce1126 100%);
+    background-image: linear-gradient(to right, #002b7f 0%, #002b7f 35%, #fcd116 35%, #fcd116 70%, #ce1126 70%, #ce1126 100%);
   }
 }
 
@@ -900,6 +900,7 @@ li.up {
     .appStore {
       display: flex;
       justify-content: flex-start;
+      flex-direction: column;
     }
   }
 
