@@ -382,7 +382,7 @@ $.i18n().load({
         "t11": "You will find in this Encyclopedia the stories of people who do not appear in the schoolbooks we learn, but who are more precious in their character than many of those who have notoriety.”",
         "t12": "„Looking through these pages, I became more aware than ever that the history of my people is connected to a series of important facts, that my 'spiritual parish' legitimizes me and anchors me in a remarkable space and time - in a country with a strong history, with real people, and a family worthy not to be forgotten.",
         "t13": "It is truly right to live in the depths of our emotional nature, and from the chronicle of those moments of crossroads to make the distinction between individual stories and the experience of becoming - let's pass from the passive contemplation of legends to the completion of our monument of gratitude.”",
-        "t14": "Simona Tănăsescu, Phd -",
+        "t14": "Simona Tănăsescu, PhD. -",
         "t15":"Member of the Scientific Council", 
         
 
@@ -450,7 +450,7 @@ $.i18n().load({
         "cs6": "Lt-Gen.(ret.). Dumitru Dorin Prunariu, PhD.",
         "cs7": "Prof. Gheorghe Sbârnă, PhD.",
         "cs8": "Prof. Ioan Scurtu, PhD.",
-        "cs9": "Simona Tănăsescu, Phd",
+        "cs9": "Simona Tănăsescu, PhD",
         "csp1": "The Scientific Pedagogical Council",
         "csp2": "Doru Dumitrescu, PhD.",
         "csp3": "Prof. Gabriel Leahu, PhD.",
@@ -495,7 +495,7 @@ $.i18n().load({
         "conl8": "Frații Alin Dimăncescu",
         "conl9": " Prof. Adrian Mihai Olaru",
         "conl10": "Prof. Corneliu Stoica",
-        "conl11": "Simona Tănăsescu, Phd",
+        "conl11": "Simona Tănăsescu, PhD",
 
         "cd1": "Digital Creation:",
         "cd2": "Coordinator:",
