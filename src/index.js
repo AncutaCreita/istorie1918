@@ -186,9 +186,9 @@ $.i18n().load({
         "h4": "SIVECO România,",
         "h5": " în parteneriat cu instituții prestigioase de cultură și personalități ale societății românești. ",
         "h6": "Anul 1918 a fost, pentru națiunea română, un miracol împlinit.",
-        "h7": "Enciclopedia este oferită românilor de pretutindeni, ca un memento al celui mai important proiect național:întregirea neamului.",
+        "h7": "Enciclopedia este oferită românilor de pretutindeni, ca un memento al celui mai important proiect național: întregirea neamului.",
        
-        "soon":"Vom lansa Enciclopedia în curând...",
+        "soon":"Lansarea Enciclopediei digitale România 1918 va avea loc în Amfiteatrul Albastru al Camerei de Comerț și Industrie a României pe data de 3 Aprilie la ora 10:00.",
         "download":"Descarcă aplicația",
         "windows":"windows",
         "android":"android",        
@@ -357,7 +357,7 @@ $.i18n().load({
         "m6": "Contributors",
         "m7": "Partners",
 
-        "soon":"We are launching the Encyclopedia in...",
+        "soon":"The launch of the Digital Encyclopedia Romania 1918 will take place in the Blue Amphitheater of the Chamber of Commerce and Industry of Romania on April 3 at 10:00.",
         "download":"Download",
         "windows":"windows",
         "android":"android",
