@@ -248,7 +248,7 @@ $.i18n().load({
 
         "f1": "Funcționalități",
         "f2": "Versiuni de limbă",
-        "f3": "Enciclopedia este disponibilă în trei versiuni: română, engleză și franceză",
+        "f3": "Enciclopedia este disponibilă în trei versiuni de limbă: română, engleză și (în curând) franceză.",
         "f4": "Imagini",
         "f5": "Peste 300 de fotografii rare, din colecții particulare sau muzeale (din care 12 sunt animate)",
         "f6": "Video",
@@ -425,7 +425,7 @@ $.i18n().load({
 
         "f1": "Features",
         "f2": "Language versions",
-        "f3": "The Encyclopedia is available in three languages: Romanian, English, French",
+        "f3": "The Encyclopedia is available in three languages: Romanian, English and (very soon) French",
         "f4": "Images",
         "f5": "Over 300 rare photographs, from private collections or museums (12 were animated)",
         "f6": "Video",
