@@ -774,22 +774,9 @@ li.up {
   background-position: top center;
 
   p {
-    font-size: 5rem;
+    font-size: 0.7rem;
   }
 }
-
-// @media only screen and (max-width: 400px) {
-//   .modal {
-//     transform: translate(-50%, -20%);
-//     top: 21%;
-//     width: 90%;
-
-//     h1,
-//     p {
-//       font-size: 5rem;
-//     }
-//   }
-// }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .modal {
@@ -802,8 +789,9 @@ li.up {
     left: 5%;
     right: 10%;
 
-    p {
-      font-size: 5rem;
+    p,
+    .modal-guts .pictureInfo span {
+      font-size: 0.9rem;
     }
   }
 }
