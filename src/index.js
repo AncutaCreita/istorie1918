@@ -180,6 +180,7 @@ $.i18n().load({
         "m6": "Creatori",
         "m7": "Parteneri",
 
+        "hs": "Primul proiect al Fundației SIVECO România.",
         "h1": "România 1918",
         "h2": "Oameni, momente și imagini",
         "h3": "Enciclopedia “România 1918. Oameni, momente și imagini” este o producție ",
@@ -209,7 +210,7 @@ $.i18n().load({
         "t15":"Consiliul Științific", 
 
 
-        "c11": "I. Primul Război Mondial ",
+        "c11": "I. Contextul istoric",
         "c12": "Marele Război",
         "c13": "Harta lumii în 1914 și alianțele politico-militare. Dinamica fronturilor de luptă, evenimentele memorabile derulate pe parcursul fiecărui an de război. Harta lumii în 1918-1920",
         "c14": "Războiul în cifre și imagini",
@@ -264,7 +265,7 @@ $.i18n().load({
         "f16": "Joc 3D care simulează bătălia de la Villers-Bretonneux",        
 
         "cr1": "Creatori",
-        "cr2": "Enciclopedia “România 1918. Oameni, momente și imagini” este o producție SIVECO Romania, în parteneriat cu instituții prestigioase de cultură și personalități ale societății românești.",
+        "cr2": "Enciclopedia “România 1918. Oameni, momente și imagini” este o producție SIVECO Romania, în parteneriat cu instituții prestigioase de cultură și personalități ale societății românești. Mulțumim celor care au contribuit la realizarea acestei Enciclopedii:",
         "cs1": "Consiliul științific",
         "cs2": "General Prof. Univ. Dr. Mihail E. Ionescu",
         "cs3": "Prof. Univ. Dr. Corneliu Mihail Lungu",
@@ -284,7 +285,9 @@ $.i18n().load({
         "cop3": "Prof. Magda Stan",
         "cop4" :"Prof. Radu Jugureanu",
 
-        "cont1": "Contributori, autori articole ",
+        "cont1": "Autori articole ",
+        "cont01": "Muzeul Național de Istorie a României,",
+        "cont02": " ”România în Marele Război” (catalog expoziție), 2016",
         "cont2": "Prof. Univ. Dr. Alin Ciupală –",
         "cont3": "„Bătălia lor. Femeile din România în Primul Război Mondial”, Editura Polirom ",
         "cont4": "Cercet. Dr. Adrian-Silvan Ionescu -",
@@ -308,10 +311,11 @@ $.i18n().load({
         "cont22": "Cercet. Dr. Horia Șerbănescu -",
         "cont23": "Conținut științific Cap. II",
 
-        "conl1": "Colecționari contributori ",
+        "conl1": "Colecționari",
         "conl2": "Prof. Univ. Dr. A. Atanasiu",
         "conl3": "Prof. Dr. Carol Căpiță",
-        "conl4": "Alexandra Crăciunoiu (Colecția Cristian Crăciunoiu)",
+        "conl41": "Alexandra Crăciunoiu ",
+        "conl42": "(Colecția Cristian Crăciunoiu)",
         "conl5": "Mihaela Kloos-Ilea, autor blog",
         "conl6": "Povestiri Săsești",
         "conl7": "Alin Dimăncescu, autor blog",
@@ -328,6 +332,7 @@ $.i18n().load({
         "cd6": " Testare:",
         "cd7": " Coordonator parteneri:",
         "cd8": " Marketing și comunicare:",
+        "cd9": " Consiliere juridică:",        
         "cd10": " (coordonator)",
 
         "p1": " Parteneri",
@@ -343,6 +348,8 @@ $.i18n().load({
         "zile":" zile",
         "ore":" ore",
         "minute":" minute",
+
+        "tc":"Termeni și condiții",        
 
     },
     "en": {
@@ -362,6 +369,7 @@ $.i18n().load({
         "windows":"windows",
         "android":"android",
 
+        "hs": "The first project of the SIVECO Romania Foundation.",
         "h1": "Romania 1918",
         "h2": "People, moments and images",
         "h3": " „Romania 1918. People, moments and images” is a digital product created by ",
@@ -386,7 +394,7 @@ $.i18n().load({
         "t15":"Member of the Scientific Council", 
         
 
-        "c11": "I. First World War ",
+        "c11": "I. The historical context",
         "c12": "The Great War",
         "c13": "World map in 1914 and political-military alliances. Dynamics of the battle fronts; memorable events during each year of war. Map of the world in 1918-1920",
         "c14": "The War in numbers and images",
@@ -441,7 +449,7 @@ $.i18n().load({
         "f16": "3D game simulating the Battle of Villers-Bretonneux",
 
         "cr1": "Contributors",
-        "cr2": "The digital Encyclopedia “Romania 1918. People, moments and images” is a SIVECO Romania production, developed in partnership with prestigious cultural institutions and personalities of Romanian society.",
+        "cr2": "The digital Encyclopedia “Romania 1918. People, moments and images” is a SIVECO Romania production, developed in partnership with prestigious cultural institutions and personalities of Romanian society. We thank those who contributed to this Encyclopedia:",
         "cs1": "The Scientific Council",
         "cs2": "Gen. Prof. Mihail E. Ionescu, PhD.",
         "cs3": "Prof. Corneliu Mihail Lungu, PhD.",
@@ -462,6 +470,8 @@ $.i18n().load({
         "cop4" :"Prof. Radu Jugureanu",        
 
         "cont1": "Contributing authors ",
+        "cont01": "Muzeul Național de Istorie a României,",
+        "cont02": " ”România în Marele Război” (catalog expoziție), 2016",
         "cont2": "Prof. Alin Ciupală, PhD –",
         "cont3": "„Their battle. The Romanian women during the First World War”, Polirom Publishing House ",
         "cont4": "Researcher Prof. Adrian-Silvan Ionescu, PhD -",
@@ -488,7 +498,8 @@ $.i18n().load({
         "conl1": "Contributing collectors",
         "conl2": "Prof. A. Atanasiu, PhD",
         "conl3": "Prof. Carol Căpiță, PhD",
-        "conl4": "Alexandra Crăciunoiu (Cristian Crăciunoiu collection)",
+        "conl41": "Alexandra Crăciunoiu ",
+        "conl42": "(Cristian Crăciunoiu collection)",
         "conl5": "Mihaela Kloos-Ilea, blog author of",
         "conl6": "Povestiri Săsești",
         "conl7": "Alin Dimăncescu, blog author of",
@@ -505,6 +516,7 @@ $.i18n().load({
         "cd6": " Testing:",
         "cd7": " Partners Coordinator:",
         "cd8": " Marketing and communication:",
+        "cd9": " Legal Counseling:",
         "cd10": " (coordinator),",
 
         "p1": " Partners",
@@ -520,6 +532,8 @@ $.i18n().load({
         "zile":" days",
         "ore":" hours",
         "minute":" minutes",
+
+        "tc":"Terms of use",
     },
 
     "fr": {
