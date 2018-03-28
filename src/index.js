@@ -546,7 +546,18 @@ $('#lang_select').on('change', function () {
     $('html').i18n();
     localStorage.setItem("language", this.value);
     $('html').attr('lang', this.value);
+    hrefValue()
 })
+
+function hrefValue(){
+    localLanguage = localStorage.getItem("language");
+
+    if(localLanguage === 'ro'){
+        $('#terms').attr("href", "assets/downloads/Termeni_conditii.pdf")
+    } else {
+        $('#terms').attr("href", "assets/downloads/Terms_and_Conditions.pdf")
+    }
+}
 
 function languageSelector(){
     localLanguage = localStorage.getItem("language");
