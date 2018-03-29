@@ -180,7 +180,7 @@ $.i18n().load({
         "m6": "Creatori",
         "m7": "Parteneri",
 
-        "hs": "Primul proiect al Fundației SIVECO România.",
+        "hs": "Primul proiect al Fundației SIVECO",
         "h1": "România 1918",
         "h2": "Oameni, momente și imagini",
         "h3": "Enciclopedia “România 1918. Oameni, momente și imagini” este o producție ",
@@ -369,7 +369,7 @@ $.i18n().load({
         "windows":"windows",
         "android":"android",
 
-        "hs": "The first project of the SIVECO Romania Foundation.",
+        "hs": "The first project of the SIVECO Foundation",
         "h1": "Romania 1918",
         "h2": "People, moments and images",
         "h3": " „Romania 1918. People, moments and images” is a digital product created by ",
