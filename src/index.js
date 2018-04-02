@@ -100,9 +100,9 @@ navButton.addEventListener('click', toggleNav);
 
 
 // video script
-// var vid = document.getElementById('vid');
-// var vid01 = document.getElementById('vid01');
-// $('#vid')[0].play();
+var vid = document.getElementById('vid');
+var vid01 = document.getElementById('vid01');
+$('#vid')[0].play();
 
 // modal script
 var modal = document.querySelector("#modal");
@@ -190,9 +190,10 @@ $.i18n().load({
         "h7": "Enciclopedia este oferită românilor de pretutindeni, ca un memento al celui mai important proiect național: întregirea neamului.",
        
         "soon":"Lansarea Enciclopediei digitale România 1918 va avea loc în Amfiteatrul Al. I. Cuza al Camerei de Comerț și Industrie a României pe data de 3 Aprilie la ora 10:00.",
-        "download":"Descarcă aplicația",
-        "windows":"windows",
-        "android":"android",        
+        "downloadLocal":"Descarcă aplicația local",
+        "ios":"În curând aplicația IOS",
+        "windows":"Aplicația Windows",
+        "android":"În curând aplicația Android",        
 
         "t1": "„Enciclopedia 'România 1918. Oameni, momente și imagini' este dedicată miilor de românce și de români, femei, bărbați și copii, profesori și preoți, avocați și inventatori, țărănci și prințese, soldați și generali,  oameni simpli sau erudiți inventatori care s-au sacrificat pentru ca România să fie cea întreagă de astăzi. ",
         "t2": "Enciclopedia este creată prin voluntariat și generozitate și este oferită școlii românești și societății românești, pentru o continuă reamintire a celor care au creat România de astăzi.”",
@@ -366,9 +367,10 @@ $.i18n().load({
         "m7": "Partners",
 
         "soon":"The launch of the Digital Encyclopedia Romania 1918 will take place in the Al. I. Cuza Amphitheater of the Chamber of Commerce and Industry of Romania on April 3 at 10:00.",
-        "download":"Download",
-        "windows":"windows",
-        "android":"android",
+        "downloadLocal":"Local download",
+        "ios":"IOS App coming soon",
+        "windows":"Windows App",
+        "android":"Android App coming soon",
 
         "hs": "The first project of the SIVECO Foundation",
         "h1": "Romania 1918",

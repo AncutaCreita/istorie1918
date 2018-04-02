@@ -56,9 +56,9 @@
                 <li>
                     <a href="#cuprins" data-i18n="m3">Cuprins</a>
                 </li>
-                <!-- <li>
+                <li>
                     <a href="#demo" data-i18n="m4">Demo</a>
-                </li> -->
+                </li>
                 <li>
                     <a href="#featuresLink" data-i18n="m5">Funcționalități</a>
                 </li>
@@ -103,29 +103,35 @@
             </header>
             <div class="appStore">
 
-                <p data-i18n="soon">Lansarea Enciclopediei digitale România 1918 va avea loc în Amfiteatrul Al. I. Cuza al Camerei de Comerț
-                    și Industrie a României pe data de 3 Aprilie la ora 10:00.</p>
+                <!-- <p data-i18n="soon">Lansarea Enciclopediei digitale România 1918 va avea loc în Amfiteatrul Al. I. Cuza al Camerei de Comerț
+                    și Industrie a României pe data de 3 Aprilie la ora 10:00.</p> -->
 
-                <div id="countdown">
+                <!-- <div id="countdown">
                     <div id="countdowndays" class="box"></div>
                     <div id="countdownhours" class="box"></div>
-                    <div id="countdownmins" class="box"></div>
+                    <div id="countdownmins" class="box"></div> -->
                     <!-- <div id="countdownsecs" class="box"><p></p></div> -->
-                </div>
-                <!-- <button>
+                <!-- </div> -->
+                <button>
+                    <a href="assets/downloads/Romania1918.zip">
+                            <img src="assets/images/download.svg" alt="Windows store" height="40" width="40"><span data-i18n="downloadLocal">Descarcă aplicația local</span>
+                    </a>
+                    </button>                
+                <button>
+                    <a href="/">
+                    <img src="assets/images/windows.svg" alt="Windows store" height="40" width="40"><span data-i18n="windows">Aplicația Windows</span></a>
+                 </button>
+                <button class="fade">
                     <a href="" title="">
                         <img src="assets/images/apple.svg" alt="Apple store" height="40" width="40">
-                        <span data-i18n="download">App Store</span>
+                        <span data-i18n="ios">În curând aplicația IOS</span>
                     </a>
                 </button>
-                <button>
+
+                <button class="fade">
                     <a href="/">
-                        <img src="assets/images/windows.svg" alt="Windows store" height="40" width="40"><span data-i18n="windows">App Windows</span></a>
+                        <img src="assets/images/android.svg" alt="Android store" height="40" width="40"> <span data-i18n="android">În curând aplicația Android</span> </a>
                 </button>
-                <button>
-                    <a href="/">
-                        <img src="assets/images/android.svg" alt="Android store" height="40" width="40"> <span data-i18n="android">Android</span> </a>
-                </button> -->
 
             </div>
             <p id='testimoniale'></p>
@@ -352,11 +358,14 @@
         <!-- end content -->
 
         <!-- video -->
-        <section id="demo" class="section__video" style="display:none">
+        <section id="demo" class="section__video">
             <h1>Demo</h1>
             <div class="flex-video">
-                <!-- <video preload loop muted id="vid" src="https://player.vimeo.com/external/118310608.sd.mp4?s=16baa73f581d93200fbfc4ffb15c1f04">
+                <!-- <video preload loop muted id="vid" src="https://youtu.be/JFk7uZQ-TPk">
                 </video> -->
+                <!-- <video preload loop muted id="vid" src="https://youtu.be/WMLZ5n8ObKM?list=RDMMWMLZ5n8ObKM">
+                </video>             -->
+                <iframe width="854" height="480" src="https://www.youtube.com/embed/WMLZ5n8ObKM?list=RDMMWMLZ5n8ObKM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>    
             </div>
         </section>
         <!-- end video -->

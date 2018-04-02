@@ -56,6 +56,11 @@ span {
   line-height: 1.5rem;
 }
 
+.termeni{
+  color:#fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .wrapper {
   display: grid;
   justify-content: center;
@@ -164,7 +169,7 @@ span {
     justify-content: space-around;
 
     button {
-      margin: 10px;
+      margin: 2px;
     }
   }
 }
@@ -216,13 +221,14 @@ button {
   display: inline-flex;
   background-color: transparent;
   border: 2px solid var(--gold);
-  padding: 15px;
+  padding: 8px;
   color: var(--gold);
   border-radius: 50px;
   cursor: pointer;
   font-size: 16px;
   align-content: center;
   justify-content: center;
+  
 
   a {
     display: flex;
@@ -232,6 +238,15 @@ button {
 
     img {
       padding: 5px;
+    }
+  }
+
+  &.fade{
+    opacity: 0.5;
+
+    &:hover{
+      box-shadow: none;
+      border: 2px solid var(--gold);
     }
   }
 }
@@ -559,6 +574,9 @@ footer {
   a {
     color: #fff;
   }
+}
+footer.termeni{
+  background: transparent;
 }
 
 li.up {
