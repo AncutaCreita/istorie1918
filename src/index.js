@@ -189,7 +189,7 @@ $.i18n().load({
         "h6": "Anul 1918 a fost, pentru națiunea română, un miracol împlinit.",
         "h7": "Enciclopedia este oferită românilor de pretutindeni, ca un memento al celui mai important proiect național: întregirea neamului.",
        
-        "soon":"Lansarea Enciclopediei digitale România 1918 va avea loc în Amfiteatrul Albastru al Camerei de Comerț și Industrie a României pe data de 3 Aprilie la ora 10:00.",
+        "soon":"Lansarea Enciclopediei digitale România 1918 va avea loc în Amfiteatrul Al. I. Cuza al Camerei de Comerț și Industrie a României pe data de 3 Aprilie la ora 10:00.",
         "download":"Descarcă aplicația",
         "windows":"windows",
         "android":"android",        
@@ -336,6 +336,7 @@ $.i18n().load({
         "cd10": " (coordonator)",
 
         "p1": " Parteneri",
+        "pm1":"Parteneri media",
 
         "close":"Închide",
         "info0":"Povestea imaginii din fundal",        
@@ -364,7 +365,7 @@ $.i18n().load({
         "m6": "Contributors",
         "m7": "Partners",
 
-        "soon":"The launch of the Digital Encyclopedia Romania 1918 will take place in the Blue Amphitheater of the Chamber of Commerce and Industry of Romania on April 3 at 10:00.",
+        "soon":"The launch of the Digital Encyclopedia Romania 1918 will take place in the Al. I. Cuza Amphitheater of the Chamber of Commerce and Industry of Romania on April 3 at 10:00.",
         "download":"Download",
         "windows":"windows",
         "android":"android",
@@ -520,6 +521,7 @@ $.i18n().load({
         "cd10": " (coordinator),",
 
         "p1": " Partners",
+        "pm1":"Media Partners",
 
         "close":"close",
         "info0":"The story of the background image",
