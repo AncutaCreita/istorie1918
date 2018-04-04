@@ -225,6 +225,9 @@ h1.title {
   color: #fff;
 }
 
+.appStore a{
+  text-decoration: none;
+}
 button {
   display: inline-flex;
   background-color: transparent;
@@ -236,6 +239,8 @@ button {
   font-size: 16px;
   align-content: center;
   justify-content: center;
+  align-items: center;
+  align-content: center;
   
 
   a {

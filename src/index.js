@@ -194,7 +194,7 @@ $.i18n().load({
         "ios":"În curând iOS",
         "windows":"În curând WindowsStore",
         "android":"Android", 
-        "mac":"În curând Mac OS",       
+        "mac":"Mac OS",       
 
         "t1": "„Enciclopedia 'România 1918. Oameni, momente și imagini' este dedicată miilor de românce și de români, femei, bărbați și copii, profesori și preoți, avocați și inventatori, țărănci și prințese, soldați și generali,  oameni simpli sau erudiți inventatori care s-au sacrificat pentru ca România să fie cea întreagă de astăzi. ",
         "t2": "Enciclopedia este creată prin voluntariat și generozitate și este oferită școlii românești și societății românești, pentru o continuă reamintire a celor care au creat România de astăzi.”",
@@ -372,7 +372,7 @@ $.i18n().load({
         "ios":"iOS coming soon",
         "windows":"Windows coming soon",
         "android":"Android",
-        "mac":"Mac OS coming soon",
+        "mac":"Mac OS",
 
         "hs": "The first project of the SIVECO Foundation",
         "h1": "Romania 1918",
