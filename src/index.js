@@ -191,9 +191,10 @@ $.i18n().load({
        
         "soon":"Lansarea Enciclopediei digitale România 1918 va avea loc în Amfiteatrul Al. I. Cuza al Camerei de Comerț și Industrie a României pe data de 3 Aprilie la ora 10:00.",
         "downloadLocal":"Descarcă local",
-        "ios":"În curând iOS",
-        "windows":"În curând WindowsStore",
-        "android":"Android", 
+        "ios":"iOS",
+        "windows":"Windows",
+        "android":"Android",
+        "online":"Versiunea Online",         
         "mac":"Mac OS",       
 
         "t1": "„Enciclopedia 'România 1918. Oameni, momente și imagini' este dedicată miilor de românce și de români, femei, bărbați și copii, profesori și preoți, avocați și inventatori, țărănci și prințese, soldați și generali,  oameni simpli sau erudiți inventatori care s-au sacrificat pentru ca România să fie cea întreagă de astăzi. ",
@@ -282,8 +283,8 @@ $.i18n().load({
         "csp3": "Prof. Dr. Gabriel Leahu",
         "csp4": "Prof. Simona Tănase",
 
-        "cop1": "Coordonator proiect:",
-        "cop2": "Autor și scenarist:",
+        "cop1": "Proiect coordonat de:",
+        "cop2": "Coordonare științifică:",
         "cop3": "Prof. Magda Stan",
         "cop4" :"Prof. Radu Jugureanu",
 
@@ -325,6 +326,7 @@ $.i18n().load({
         "conl9": "Prof. Adrian Mihai Olaru",
         "conl10": "Prof. Corneliu Stoica",
         "conl11": "Dr. Simona Tănăsescu",
+        "conl12": "Coloana sonoră: ",
 
         "cd1": "Creație digitală",
         "cd2": "Coordonator:",
@@ -369,9 +371,10 @@ $.i18n().load({
 
         "soon":"The launch of the Digital Encyclopedia Romania 1918 will take place in the Al. I. Cuza Amphitheater of the Chamber of Commerce and Industry of Romania on April 3 at 10:00.",
         "downloadLocal":"Local download",
-        "ios":"iOS coming soon",
-        "windows":"Windows coming soon",
+        "ios":"iOS",
+        "windows":"Windows",
         "android":"Android",
+        "online":" Online Version",
         "mac":"Mac OS",
 
         "hs": "The first project of the SIVECO Foundation",
@@ -512,6 +515,7 @@ $.i18n().load({
         "conl9": " Prof. Adrian Mihai Olaru",
         "conl10": "Prof. Corneliu Stoica",
         "conl11": "Simona Tănăsescu, PhD",
+        "conl12": "Soundtrack:",
 
         "cd1": "Digital Creation:",
         "cd2": "Coordinator:",

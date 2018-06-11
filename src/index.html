@@ -110,44 +110,51 @@
                     <div id="countdowndays" class="box"></div>
                     <div id="countdownhours" class="box"></div>
                     <div id="countdownmins" class="box"></div> -->
-                    <!-- <div id="countdownsecs" class="box"><p></p></div> -->
+                <!-- <div id="countdownsecs" class="box"><p></p></div> -->
                 <!-- </div> -->
-                
-                    <a href="assets/downloads/Romania1918.zip" title="Romania1918" download>
-                        <button> 
-                            <img src="assets/images/download.svg" alt="Windows store" height="40" width="40">
-                            <span data-i18n="downloadLocal">Descarcă local</span>
-                        </button> 
-                    </a>
-                                    
-                    <a href="https://play.google.com/store/apps/details?id=ro.siveco.romania" alt="Romania1918 Android" target="_blank" >
-                        <button>
-                            <img src="assets/images/android.svg" alt="Android store" height="40" width="40"> 
-                            <span data-i18n="android">Android</span>
-                        </button>
-                    </a>
-                                
-                    <a href="assets/downloads/Romania1918.app.zip" alt="Romania1918 Mac OS" download>
-                        <button >
-                            <img src="assets/images/apple.svg" alt="Apple store" height="40" width="40">
-                            <span data-i18n="mac">Mac OS</span>                         
-                        </button>
-                    </a>                                                     
-                
-                    <a href="/">
-                        <button class="fade">
-                            <img src="assets/images/windows.svg" alt="Windows store" height="40" width="40">
-                            <span data-i18n="windows">În curând WindowsStore</span>
-                         </button>
-                    </a>           
-                
-                    <a href="" title="">
-                        <button class="fade">
-                                <img src="assets/images/apple.svg" alt="Apple store" height="40" width="40">
-                            <span data-i18n="ios">În curând iOS</span>
-                         </button> 
-                    </a>
-                             
+
+                <a href="Romania1918/index.html" alt="Romania1918 Online" target="_blank">
+                    <button>
+                        <img src="assets/images/play.svg" alt="Versiunea Online" height="40" width="40">
+                        <span data-i18n="online">Versiunea Online</span>
+                    </button>
+                </a>
+
+                <a href="assets/downloads/Romania1918.zip" title="Romania1918" download>
+                    <button>
+                        <img src="assets/images/download.svg" alt="Windows store" height="40" width="40">
+                        <span data-i18n="downloadLocal">Descarcă local</span>
+                    </button>
+                </a>
+
+                <a href="https://play.google.com/store/apps/details?id=ro.siveco.romania" alt="Romania1918 Android" target="_blank">
+                    <button>
+                        <img src="assets/images/android.svg" alt="Android store" height="40" width="40">
+                        <span data-i18n="android">Android</span>
+                    </button>
+                </a>
+
+                <a href="assets/downloads/Romania1918.app.zip" alt="Romania1918 Mac OS" download>
+                    <button>
+                        <img src="assets/images/apple.svg" alt="Apple store" height="40" width="40">
+                        <span data-i18n="mac">Mac OS</span>
+                    </button>
+                </a>
+
+                <a href="https://www.microsoft.com/ro-ro/store/p/romania-1918/9p1k974p6mpk" alt="Romania1918 WindowsStore" target="_blank">
+                    <button>
+                        <img src="assets/images/windows.svg" alt="Windows store" height="40" width="40">
+                        <span data-i18n="windows">WindowsStore</span>
+                    </button>
+                </a>
+
+                <a href="https://itunes.apple.com/ro/app/rom%C3%A2nia-1918/id1370328857?mt=8" alt="Romania1918 iOS" target="_blank">
+                    <button>
+                        <img src="assets/images/apple.svg" alt="Apple store" height="40" width="40">
+                        <span data-i18n="ios">iOS</span>
+                    </button>
+                </a>
+
 
             </div>
             <p id='testimoniale'></p>
@@ -377,11 +384,19 @@
         <section id="demo" class="section__video">
             <h1>Demo</h1>
             <div class="flex-video">
-                    <div class="video-container">
-                <!-- <video preload loop muted id="vid" src="assets/video/demo.mp4"> -->
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xOlpVZkQ100?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    </div>
+                <div class="video-container">
+                    <!-- <video preload loop muted id="vid" src="assets/video/demo.mp4"> -->
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xOlpVZkQ100?rel=0&amp;controls=0" frameborder="0" allow="autoplay; encrypted-media"
+                        allowfullscreen></iframe>
+                </div>
             </div>
+            <br/>
+            <a href="Romania1918/index.html" alt="Romania1918 Online" target="_blank">
+                <button>
+                    <img src="assets/images/play.svg" alt="Versiunea Online" height="40" width="40">
+                    <span data-i18n="online">Versiunea Online</span>
+                </button>
+            </a>
         </section>
         <!-- end video -->
 
@@ -444,7 +459,19 @@
                 prestigioase de cultură și personalități ale societății românești. Mulțumim celor care au contribuit la realizarea
                 acestei Enciclopedii: </h2>
 
-            <div>
+            <div class="one-column">
+
+                <h3 data-i18n="cop1">Proiect coordonat de:</h3>
+                <br/>
+                <span data-i18n="cop4">Prof. Radu Jugureanu</span>
+                <br/>
+                <br/>
+                <h3 data-i18n="cop2">Coordonare științifică:</h3>
+                <br/>
+                <span data-i18n="cop3">Profesor Magda Stan</span>
+                <br/>
+                <br/>
+
                 <h3 data-i18n="cs1">Consiliul științific</h3>
                 <br/>
                 <span data-i18n="cs2">General Prof. Univ. Dr. Mihail E. Ionescu</span>
@@ -471,14 +498,6 @@
                 <span data-i18n="csp3">Prof. Dr. Gabriel Leahu</span>
                 <br/>
                 <span data-i18n="csp4">Prof. Simona Tănase</span>
-            </div>
-
-            <div>
-                <h3 data-i18n="cop1">Coordonator proiect:</h3>
-                <span data-i18n="cop4">Prof. Radu Jugureanu</span>
-                <br/>
-                <h3 data-i18n="cop2">Autor și scenarist:</h3>
-                <span data-i18n="cop3">Profesor Magda Stan</span>
             </div>
 
             <div>
@@ -547,6 +566,11 @@
                 <span data-i18n="conl10">Corneliu Stoica</span>
                 <br/>
                 <span data-i18n="conl11">Tănăsescu</span>
+                <h3 data-i18n="conl12">Coloana sonoră</h3>
+
+                <a href="https://www.youtube.com/watch?v=ctMe9oYoYSg" alt="Adrian Naidin" target="_blank">
+                    <span>Adrian Naidin</span>
+                </a>
             </div>
 
             <div>
@@ -570,7 +594,8 @@
                 <b>
                     <span data-i18n="cd6">Testare</span>
                 </b>Cătălin Petrea
-                <span data-i18n="cd10">(coordonator)</span>, Alexandru Binig, Dragoș Crăciun, Florin Ilia, Radu Ilia, Prof. Dorina Jugureanu
+                <span data-i18n="cd10">(coordonator)</span>, Alexandru Binig, Dragoș Crăciun, Florin Ilia, Radu Ilia, Prof. Dorina Jugureanu, Ștefan
+                Morcov
                 <br/>
                 <b>
                     <span data-i18n="cd9">Consiliere juridică: </span>
@@ -693,6 +718,12 @@
                     <figcaption>Camera de Comerț și Industrie a României</figcaption>
                 </a>
             </figure>
+            <figure>
+                <a href="http://www.aosr.ro" alt="Academia Oamenilor de Știință din România" target="_blank">
+                    <img src="assets/images/aosr.png" title="Academia Oamenilor de Știință din România" />
+                    <figcaption>Academia Oamenilor de Știință din România</figcaption>
+                </a>
+            </figure>
         </section>
         <section id="partenerimedia" class="features">
             <h1 data-i18n="pm1">Parteneri media</h1>
@@ -715,9 +746,16 @@
 
     <footer>
         <!-- to change after the final domain -->
-        <div class="fb-share-button" data-href="https://www.facebook.com/EnciclopediaRomania1918/" data-layout="button" data-size="large"
-            data-mobile-iframe="true">
-            <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/EnciclopediaRomania1918/">Share
+
+        <div class="facebook">
+            <div class="fb-share-button" data-href="https://www.facebook.com/EnciclopediaRomania1918/" data-layout="button" data-size="large"
+                data-mobile-iframe="true">
+                <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/EnciclopediaRomania1918/">Share
+                </a>
+            </div>
+
+            <a class="fb-xfbml-parse-ignore" href="https://www.facebook.com/EnciclopediaRomania1918/" target="_blank">
+                <img src="assets/images/facebook-box.svg" alt="Windows store" height="40" width="40">
             </a>
         </div>
 
