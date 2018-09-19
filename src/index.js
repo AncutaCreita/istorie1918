@@ -338,6 +338,7 @@ $.i18n().load({
         "cd8": " Marketing și comunicare:",
         "cd9": " Consiliere juridică:",        
         "cd10": " (coordonator)",
+        "cd11": " Dr. Alexandra Jugureanu",
 
         "p1": " Parteneri",
         "pm1":"Parteneri media",
@@ -527,6 +528,7 @@ $.i18n().load({
         "cd8": " Marketing and communication:",
         "cd9": " Legal Counseling:",
         "cd10": " (coordinator),",
+        "cd11": " Alexandra Jugureanu, PhD",
 
         "p1": " Partners",
         "pm1":"Media Partners",
