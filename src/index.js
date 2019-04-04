@@ -18,18 +18,18 @@ require('assets/images/favicon.png');
 /**
  * If window scoll is more than 500 from top adds show class on scroll-to-top
  */
-$(window).scroll(function(){
+$(window).scroll(function () {
     const heightToShowScollButton = 500;
     const $scrollButton = $('#scroll-to-top');
     const winTop = $(window).scrollTop();
 
     // Used to show the scoll button
-    if(winTop > heightToShowScollButton){
-        if($scrollButton.hasClass('hide')){
+    if (winTop > heightToShowScollButton) {
+        if ($scrollButton.hasClass('hide')) {
             $scrollButton.addClass('show').removeClass('hide');
         }
     } else {
-        if($scrollButton.hasClass('show')){
+        if ($scrollButton.hasClass('show')) {
             $scrollButton.addClass('hide').removeClass('show');
         }
     }
@@ -46,7 +46,7 @@ $(window).scroll(function(){
 /**
  * On scroll-to-top press animate to 0 in 1000 ms
  */
-$('#scroll-to-top').click(function(event){ 
+$('#scroll-to-top').click(function (event) {
     event.preventDefault();
     $('html,body').animate({
         scrollTop: 0
@@ -64,12 +64,12 @@ $('.testimonialeHolder').slick({
     infinite: true,
     speed: 500,
     cssEase: 'linear'
-  });
-    
+});
+
 
 //
 // handle links with @href started with '#' only
-$(document).on('click', 'a[href^="#"]', function(e) {
+$(document).on('click', 'a[href^="#"]', function (e) {
     // target element id
     var id = $(this).attr('href');
 
@@ -86,7 +86,7 @@ $(document).on('click', 'a[href^="#"]', function(e) {
     var pos = $id.offset().top - 50;
 
     // animated top scrolling
-    $('body, html').animate({scrollTop: pos});
+    $('body, html').animate({ scrollTop: pos });
 });
 // burger menu
 var navButton = document.querySelector('button[aria-expanded]');
@@ -126,14 +126,14 @@ openButton.addEventListener("click", function () {
 });
 
 // video loop on hover script
-var figure = $(".video").hover( hoverVideo, hideVideo );
+var figure = $(".video").hover(hoverVideo, hideVideo);
 
-function hoverVideo(e) {  
-    $('video', this).get(0).play(); 
+function hoverVideo(e) {
+    $('video', this).get(0).play();
 }
 
 function hideVideo(e) {
-    $('video', this).get(0).pause(); 
+    $('video', this).get(0).pause();
 }
 
 
@@ -142,27 +142,27 @@ function hideVideo(e) {
  */
 
 // COUNTDOWN
-function makeTimer(){
-    
-	var endTime = new Date("April 3, 2018 10:00:00");			
-	endTime = (Date.parse(endTime) / 1000);
+function makeTimer() {
 
-	var now = new Date();
-	now = (Date.parse(now) / 1000);
+    var endTime = new Date("April 3, 2018 10:00:00");
+    endTime = (Date.parse(endTime) / 1000);
 
-	var timeLeft = endTime - now;
+    var now = new Date();
+    now = (Date.parse(now) / 1000);
 
-	var days = Math.floor(timeLeft / 86400); 
-	var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
-	var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
-	var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+    var timeLeft = endTime - now;
 
-	$("#countdowndays").html(days + $.i18n( 'zile' ));
-	$("#countdownhours").html(hours + $.i18n( 'ore' ));
-	$("#countdownmins").html(minutes + $.i18n( 'minute' ));
+    var days = Math.floor(timeLeft / 86400);
+    var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+    var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
+    var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
+
+    $("#countdowndays").html(days + $.i18n('zile'));
+    $("#countdownhours").html(hours + $.i18n('ore'));
+    $("#countdownmins").html(minutes + $.i18n('minute'));
 }
 // update every second
-setInterval(function() { makeTimer(); }, 1000);
+setInterval(function () { makeTimer(); }, 1000);
 
 
 
@@ -188,14 +188,14 @@ $.i18n().load({
         "h5": " în parteneriat cu instituții prestigioase de cultură și personalități ale societății românești. ",
         "h6": "Anul 1918 a fost, pentru națiunea română, un miracol împlinit.",
         "h7": "Enciclopedia este oferită românilor de pretutindeni, ca un memento al celui mai important proiect național: întregirea neamului.",
-       
-        "soon":"Lansarea Enciclopediei digitale România 1918 va avea loc în Amfiteatrul Al. I. Cuza al Camerei de Comerț și Industrie a României pe data de 3 Aprilie la ora 10:00.",
-        "downloadLocal":"Descarcă local",
-        "ios":"iOS",
-        "windows":"Windows",
-        "android":"Android",
-        "online":"Versiunea Online",         
-        "mac":"Mac OS",       
+
+        "soon": "Lansarea Enciclopediei digitale România 1918 va avea loc în Amfiteatrul Al. I. Cuza al Camerei de Comerț și Industrie a României pe data de 3 Aprilie la ora 10:00.",
+        "downloadLocal": "Descarcă local",
+        "ios": "iOS",
+        "windows": "Windows",
+        "android": "Android",
+        "online": "Versiunea Online",
+        "mac": "Mac OS",
 
         "t1": "„Enciclopedia 'România 1918. Oameni, momente și imagini' este dedicată miilor de românce și de români, femei, bărbați și copii, profesori și preoți, avocați și inventatori, țărănci și prințese, soldați și generali,  oameni simpli sau erudiți inventatori care s-au sacrificat pentru ca România să fie cea întreagă de astăzi. ",
         "t2": "Enciclopedia este creată prin voluntariat și generozitate și este oferită școlii românești și societății românești, pentru o continuă reamintire a celor care au creat România de astăzi.”",
@@ -210,7 +210,7 @@ $.i18n().load({
         "t12": "„Răsfoind filele acestui document am conștientizat mai mult decât oricând faptul că istoria neamului meu se racordează la un șir de fapte importante, că ”parohia” mea spirituală mă legitimează și mă ancorează temeinic într-un spațiu și un timp remarcabil - într-o țară cu o istorie puternică, într-un popor real și într-o familie vrednică de neuitare.",
         "t13": "Cuvine-se cu adevărat să fim locuiți în adâncul firii noastre de emoție, iar din cronica acelor momente de răscruce să facem diferența specifică dintre povești individuale și experiența unei deveniri - să trecem de la contemplarea pasivă a unor legende, la desăvârșirea monumentului recunoștinței noastre.”",
         "t14": "Dr. Simona Tănăsescu,",
-        "t15":"Consiliul Științific", 
+        "t15": "Consiliul Științific",
 
 
         "c11": "I. Contextul istoric",
@@ -265,7 +265,7 @@ $.i18n().load({
         "f13": "Adaptabilitate",
         "f14": "Enciclopedia este adaptată oricărui tip de echipament și poate fi vizualizată pe PC, laptop, tabletă sau smartphone",
         "f15": "Joc 3D",
-        "f16": "Joc 3D care simulează bătălia de la Villers-Bretonneux",        
+        "f16": "Joc 3D care simulează bătălia de la Villers-Bretonneux",
 
         "cr1": "Creatori",
         "cr2": "Enciclopedia “România 1918. Oameni, momente și imagini” este o producție SIVECO Romania, în parteneriat cu instituții prestigioase de cultură și personalități ale societății românești. Mulțumim celor care au contribuit la realizarea acestei Enciclopedii:",
@@ -286,7 +286,7 @@ $.i18n().load({
         "cop1": "Proiect coordonat de:",
         "cop2": "Coordonare științifică:",
         "cop3": "Prof. Magda Stan",
-        "cop4" :"Prof. Radu Jugureanu",
+        "cop4": "Prof. Radu Jugureanu",
 
         "cont1": "Autori articole ",
         "cont01": "Muzeul Național de Istorie a României,",
@@ -330,38 +330,39 @@ $.i18n().load({
 
         "cd1": "Creație digitală",
         "cd2": "Coordonator:",
-        "cd3": " Traducere:",
+        "cd3": " Traducere în limba engleză:",
         "cd4": " Dezvoltatori:",
         "cd5": " Grafică, design, animație, film:",
         "cd6": " Testare:",
         "cd7": " Coordonator parteneri:",
         "cd8": " Marketing și comunicare:",
-        "cd9": " Consiliere juridică:",        
+        "cd9": " Consiliere juridică:",
         "cd10": " (coordonator)",
         "cd11": " Dr. Alexandra Jugureanu",
+        "cd12": " Traducere în limba franceză:",
 
         "p1": " Parteneri",
-        "pm1":"Parteneri media",
+        "pm1": "Parteneri media",
 
-        "close":"Închide",
-        "info0":"Povestea imaginii din fundal",        
-        "info1":"360.728",
-        "info2":" Acesta este numărul orfanilor de război în Primul Război Mondial, din care o treime proveneau din București.",
-        "info3":"Pentru ei, au fost înființate orfelinate pe tot cuprinsul țării, din donații particulare și ajutoare oferite de armată, de familia regală sau de membri ai înaltei societăți.",
-        "info4":"Organizarea orfelinatelor se făcea adesea pe principii militare.",
-        "info5":"Copiii peste 12 ani lucrau în ateliere pentru a învăţa o meserie, cei între 8 şi 12 ani erau trimişi la şcolile din zonă, iar cei sub 7 ani rămâneau permanent în orfelinat unde se jucau, învăţau să citească şi să scrie sub supravegherea unor educatoare.",        
+        "close": "Închide",
+        "info0": "Povestea imaginii din fundal",
+        "info1": "360.728",
+        "info2": " Acesta este numărul orfanilor de război în Primul Război Mondial, din care o treime proveneau din București.",
+        "info3": "Pentru ei, au fost înființate orfelinate pe tot cuprinsul țării, din donații particulare și ajutoare oferite de armată, de familia regală sau de membri ai înaltei societăți.",
+        "info4": "Organizarea orfelinatelor se făcea adesea pe principii militare.",
+        "info5": "Copiii peste 12 ani lucrau în ateliere pentru a învăţa o meserie, cei între 8 şi 12 ani erau trimişi la şcolile din zonă, iar cei sub 7 ani rămâneau permanent în orfelinat unde se jucau, învăţau să citească şi să scrie sub supravegherea unor educatoare.",
 
-        "zile":" zile",
-        "ore":" ore",
-        "minute":" minute",
+        "zile": " zile",
+        "ore": " ore",
+        "minute": " minute",
 
-        "tc":"Termeni și condiții",        
+        "tc": "Termeni și condiții",
 
     },
     "en": {
 
         "menu": "Menu",
-        "title": "Romania 1918. People, moments and images",        
+        "title": "Romania 1918. People, moments and images",
         "m1": "Home",
         "m2": "Testimonials",
         "m3": "Chapters",
@@ -370,13 +371,13 @@ $.i18n().load({
         "m6": "Contributors",
         "m7": "Partners",
 
-        "soon":"The launch of the Digital Encyclopedia Romania 1918 will take place in the Al. I. Cuza Amphitheater of the Chamber of Commerce and Industry of Romania on April 3 at 10:00.",
-        "downloadLocal":"Local download",
-        "ios":"iOS",
-        "windows":"Windows",
-        "android":"Android",
-        "online":" Online Version",
-        "mac":"Mac OS",
+        "soon": "The launch of the Digital Encyclopedia Romania 1918 will take place in the Al. I. Cuza Amphitheater of the Chamber of Commerce and Industry of Romania on April 3 at 10:00.",
+        "downloadLocal": "Local download",
+        "ios": "iOS",
+        "windows": "Windows",
+        "android": "Android",
+        "online": " Online Version",
+        "mac": "Mac OS",
 
         "hs": "The first project of the SIVECO Foundation",
         "h1": "Romania 1918",
@@ -400,8 +401,8 @@ $.i18n().load({
         "t12": "„Looking through these pages, I became more aware than ever that the history of my people is connected to a series of important facts, that my 'spiritual parish' legitimizes me and anchors me in a remarkable space and time - in a country with a strong history, with real people, and a family worthy not to be forgotten.",
         "t13": "It is truly right to live in the depths of our emotional nature, and from the chronicle of those moments of crossroads to make the distinction between individual stories and the experience of becoming - let's pass from the passive contemplation of legends to the completion of our monument of gratitude.”",
         "t14": "Simona Tănăsescu, PhD. -",
-        "t15":"Member of the Scientific Council", 
-        
+        "t15": "Member of the Scientific Council",
+
 
         "c11": "I. The historical context",
         "c12": "The Great War",
@@ -476,7 +477,7 @@ $.i18n().load({
         "cop1": "Project Coordinator:",
         "cop2": "Instructional Designer and Author:",
         "cop3": "Prof. Magda Stan",
-        "cop4" :"Prof. Radu Jugureanu",        
+        "cop4": "Prof. Radu Jugureanu",
 
         "cont1": "Contributing authors ",
         "cont01": "Muzeul Național de Istorie a României,",
@@ -520,7 +521,7 @@ $.i18n().load({
 
         "cd1": "Digital Creation:",
         "cd2": "Coordinator:",
-        "cd3": " Translation:",
+        "cd3": " English translation:",
         "cd4": " Developers:",
         "cd5": " Graphics, design, animation, movie:",
         "cd6": " Testing:",
@@ -529,23 +530,24 @@ $.i18n().load({
         "cd9": " Legal Counseling:",
         "cd10": " (coordinator),",
         "cd11": " Alexandra Jugureanu, PhD",
+        "cd12": " French Translation:",
 
         "p1": " Partners",
-        "pm1":"Media Partners",
+        "pm1": "Media Partners",
 
-        "close":"close",
-        "info0":"The story of the background image",
-        "info1":"360.728",
-        "info2":"This is the number of orphans in World War I, one third of which came from Bucharest.",
-        "info3":"For them, orphanages were established throughout the country, from private donations and aids provided by the army, the royal family or members of the high society.",
-        "info4":" The organization of orphanages was often based on military principles.",
-        "info5":" Children over 12 years of age were working in a workshop to learn a job; the 8 to 12 year olds were sent to local schools, and those under 7 were kept in the orphanage where they were playing, learning to read and write under the supervision of some educators.",
+        "close": "close",
+        "info0": "The story of the background image",
+        "info1": "360.728",
+        "info2": "This is the number of orphans in World War I, one third of which came from Bucharest.",
+        "info3": "For them, orphanages were established throughout the country, from private donations and aids provided by the army, the royal family or members of the high society.",
+        "info4": " The organization of orphanages was often based on military principles.",
+        "info5": " Children over 12 years of age were working in a workshop to learn a job; the 8 to 12 year olds were sent to local schools, and those under 7 were kept in the orphanage where they were playing, learning to read and write under the supervision of some educators.",
 
-        "zile":" days",
-        "ore":" hours",
-        "minute":" minutes",
+        "zile": " days",
+        "ore": " hours",
+        "minute": " minutes",
 
-        "tc":"Terms of use",
+        "tc": "Terms of use",
     },
 
     "fr": {
@@ -561,26 +563,26 @@ $('#lang_select').on('change', function () {
     hrefValue()
 })
 
-function hrefValue(){
+function hrefValue() {
     localLanguage = localStorage.getItem("language");
 
-    if(localLanguage === 'ro'){
+    if (localLanguage === 'ro') {
         $('#terms').attr("href", "assets/downloads/Termeni_conditii.pdf")
     } else {
         $('#terms').attr("href", "assets/downloads/Terms_and_Conditions.pdf")
     }
 }
 
-function languageSelector(){
+function languageSelector() {
     localLanguage = localStorage.getItem("language");
 
-    if(!localLanguage){
+    if (!localLanguage) {
         localStorage.setItem("language", $('html').attr('lang'))
     } else {
         $('html').attr('lang', localLanguage)
         $.i18n().locale = localLanguage;
         $('html').i18n();
-        $('#lang_select option[value=' + localLanguage +']').attr('selected','selected');
+        $('#lang_select option[value=' + localLanguage + ']').attr('selected', 'selected');
     }
 }
 
